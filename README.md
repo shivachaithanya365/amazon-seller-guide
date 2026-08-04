@@ -81,8 +81,11 @@ republishing.
 
 ## Known issues
 
-- `parse_product.py` extracts nothing from `product.html` — the saved page appears to be
-  a bot-block page rather than a product listing.
+- `product.html` is **not a product page** — it holds Amazon's "Continue shopping"
+  anti-automation interstitial (3,793 bytes, zero product markup). Re-save it from a
+  browser session already signed in to Amazon.in, as *Webpage, HTML Only*.
+  `python3 parse_product.py --selftest` confirms the extraction patterns still work
+  independently of that bad input.
 - Chapter 3's advertising figures rest on a 7-day → 30-day projection divided by July's
   unit count, and the Seller Central export behind them is not in this repo. The
   arithmetic reconciles exactly; the assumption that spend ran flat through July does
