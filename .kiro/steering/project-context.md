@@ -48,20 +48,76 @@ from anywhere, but the parts and `style.css` must stay in the same folder as it.
 Outputs are deterministic: re-running the four data scripts reproduces the committed
 JSON and appendix HTML byte-for-byte. Use that as a regression check after any edit.
 
+## Closing fees: six lists, not three tiers
+
+This is the single most important fact about the fee data, and it was previously
+modelled wrongly.
+
+Amazon publishes **six independent category lists**, three per price band:
+
+```
+INR 0-300    Group #  Rs 26 (153)   Group A  Rs 20 (59)   Group B  Rs 13 (20)
+INR 301-500  Group ## Rs 22 (146)   Group C  Rs 18 (55)   Group D  Rs 14 (32)
+```
+
+The bands do **not** mirror each other. Do not pair Group A with C, or B with D.
+Amazon's own worked example on the page settles it: *Apparel - Shorts* is Group A
+below Rs 300 but Group D at Rs 450, so Rs 14 - not the Rs 18 an A->C pairing implies.
+
+**16 categories** are placed in a pairing no simple tier model predicts (11 move
+Group # -> D, 4 move A -> D, 1 moves B -> ##). They are tabulated at the end of
+Appendix B. A further 18 have no exact string match in the Rs 301-500 band, but that
+is mostly Amazon's own inconsistent naming (`Fragrance` vs `Beauty - Fragrance`,
+`Jewellery` vs `Jewelry`), not proof of absence - treat those as unknown, not missing.
+
+Above Rs 1,000 every category pays Rs 52 except exactly four, which pay Rs 72:
+Chimneys, Refrigerators, Major Appliances - Other Products, Home Entertainment -
+Other products. Amazon only ever calls these "select fee categories".
+
+`extract_groups.py` self-validates: it exits non-zero if any group is empty, if
+Amazon's worked examples do not reproduce, or if a category appears twice in one
+band. If you re-save `fees.html`, run it and trust the exit code.
+
+Two parsing traps that previously broke it, in case the markup shifts again:
+`(Group #)` sits alone on a line, but Group C and D put the marker at the **end** of
+their description line, and Group ## has **no marker at all** and must be identified
+by its rate. A `len(l) < 160` guard also silently dropped a legitimate 170-character
+Automotive category; the cap is now 200.
+
+## What is verified, and what cannot be
+
+Verified reproducibly from `fees.html` (re-running the scripts proves it):
+all six closing-fee group lists, the Rs 72 exception list, all 219 referral-fee
+rates, pick & pack Rs 17, storage Rs 50/cu ft, the 500 g minimum chargeable weight.
+
+**Not machine-verifiable** - these figures exist only inside the rate-card JPGs and
+were read by eye: the Rs 27 (Rs 501-1,000) and Rs 52 (above Rs 1,000) closing fees,
+the Rs 101 Self-Ship rate, and every weight-handling number (Rs 39 / 65 / 54 / 85).
+Searching the saved page text for "501", "Rs 27" or "Rs 52" returns nothing. They may
+well be right, but no script can confirm them - re-check by eye against
+`research/ratecards/*.jpg` before republishing, and do not assume a passing script
+run has validated them.
+
 ## Known open issues
 
-1. **`extract_groups.py` finds 0 categories for Group ##, Group C and Group D.**
-   Only Group # (153), Group A (58) and Group B (20) populate. These three empty
-   groups are the ₹301-500 price band. Appendix B currently presents the ₹301-500
-   rates (₹22 / ₹18 / ₹14) as if their category membership mirrors the ₹0-300 groups,
-   but that mirroring was never actually extracted or verified - while the output is
-   still labelled `VERIFIED`. Either extract the real ₹301-500 membership from
-   `fees.html`, or downgrade that label and state the assumption in the text.
-
-2. **`parse_product.py` extracts nothing** from the current `product.html` - title,
+1. **`parse_product.py` extracts nothing** from the current `product.html` - title,
    price, byline, seller and all details return `-- not found --`. The saved page is
    likely a bot-block/interstitial rather than a real product page, or Amazon's markup
    changed. Re-save the product page before relying on this script.
+
+2. **Chapter 3's ad-spend figures rest on a projection, not measurement.** The
+   Rs 1,858 last-7-days Sponsored Ads spend is stated as fact but the underlying
+   Seller Central export is not in this repo, so nothing here can verify it. The
+   Rs 248.84 per-unit ad cost mixes windows: it projects that 7-day figure to 30 days
+   (Rs 7,963) and divides by *July's* 32 units. That is only valid if spend ran flat
+   through July. The headline "Rs 39.94 loss per unit" depends entirely on it. All the
+   arithmetic reconciles exactly - the assumption, not the maths, is the weak point.
+   Commit the transaction CSVs and recompute from actual July spend.
+
+3. **Chapter 9's profit box excludes advertising.** It shows Rs 95 net and ~29% margin
+   at Rs 120 COGS, while Chapter 3 says ads make the same unit a loss. Both are
+   arithmetically right; they just answer different questions. Worth an explicit
+   cross-reference so the two chapters are not read as contradicting each other.
 
 ## Conventions
 
