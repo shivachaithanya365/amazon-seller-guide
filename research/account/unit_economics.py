@@ -45,6 +45,20 @@ UNITS_NET_MONTH  = 36       # units sold minus refunds, July
 REFUND_RATE      = 6 / 42   # 6 refunded of 42 gross
 INBOUND_FREIGHT  = 1172.92  # Inbound Transportation Fee, 17 June
 
+# CONFIRMED 5 Aug 2026 from Inventory > Manage FBA Shipments. Three shipments were
+# created 16-18 June; only ONE actually shipped:
+#
+#   FBA15LXQVV97  created 16 Jun  Cancelled  0 expected / 0 located   fee Rs 0.00
+#   FBA15LXV3FZL  created 17 Jun  Closed   180 expected / 178 located fee Rs 1,172.92
+#   FBA15LY78X7Y  created 18 Jun  Cancelled  0 expected / 0 located   no fee row
+#
+# The Rs 1,172.92 dated 17/6 maps to FBA15LXV3FZL exactly. The two cancelled
+# shipments cost nothing - verified against the transaction export, which has a
+# second Inbound Transportation Fee row dated 16/6 for Rs 0.00 and no row at all
+# for 18/6. So the whole inbound charge belongs to one 180-unit shipment.
+SHIPMENT_UNITS_SENT     = 180   # units Amazon expected
+SHIPMENT_UNITS_RECEIVED = 178   # units Amazon actually located - TWO SHORT
+
 # ---------------------------------------------------------------------------
 # UNKNOWN - fill these in. Set to None to see what happens across a range.
 # ---------------------------------------------------------------------------
@@ -57,7 +71,13 @@ GST_RATE         = 0.18     # CONFIRMED. The listing's HSN code is 72179099 - he
 SUPPLIER_COST    = None     # Rs per unit, EX-GST (the taxable value on the invoice,
                             # not the invoice total - the GST part is input credit)
 PACKAGING_COST   = None     # Rs per unit: poly bag + FNSKU label + insert card
-SHIPMENT_UNITS   = None     # units in the inbound shipment that cost Rs 1,172.92
+
+# NO LONGER UNKNOWN. Spread over units RECEIVED (178), not units sent (180),
+# because the two units Amazon could not locate will never earn revenue - so the
+# freight paid to move them has to be carried by the units that did arrive.
+#   1172.92 / 178 = Rs 6.59 a unit   <- used
+#   1172.92 / 180 = Rs 6.52 a unit   (understates it by 7 paise)
+SHIPMENT_UNITS   = SHIPMENT_UNITS_RECEIVED
 
 
 def economics(gst_rate, supplier, packaging, shipment_units):
@@ -124,20 +144,24 @@ To fill this in you need four numbers:
                   Not the invoice total. The GST you paid is input credit.
   PACKAGING_COST  Poly bag + FNSKU label + insert card, per unit. Divide a bulk
                   purchase by the number of units it covers.
-  SHIPMENT_UNITS  Seller Central > Inventory > Shipments > open the June shipment
-                  > units sent. That is what the Rs 1,172.92 inbound fee covers.
+
+Two of the original four are now settled:
+  GST_RATE        18%, from HSN 72179099 on the listing.
+  SHIPMENT_UNITS  178 received of 180 sent, shipment FBA15LXV3FZL. Inbound
+                  freight is therefore Rs 6.59 a unit - small, and not your problem.
 """)
     print("=" * 78)
     print("Sensitivity: contribution after refunds, BEFORE advertising")
     print("(rows = supplier cost ex-GST, columns = GST rate; packaging Rs 8,")
-    print(" inbound spread over 141 units)")
+    print(f" inbound spread over {SHIPMENT_UNITS} units received = Rs "
+          f"{INBOUND_FREIGHT/SHIPMENT_UNITS:.2f}/unit)")
     print("=" * 78)
     rates = [0.05, 0.12, 0.18]
     print("      supplier  " + "".join(f"{r*100:>12.0f}%" for r in rates))
     for supplier in (60, 80, 100, 120, 140, 160):
         cells = []
         for r in rates:
-            e = economics(r, supplier, 8.0, 141)
+            e = economics(r, supplier, 8.0, SHIPMENT_UNITS)
             cells.append(f"Rs {e['after_refunds']:>8.2f}")
         print(f"      Rs {supplier:>5}   " + "  ".join(cells))
     print()

@@ -61,11 +61,43 @@ From roughly 11 August, at 18% GST and ₹100 supplier cost:
 | Supplier invoice **taxable value** (not invoice total) + units/metres/kg it covers | purchase invoice | true cost per unit |
 | Wastage %, if cutting 22 m lengths from bulk | own measurement | true cost per unit |
 | Packaging cost per unit | bulk bills ÷ units covered | true cost per unit |
-| **June shipment units** + `FBA…` shipment ID | Inventory → Manage FBA Shipments, 16–17 Jun | inbound freight per unit (₹1,172.92 total) |
-| **6 July return rows** — reason, resolution, in-policy | Reports → Fulfilment → Customer Returns | the 14.3% refund rate |
+Feed these into `unit_economics.py`. It still prints a sensitivity table instead of an
+answer, but only **two** unknowns remain — supplier cost and packaging. Everything else
+is now settled.
 
-Feed the first four into `unit_economics.py`. It currently prints a sensitivity table
-instead of an answer because they are unknown.
+## Answered
+
+| Item | Answer | Date |
+| --- | --- | --- |
+| **June shipment units** + `FBA…` ID | `FBA15LXV3FZL`, **180 sent / 178 located**. Two other June shipments (`FBA15LXQVV97` 16 Jun, `FBA15LY78X7Y` 18 Jun) were **Cancelled** at 0 units and cost ₹0. Inbound freight = ₹1,172.92 ÷ 178 = **₹6.59/unit** | 5 Aug 2026 |
+| **6 July return rows** | 5 × `UNDELIVERABLE_REFUSED` returned `SELLABLE`; 1 × `QUALITY_UNACCEPTABLE` returned `CUSTOMER_DAMAGED`, offset by an ₹83.25 inventory reimbursement. `Label cost` and `SafeT claim ID` columns empty on all six — Chapter 20.4 stands. | 5 Aug 2026 |
+| GST rate | 18%, HSN 72179099 | 5 Aug 2026 |
+
+## New action: file the inbound shortage claim
+
+**Two units of `BSNY-WIRE-22M` were never located** on shipment `FBA15LXV3FZL`
+(180 expected, 178 located, closed 31 Jul 2026).
+
+- Reimbursed at **sourcing cost**, not the ₹333 sale price — so this is worth roughly
+  ₹200–250, not ₹666.
+- **Filing window is UNSETTLED.** 2026 sources disagree between 60 days from the event
+  and 18 months. Amazon compressed the window in late 2024. Assume **60 days** and file
+  now: that expires around end-September if the clock starts at shipment close
+  (31 Jul), or mid-August if it starts at receiving.
+- Route: Inventory → Manage FBA Shipments → open `FBA15LXV3FZL` → Reconcile. If no
+  reconcile option appears, open a case quoting the shipment ID.
+- **Evidence Amazon will demand** — the burden of proof is entirely on us: packing list
+  showing 180 units, carrier consignment note / bill of lading, supplier invoice
+  covering the stock, photos of the sealed labelled cartons.
+- Going forward: photograph every carton before sealing. Two units is trivial; the same
+  1.1% on a 500-unit shipment is not.
+
+### Inventory cross-check
+
+178 received − 42 sold in July − 2 sold in August + 5 sellable returns restocked =
+**≈139 units expected on hand.** Worth confirming against the live FBA inventory report.
+If on-hand is materially below 139, there is a second shrinkage problem beyond the
+inbound shortage.
 
 Two columns in the returns report worth checking when pulling those rows:
 `Label cost` / `Label to be paid by` (an uncounted per-return cost if Amazon billed the
