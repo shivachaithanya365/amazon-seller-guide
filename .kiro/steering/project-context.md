@@ -100,10 +100,24 @@ run has validated them.
 
 ## Known open issues
 
-1. **`parse_product.py` extracts nothing** from the current `product.html` - title,
-   price, byline, seller and all details return `-- not found --`. The saved page is
-   likely a bot-block/interstitial rather than a real product page, or Amazon's markup
-   changed. Re-save the product page before relying on this script.
+1. **`product.html` is not a product page.** Diagnosed: it is 3,793 bytes containing
+   only Amazon's "Continue shopping" anti-automation interstitial - six lines of
+   visible text, and zero occurrences of `productTitle`, `a-price-whole`,
+   `bylineInfo`, `landingImage` or `merchant-info`. `parse_product.py` was never the
+   problem; it had nothing to parse.
+
+   The script now classifies its input first and exits non-zero with a specific
+   diagnosis (bot wall / CAPTCHA / 404 / sign-in / no markers / stale markup) instead
+   of printing fifteen `-- not found --` lines and exiting 0. Run
+   `python3 parse_product.py --selftest` to confirm the extraction patterns still fire
+   against a known-good synthetic sample - that separates "bad input" from "Amazon
+   changed their markup", which the old script conflated.
+
+   To fix the data: open the listing in a browser already signed in to Amazon.in,
+   click through any "Continue shopping" prompt, confirm title/price/"Sold by" are
+   visible, then save as **Webpage, HTML Only**. Fetching the URL with curl or from a
+   fresh incognito window hits the wall again. The parser's happy path is verified
+   only against the synthetic sample - it has never seen a real saved page.
 
 2. **Chapter 3's ad-spend figures rest on a projection, not measurement.** The
    Rs 1,858 last-7-days Sponsored Ads spend is stated as fact but the underlying
