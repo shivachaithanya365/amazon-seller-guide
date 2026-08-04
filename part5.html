@@ -1,0 +1,368 @@
+<!-- ========== CH 19 ========== -->
+<h1 id="ch19">19 · Packaging and Barcodes</h1>
+
+<h2>19.1 Do you actually need to buy a barcode?</h2>
+<p>Two different barcodes matter, and people confuse them constantly.</p>
+<table>
+<thead><tr><th style="width:32mm">Barcode</th><th>What it is</th><th style="width:44mm">Do you need it?</th></tr></thead>
+<tbody>
+<tr><td><strong>GTIN</strong><br>(also called UPC or EAN)</td><td>A global product ID issued by GS1. Identifies the <em>product</em> worldwide.</td><td>Needed for most new listings — unless you get an exemption</td></tr>
+<tr><td><strong>FNSKU</strong></td><td>Amazon's own internal barcode. Identifies <em>your</em> unit in <em>Amazon's</em> warehouse.</td><td><strong>Always</strong>, on every FBA unit</td></tr>
+</tbody></table>
+<ul>
+<li><strong>If your product already has a manufacturer-issued GS1 barcode</strong> — use it as-is.
+Do not create a new one.</li>
+<li><strong>If it is genuinely unbranded, handmade, private-label, or a bundle you made</strong> —
+you likely qualify for a <strong>GTIN exemption</strong> and can skip buying a barcode.</li>
+</ul>
+<p><span class="tag c">UNCONFIRMED</span> How the exemption works: it is granted per brand, per
+category — not account-wide. Apply during listing creation: Catalogue → Add Products →
+&ldquo;I'm adding a product not sold on Amazon&rdquo; → tick &ldquo;I don't have a Product ID&rdquo; →
+submit your brand name plus 2–9 images showing all sides of the product and packaging. Review typically takes 48–72 hours.</p>
+<div class="box">
+<p class="lbl">One thing to think about before relying on exemption</p>
+<p>A GTIN exemption is an <strong>Amazon-only shortcut</strong>, not a real product identity. If you
+ever plan to sell the same item on Flipkart, in physical shops, or export it, buy a proper GS1 India
+barcode instead.</p>
+</div>
+<p><strong>Never buy a cheap barcode from an unofficial reseller.</strong> Amazon checks ownership
+against the GS1 database. A mismatched barcode gets your listing suppressed, and you will have paid
+for the privilege.</p>
+
+<h2>19.2 The FNSKU placement rule</h2>
+<p>You can print and apply FNSKU labels yourself, or pay Amazon a per-unit fee to do it (FBA Label
+Service).</p>
+<div class="box warn">
+<p class="lbl">The rule that gets inbound shipments rejected</p>
+<p>Your FNSKU label must <strong>not cover any Legal Metrology declaration</strong> — not the
+manufacturer address, not the net quantity, not the MRP. Decide where the label goes
+<strong>while designing your packaging artwork</strong>. Discovering the clash after you have printed
+5,000 poly bags is an expensive lesson.</p>
+</div>
+
+<h2>19.3 Packaging by product type</h2>
+<table>
+<thead><tr><th style="width:44mm">Product type</th><th>What to use</th></tr></thead>
+<tbody>
+<tr><td>Fragile, glass, ceramic</td><td>Bubble wrap plus a rigid outer carton, cushioning on all sides</td></tr>
+<tr><td>Clothing and soft goods</td><td>Poly bag for moisture protection, inside a mailer or box</td></tr>
+<tr><td><strong>Coiled or flexible items — rope, cable (yours)</strong></td><td><strong>Poly bag or shrink wrap</strong> to stop tangling and abrasion in transit</td></tr>
+<tr><td>Electronics</td><td>Anti-static bag, foam inserts, rigid box</td></tr>
+<tr><td>Bulk cartons going to the FC</td><td>Master carton with a carton label showing contents, quantity and FNSKU/ASIN reference</td></tr>
+</tbody></table>
+
+<h2>19.4 Packaging is a fee lever, not a side cost</h2>
+<p>Every gram and centimetre feeds straight into your weight handling fee (8.4), pick &amp; pack fee
+(8.5) and storage fee (8.6).</p>
+<ul>
+<li><strong>Use the smallest box that protects the product.</strong> Empty space increases
+volumetric weight without protecting anything. Remember: length × breadth × height ÷ 5000.</li>
+<li><strong>Weigh and measure the finished parcel</strong>, not the bare product. That is what
+Amazon bills against.</li>
+<li><strong>Compress or vacuum-pack</strong> where the product allows it — this cuts both delivery
+and storage costs at once.</li>
+<li><strong>Re-measure after any packaging change.</strong> A small increase in the longest side or
+girth can tip a product into the Heavy &amp; Bulky tier, which changes both the delivery and
+pick &amp; pack formulas.</li>
+</ul>
+
+<!-- ========== CH 20 ========== -->
+<h1 id="ch20">20 · Returns and Getting Reimbursed</h1>
+<p class="lede">Returns hit your real margin harder than most sellers expect. A healthy-looking
+profit per unit can vanish in a category with a high return rate.</p>
+
+<h2>20.1 Return windows and refunds</h2>
+<p><span class="tag c">UNCONFIRMED</span> Return windows are set per product and category and are
+shown on the product page itself — for example &ldquo;10 Days Returnable&rdquo;. Most non-exempt
+categories fall in a 7–30 day window. Some categories are explicitly non-returnable.</p>
+<p>A product is returnable within its window if it is damaged, has missing parts, is defective, or
+is materially different from the listing description.</p>
+<p><span class="tag c">UNCONFIRMED</span> Amazon reportedly starts a refund once the item is received
+back at a fulfilment centre, and processes the refund request within 13 days of successful pickup.
+<span class="tag s">CHECK LIVE</span> — I did not verify the 13-day figure.</p>
+
+<h2>20.2 What returns cost you</h2>
+<div class="box warn">
+<p class="lbl">The asymmetry nobody explains up front</p>
+<p><span class="tag c">UNCONFIRMED</span> On a return you typically get <strong>most of the referral
+fee credited back — but not the weight handling fee or the pick &amp; pack fee</strong>. Those are
+gone. So a returned unit costs you the outbound delivery, the picking labour, and possibly a removal
+or disposal fee if it comes back unsellable.</p>
+<p style="margin-bottom:0">This is why a 20% return rate is far worse than a 20% discount. Build a
+return allowance into your margin sheet (Chapter 11).</p>
+</div>
+
+<h2>20.3 A-to-Z Guarantee</h2>
+<p>Covers customers on seller-fulfilled orders when a seller cannot resolve a missing, damaged or
+materially different item within 3 business days. Since you use FBA, Amazon handles the
+customer-facing return process directly — so this mainly matters if you ever add a Self-Ship or
+Easy Ship product.</p>
+
+<h2>20.4 SAFE-T claims — getting Amazon's own mistakes paid back</h2>
+<p><span class="tag c">UNCONFIRMED</span> SAFE-T claims let FBA sellers recover money when
+<strong>Amazon's</strong> handling causes the loss:</p>
+<ul>
+<li>Stock damaged or lost inside a fulfilment centre</li>
+<li>Stock lost in transit between fulfilment centres</li>
+<li>Customer returns processed incorrectly, or the wrong item taken back</li>
+<li>Stock disposed of incorrectly</li>
+<li>Fee and charge disputes</li>
+</ul>
+<p>File from Seller Central against the relevant order or shipment, attaching shipment IDs,
+inventory records and photos. Typical review time is 3–7 business days, tracked in the
+SAFE-T Communication Center.</p>
+<div class="box info">
+<p class="lbl">Amazon will not tell you when it owes you money</p>
+<p>Check your <strong>Inventory Adjustment Report</strong> and <strong>Reimbursements Report</strong>
+every month. Look for entries flagged <em>Lost — Warehouse</em> or <em>Damaged — Warehouse</em> that
+have not been reimbursed. Nobody sends you a notification.</p>
+<p style="margin-bottom:0"><strong>The distinction that decides your claim:</strong>
+&ldquo;warehouse-damaged&rdquo; is generally reimbursable. &ldquo;customer-damaged&rdquo; generally is
+not. Read the condition notes carefully before filing.</p>
+</div>
+
+<!-- ========== CH 21 ========== -->
+<h1 id="ch21">21 · Advertising (PPC)</h1>
+<p class="lede">Formulas are in Chapter 12. This chapter is about actually running a campaign.</p>
+
+<h2>21.1 The three ad types</h2>
+<table>
+<thead><tr><th style="width:38mm">Format</th><th>What it does</th><th style="width:44mm">When to use it</th></tr></thead>
+<tbody>
+<tr><td><strong>Sponsored Products</strong></td><td>Ads for a single product in search results and on product pages</td><td><strong>Start here.</strong> This is the only one you need at first.</td></tr>
+<tr><td>Sponsored Brands</td><td>Banner ads with your logo and several products</td><td>Needs Brand Registry. Later.</td></tr>
+<tr><td>Sponsored Display</td><td>Follows shoppers who viewed but did not buy</td><td>Once you have enough traffic to retarget</td></tr>
+</tbody></table>
+
+<h2>21.2 How to structure your first campaign</h2>
+<ol>
+<li><strong>Start with Automatic targeting</strong> for 1–2 weeks. Let Amazon find which search
+terms convert. You do not know yet, and guessing wastes money.</li>
+<li><strong>Pull the Search Term Report.</strong> This shows the actual words customers typed.</li>
+<li><strong>Move the winners into a Manual campaign</strong> using exact match, so you control the
+bid on terms you know work.</li>
+<li><strong>Add the losers as Negative Keywords</strong> in the automatic campaign to stop paying
+for them.</li>
+<li><strong>Run both campaigns together.</strong> Automatic keeps discovering; Manual controls bids
+on proven winners.</li>
+</ol>
+
+<h2>21.3 Match types</h2>
+<table>
+<thead><tr><th style="width:26mm">Type</th><th>Behaviour</th></tr></thead>
+<tbody>
+<tr><td><strong>Broad</strong></td><td>Widest reach, least precise. Good for discovery, bad for tight budgets.</td></tr>
+<tr><td><strong>Phrase</strong></td><td>Matches searches containing your phrase in order. Middle ground.</td></tr>
+<tr><td><strong>Exact</strong></td><td>Only the precise keyword or very close variants. Most control — use for proven converters.</td></tr>
+</tbody></table>
+
+<h2>21.4 Budgeting against your margin</h2>
+<div class="box warn">
+<p class="lbl">The one rule that keeps advertising from eating your business</p>
+<p><strong>Your target ACOS must sit below your margin after all Chapter 8 fees.</strong> If your net
+margin is 20% and your ACOS is 25%, you are paying ₹1.25 to earn ₹1.00. A great click-through rate
+does not fix that — it makes it worse, faster.</p>
+</div>
+<p><strong>Watch TACOS over months, not ACOS over days.</strong> A campaign that is working shows
+organic sales rising and TACOS trending down over 2–3 months. If TACOS stays flat, your ads are
+renting sales rather than building a product.</p>
+<p><span class="tag s">CHECK LIVE</span> Amazon's ad interface, bid strategies and placement settings
+change often. Look at Seller Central → Advertising → Campaign Manager for the current layout rather
+than expecting any book to match the screen.</p>
+
+<!-- ========== CH 22 ========== -->
+<h1 id="ch22">22 · Building a Brand</h1>
+<p class="lede">Turning one product into something defensible. Right now, a Generic listing is not
+defensible — anyone can sell against it.</p>
+
+<table>
+<thead><tr><th style="width:36mm">Step</th><th>What it involves</th><th style="width:22mm">Needs Brand Registry?</th></tr></thead>
+<tbody>
+<tr><td><strong>Trademark (TM-A)</strong></td><td>File Form TM-A on the IP India portal</td><td>No — this comes first</td></tr>
+<tr><td><strong>Brand Registry</strong></td><td>Enrol using your trademark</td><td>—</td></tr>
+<tr><td>Logo and packaging</td><td>One consistent look across all your products</td><td>No</td></tr>
+<tr><td><strong>Insert cards</strong></td><td>A small card in the parcel — thank-you note, care instructions, or a QR code</td><td>No</td></tr>
+<tr><td>A+ Content</td><td>Rich images and comparison charts on your listing</td><td>Yes</td></tr>
+<tr><td>Brand Store</td><td>A free multi-page mini-site inside Amazon</td><td>Yes</td></tr>
+<tr><td>Amazon Vine</td><td>Gives products to trusted reviewers for honest reviews — the cheapest legitimate way off zero reviews</td><td>Yes</td></tr>
+<tr><td>Social media</td><td>Not required to sell, but builds trust off-platform</td><td>No</td></tr>
+</tbody></table>
+
+<h2>22.1 The right order for a one-product seller</h2>
+<ol>
+<li><strong>File TM-A now.</strong> It is cheap and unlocks everything downstream. Do not wait until
+you have three products.</li>
+<li><strong>Design one logo and packaging treatment before your next order</strong>, so it can be
+reused instead of redesigned per product.</li>
+<li><strong>Add an insert card to your current rope packaging.</strong> Near-zero cost, and your
+cheapest lever for both reviews and repeat visibility.</li>
+<li><strong>Hold off on Brand Store, A+ Content and heavy social spend</strong> until Brand Registry
+is actually active. Building them earlier just means rebuilding them.</li>
+</ol>
+<div class="box warn">
+<p class="lbl">What an insert card may not say</p>
+<p>Ask for a review, by all means. <strong>Do not offer anything in exchange for a positive
+review</strong> — no discount, no gift, no refund. That violates Amazon policy and risks your
+account. &ldquo;If you have a moment, we'd appreciate an honest review&rdquo; is fine. Anything
+conditional on the rating is not.</p>
+</div>
+
+<!-- ========== CH 23 ========== -->
+<h1 id="ch23">23 · Worked Case Studies</h1>
+<p class="lede">Three price points. Referral percentages are real. Product cost, packaging and weight
+are illustrative — swap in your own. <strong>Read the warning on closing fees before trusting
+cases 2 and 3.</strong></p>
+
+<div class="box info">
+<p class="lbl">Closing fees above ₹500 are included here</p>
+<p><span class="tag v">VERIFIED</span> Many guides claim no closing fee applies above ₹500. It does —
+<strong>₹27</strong> for ₹501–1,000 and <strong>₹52</strong> above ₹1,000 on FBA. Both figures are
+included below. Leaving them out overstates profit on every higher-priced product.</p>
+</div>
+
+<h2>Case 1 — a ₹300 kitchen storage container (FBA)</h2>
+<table>
+<thead><tr><th style="width:52mm">Line item</th><th style="width:24mm">Amount</th><th>Confidence</th></tr></thead>
+<tbody>
+<tr><td>Selling price</td><td>₹300</td><td>—</td></tr>
+<tr><td>Referral fee — Kitchen, under ₹1,000</td><td>₹0</td><td><span class="tag v">VERIFIED</span> 0% band</td></tr>
+<tr><td>Closing fee — Group A, ₹0–300</td><td>₹20</td><td><span class="tag c">UNCONFIRMED</span></td></tr>
+<tr><td>Weight handling — 300 g, Regional, Standard STEP</td><td><strong>₹39</strong></td><td><span class="tag v">VERIFIED</span> rate</td></tr>
+<tr><td>Pick &amp; pack — standard, under 1 kg</td><td>₹17</td><td><span class="tag c">UNCONFIRMED</span></td></tr>
+<tr><td>GST at 18% on (₹20 + ₹30 + ₹17)</td><td>≈₹12</td><td>Calculated</td></tr>
+<tr><td>Product cost</td><td>₹110</td><td>Illustrative</td></tr>
+<tr><td>Packaging</td><td>₹8</td><td>Illustrative</td></tr>
+<tr><td><strong>Net profit</strong></td><td><strong>≈₹103</strong></td><td>≈34% margin</td></tr>
+</tbody></table>
+<p><small>Note: the ₹17 pick &amp; pack fee is easy to leave out of this kind of calculation. It
+applies to every FBA unit sold, so it is included here.</small></p>
+
+<h2>Case 2 — a ₹1,200 charging cable (FBA)</h2>
+<table>
+<thead><tr><th style="width:52mm">Line item</th><th style="width:24mm">Amount</th><th>Confidence</th></tr></thead>
+<tbody>
+<tr><td>Selling price</td><td>₹1,200</td><td>—</td></tr>
+<tr><td>Referral fee — Cables &amp; Adapters, 20% above ₹1,000</td><td>₹240</td><td><span class="tag c">UNCONFIRMED</span> (Appendix A)</td></tr>
+<tr><td>Closing fee — above ₹1,000</td><td><strong>₹52</strong></td><td><span class="tag v">VERIFIED</span></td></tr>
+<tr><td>Weight handling — 150 g, National, Standard STEP</td><td><strong>₹65</strong></td><td><span class="tag v">VERIFIED</span> rate</td></tr>
+<tr><td>Pick &amp; pack</td><td>₹17</td><td><span class="tag c">UNCONFIRMED</span></td></tr>
+<tr><td>GST at 18% on (₹240 + ₹52 + ₹65 + ₹17)</td><td>≈₹67</td><td>Calculated</td></tr>
+<tr><td>Product cost</td><td>₹350</td><td>Illustrative</td></tr>
+<tr><td>Packaging</td><td>₹15</td><td>Illustrative</td></tr>
+<tr><td><strong>Net profit</strong></td><td><strong>≈₹394</strong></td><td>≈33% margin</td></tr>
+</tbody></table>
+<p><strong>What this case teaches:</strong> above ₹1,000, the <strong>referral fee becomes the
+dominant cost</strong> — ₹240 here, more than five times the delivery fee. At low prices the flat
+fees dominate; at high prices the percentage does. That flip changes which products are worth
+selling.</p>
+
+<h2>Case 3 — a ₹5,000 side table (FBA, Heavy &amp; Bulky)</h2>
+<table>
+<thead><tr><th style="width:52mm">Line item</th><th style="width:24mm">Amount</th><th>Confidence</th></tr></thead>
+<tbody>
+<tr><td>Selling price</td><td>₹5,000</td><td>—</td></tr>
+<tr><td>Referral fee — Furniture-Other, 15.5% (₹1,000–15,000)</td><td>₹775</td><td><span class="tag c">UNCONFIRMED</span></td></tr>
+<tr><td>Closing fee — above ₹1,000</td><td><strong>₹52</strong></td><td><span class="tag v">VERIFIED</span></td></tr>
+<tr><td>Weight handling — Heavy &amp; Bulky, National, first 12 kg, Standard STEP</td><td><strong>₹300</strong></td><td><span class="tag v">VERIFIED</span> rate</td></tr>
+<tr><td>Pick &amp; pack — Heavy &amp; Bulky up to 12 kg</td><td>₹26</td><td><span class="tag c">UNCONFIRMED</span></td></tr>
+<tr><td>GST at 18% on (₹775 + ₹52 + ₹300 + ₹26)</td><td>≈₹208</td><td>Calculated</td></tr>
+<tr><td>Product cost</td><td>₹2,200</td><td>Illustrative</td></tr>
+<tr><td>Packaging and crating</td><td>₹150</td><td>Illustrative</td></tr>
+<tr><td><strong>Net profit</strong></td><td><strong>≈₹1,289</strong></td><td>≈26% margin</td></tr>
+</tbody></table>
+<p><strong>What this case teaches:</strong> furniture crosses the Heavy &amp; Bulky threshold, which
+changes <em>both</em> the delivery and pick &amp; pack formulas. Always check the size tier before
+assuming standard rates — especially above about ₹3,000, where furniture and appliances live.</p>
+
+<!-- ========== CH 24 ========== -->
+<h1 id="ch24">24 · Risks Nobody Warns You About</h1>
+<p class="lede">Everything before this chapter is procedure. This chapter is about what actually
+decides whether a seller survives year one.</p>
+
+<h2>24.1 Cash on Delivery and failed deliveries (RTO)</h2>
+<p><strong>RTO</strong> means Return to Origin — the parcel goes out, the customer refuses it or is
+unreachable, and it comes back. It is the most India-specific risk in this book.</p>
+<div class="box">
+<p class="lbl">Treat these as estimates, not facts</p>
+<p>These figures circulate widely: COD is 60–65% of Indian e-commerce orders, of which 25–30% fail to
+deliver, versus under 3% for prepaid. <strong>The source chain is blog-to-blog, not primary</strong>,
+and COD's share has been falling as UPI adoption grows — so 60–65% is likely high for 2026.</p>
+<p style="margin-bottom:0">The <em>direction</em> is right and worth acting on: COD orders fail far
+more often than prepaid ones, and faster delivery reduces failures. The precise percentages are not
+planning-grade numbers.</p>
+</div>
+<h4>What this means for you as an FBA seller</h4>
+<ul>
+<li><strong>Good news:</strong> Amazon handles the courier and the cash collection. You are not
+chasing addresses or reconciling cash.</li>
+<li><strong>Bad news:</strong> a refused COD order is still a lost sale, and the unit needs
+re-inspection before it can be sold again.</li>
+</ul>
+<div class="box warn">
+<p class="lbl">The habit this should change</p>
+<p>When you forecast revenue or plan a reorder, use <strong>confirmed delivered</strong> numbers from
+your reports — not &ldquo;orders placed&rdquo;. Orders-placed overstates real demand. Ordering stock
+against that inflated figure is one of the most common and most expensive first-year mistakes.</p>
+</div>
+
+<h2>24.2 Scams aimed at sellers</h2>
+<ul>
+<li><strong>Refund abuse.</strong> A buyer arranges a partial refund while keeping the product — by
+returning an empty box, swapping a tracking ID, or claiming the item was lost.
+<strong>Photograph and video every outbound parcel</strong> so you have evidence if a return does not
+match what you sent.</li>
+<li><strong>&ldquo;Guaranteed ranking&rdquo; and review-selling agencies.</strong> Anyone offering to
+put you on page 1 or supply a batch of 5-star reviews is selling an Amazon policy violation. The
+realistic outcome is suspension, not growth. Real ranking comes from Chapter 21 and genuine reviews.</li>
+<li><strong>Supplier fraud.</strong> Never wire 100% advance to a new, unverified supplier — see 18.3.</li>
+</ul>
+<p>If you are defrauded: National Cyber Crime Helpline <strong>1930</strong>, or cybercrime.gov.in</p>
+
+<h2>24.3 What year one actually looks like</h2>
+<table>
+<thead><tr><th style="width:26mm">Phase</th><th>Normal</th><th>Warning sign</th></tr></thead>
+<tbody>
+<tr><td>Month 1–2</td><td>Break-even or a small loss while you learn fulfilment, fix listing problems and collect first reviews</td><td>Zero sales after 4+ weeks with steady ad spend — revisit the product and listing, do not just wait</td></tr>
+<tr><td>Month 3–4</td><td>First real profit signal, if margin and demand were validated properly</td><td>Margin still negative after fees — the product may simply not be viable. No amount of advertising fixes bad unit economics.</td></tr>
+<tr><td>Month 6+</td><td>Reinvestment decisions: more products, Brand Registry, or scaling ads</td><td>Scaling ad spend on a product with no organic pull — this amplifies a loser faster</td></tr>
+</tbody></table>
+
+<h2>24.4 The most common avoidable mistakes</h2>
+<ul>
+<li><strong>Over-ordering on an unproven product</strong> because the MOQ discount looked good.
+Test small. With the aged-stock surcharge now starting at 181 days (8.6), dead stock costs more
+than it used to.</li>
+<li><strong>Competing purely on price</strong> against established listings — a race you lose to
+sellers with better supplier terms and Buy Box history.</li>
+<li><strong>Spreading across too many products</strong> before any one is profitable. Depth before
+breadth for the first few months.</li>
+<li><strong>Ignoring Account Health</strong> until it becomes a suspension. Check weekly.</li>
+<li><strong>Treating the first bad review as a crisis</strong> instead of as information. Read it for
+a genuine product or listing fix.</li>
+<li><strong>Trusting a static document over Fee Preview.</strong> Including this one.</li>
+</ul>
+
+<h2>24.5 Festive season planning</h2>
+<p>India's big sale events drive a disproportionate share of annual volume, Home &amp; Kitchen
+included. The principle that matters more than any specific date:
+<strong>place inventory orders 6–8 weeks before a major sale event, not during it.</strong> Supplier
+lead times and Amazon's inbound processing both slow down when everyone rushes at once.</p>
+<p><span class="tag s">CHECK LIVE</span> Exact event dates move every year. Check Seller Central →
+Growth → Deals, or Announcements, 2–3 months ahead.</p>
+
+<!-- ========== CH 25 ========== -->
+<h1 id="ch25">25 · Growth Roadmap</h1>
+<table>
+<thead><tr><th style="width:20mm">Phase</th><th style="width:28mm">When</th><th>Focus</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Month 1–2</td><td>Stabilise your first product — reviews, reliable fulfilment, account health. Fix the TCS figure in your records. Confirm your fee category.</td></tr>
+<tr><td>2</td><td>Month 2–4</td><td>Add 2–3 products in the same open category. File TM-A if you have not.</td></tr>
+<tr><td>3</td><td>Month 5–8</td><td>Apply for Brand Registry once you have a trademark and 3+ differentiated products.</td></tr>
+<tr><td>4</td><td>Month 8+</td><td>Consider one adjacent gated category. Reinvest profit before scaling ad spend.</td></tr>
+</tbody></table>
+<div class="box info">
+<p class="lbl">File the trademark early</p>
+<p>Full trademark registration takes a long time, but you do not need to wait for it to start using
+the name and building the brand. <span class="tag c">UNCONFIRMED</span> Brand Registry reportedly accepts a pending TM-A application number — confirm this in the enrolment flow. Either way, filing in
+month 1 costs little and removes a bottleneck later.</p>
+</div>

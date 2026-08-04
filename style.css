@@ -1,0 +1,108 @@
+@page {
+  size: A4;
+  margin: 18mm 16mm 20mm 16mm;
+  @bottom-center {
+    content: "Amazon India Seller Handbook · 2026 Edition · page " counter(page);
+    font-family: "Noto Sans", "DejaVu Sans"; font-size: 7.5pt; color: #777;
+  }
+}
+@page :first { @bottom-center { content: ""; } }
+
+* { box-sizing: border-box; }
+body {
+  font-family: "Noto Sans", "DejaVu Sans", sans-serif;
+  font-size: 9.6pt;
+  line-height: 1.5;
+  color: #1a1a1a;
+  margin: 0;
+}
+h1 {
+  font-size: 17pt; color: #0d3b66; margin: 0 0 2mm 0;
+  page-break-before: always; padding-bottom: 2mm;
+  border-bottom: 2.5px solid #0d3b66;
+}
+h1.nobreak { page-break-before: avoid; }
+h2 { font-size: 12pt; color: #10559a; margin: 6mm 0 2mm 0; page-break-after: avoid; }
+h3 { font-size: 10.3pt; color: #1a1a1a; margin: 4mm 0 1.5mm 0; page-break-after: avoid; }
+h4 { font-size: 9.6pt; color: #333; margin: 3mm 0 1mm 0; page-break-after: avoid; }
+p { margin: 0 0 2mm 0; }
+ul, ol { margin: 0 0 2mm 0; padding-left: 5mm; }
+li { margin-bottom: 1.2mm; }
+
+table { width: 100%; border-collapse: collapse; margin: 2mm 0 3mm 0; font-size: 8.6pt; }
+th {
+  background: #dce6f2; color: #0d3b66; text-align: left;
+  padding: 1.6mm 2mm; border: 0.5px solid #a8bdd4; font-weight: 600;
+}
+td { padding: 1.5mm 2mm; border: 0.5px solid #c8d4e0; vertical-align: top; }
+tr { page-break-inside: avoid; }
+thead { display: table-header-group; }
+table.tight { font-size: 8pt; }
+table.tight td, table.tight th { padding: 1mm 1.5mm; }
+td.num { text-align: right; white-space: nowrap; }
+
+/* provenance badges */
+.tag {
+  display: inline-block; font-size: 7pt; font-weight: 700; letter-spacing: 0.02em;
+  padding: 0.5mm 1.4mm; border-radius: 1mm; margin-right: 1.5mm;
+  vertical-align: 0.4mm; white-space: nowrap;
+}
+.v  { background: #d6f0d6; color: #14631a; border: 0.5px solid #8cc79a; }
+.c  { background: #e4e4ea; color: #40404a; border: 0.5px solid #b0b0bc; }
+.s  { background: #fde7c4; color: #8a4b06; border: 0.5px solid #e0ac63; }
+.n  { background: #fbd5d5; color: #8f1d1d; border: 0.5px solid #e08d8d; }
+
+.box {
+  border-left: 3px solid #c8952a; background: #fdf7ec;
+  padding: 2mm 3mm; margin: 2.5mm 0; page-break-inside: avoid;
+}
+.box.warn { border-left-color: #b32222; background: #fdf0f0; }
+.box.good { border-left-color: #2a8a3a; background: #f0f9f1; }
+.box.info { border-left-color: #10559a; background: #eef4fb; }
+.box p:last-child, .box ul:last-child { margin-bottom: 0; }
+.box .lbl { font-weight: 700; }
+
+.formula {
+  font-family: "DejaVu Sans Mono", "DejaVu Sans", monospace; font-size: 8.4pt;
+  background: #f2f4f7; border: 0.5px solid #ccd4dd;
+  padding: 2mm 2.5mm; margin: 2mm 0; line-height: 1.45;
+  page-break-inside: avoid; white-space: pre-wrap;
+}
+.src { font-size: 7.6pt; color: #555; margin: 1mm 0 2.5mm 0; }
+.src a { color: #10559a; text-decoration: none; word-break: break-all; }
+small { font-size: 8pt; color: #555; }
+.lede { font-size: 10pt; color: #333; margin-bottom: 3mm; }
+.chk { list-style: none; padding-left: 0; }
+.chk li { padding-left: 6mm; text-indent: -6mm; }
+.chk li::before { content: "\2610  "; color: #10559a; font-weight: 700; }
+
+/* title page */
+.title-page { text-align: center; padding-top: 30mm; page-break-after: always; }
+.title-page h1 {
+  page-break-before: avoid; border: none; font-size: 26pt;
+  letter-spacing: -0.01em; margin-bottom: 3mm;
+}
+.title-page .sub { font-size: 13pt; color: #10559a; font-weight: 600; margin-bottom: 2mm; }
+.title-page .sub2 { font-size: 10.5pt; color: #444; font-style: italic; margin-bottom: 12mm; }
+.title-page .meta { font-size: 9.5pt; color: #333; line-height: 1.7; }
+.title-page .keybox {
+  text-align: left; margin: 14mm auto 0 auto; max-width: 148mm;
+  border: 1px solid #c8952a; background: #fdf7ec; padding: 4mm;
+  font-size: 8.8pt;
+}
+
+/* TOC with real page numbers */
+.toc { font-size: 9.4pt; }
+.toc a { text-decoration: none; color: #10559a; }
+.toc li { margin-bottom: 1.1mm; }
+.toc a::after { content: "  ·  p. " target-counter(attr(href), page); color: #666; font-weight: 600; }
+.toc .grp { font-weight: 700; color: #0d3b66; margin: 3mm 0 1mm 0; font-size: 9.6pt; }
+.cols2 { column-count: 2; column-gap: 7mm; }
+.avoid { page-break-inside: avoid; }
+
+
+/* fixed-layout tables: stops narrow columns collapsing around nowrap badges */
+table.fixed { table-layout: fixed; }
+table.fixed td, table.fixed th { word-wrap: break-word; overflow-wrap: break-word; }
+/* badges inside table cells should be able to sit on their own line */
+td .tag { margin-bottom: 0.6mm; }
