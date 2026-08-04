@@ -35,14 +35,12 @@ th {
   padding: 1.6mm 2mm; border: 0.5px solid #a8bdd4; font-weight: 600;
 }
 td { padding: 1.5mm 2mm; border: 0.5px solid #c8d4e0; vertical-align: top; }
+/* Long tables span pages. Repeat the header row on each page, and never split a
+   single row across a page break - both matter for the Appendix B lookup table. */
 tr { page-break-inside: avoid; }
 thead { display: table-header-group; }
 table.tight { font-size: 8pt; }
 table.tight td, table.tight th { padding: 1mm 1.5mm; }
-/* Long tables span pages. Repeat the header row on each page, and never split a
-   single row across a page break - both matter for the Appendix B lookup table. */
-thead { display: table-header-group; }
-tr { page-break-inside: avoid; }
 td.num { text-align: right; white-space: nowrap; }
 
 /* provenance badges */
