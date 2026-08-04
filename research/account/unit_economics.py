@@ -26,7 +26,18 @@ that a sheet ignoring both overstates contribution by roughly Rs 29 a unit.
 # KNOWN - from your Fee Preview and transaction export, already verified
 # ---------------------------------------------------------------------------
 PRICE_INCL_GST   = 333.00   # what the customer pays
-AMAZON_FEES      = 120.00   # Fee Preview: referral 0 + closing 18 + pick&pack 17 + weight 85
+
+# Two fee scenarios, because your fees are currently being WAIVED.
+#   Amazon charged Rs 145.02 in fees across 42 units sold in July. At the
+#   Fee Preview rate of Rs 120/unit it would have been Rs 5,040. 39 of 41 order
+#   lines show Rs 0. The Revenue Calculator shows 'Fee Discounts Rs 89.00'
+#   cancelling the whole fee, and the dashboard offers a New Seller Incentive
+#   worth Rs 41,000. So today you pay almost nothing in Amazon fees.
+#   THAT WILL END. Model both.
+FEES_TODAY       = 145.02 / 42          # actual, averaged over July units
+FEES_AFTER       = 120.00               # Fee Preview: 0 referral + 18 closing
+                                        # + 17 pick&pack + 85 weight handling
+AMAZON_FEES      = FEES_AFTER           # switch to FEES_TODAY to see the current position
 GST_ON_FEES      = AMAZON_FEES * 0.18          # reclaimable as input credit
 STORAGE_MONTH    = 23.02    # FBA storage fee, July
 ADS_MONTH        = 15554.00 # advertising charged in July
@@ -37,9 +48,12 @@ INBOUND_FREIGHT  = 1172.92  # Inbound Transportation Fee, 17 June
 # ---------------------------------------------------------------------------
 # UNKNOWN - fill these in. Set to None to see what happens across a range.
 # ---------------------------------------------------------------------------
-GST_RATE         = None     # e.g. 0.18 - your product's GST rate. Check the HSN on
-                            # your supplier invoice. PVC-coated GI wire is usually 18%,
-                            # but confirm rather than assume.
+GST_RATE         = 0.18     # CONFIRMED. The listing's HSN code is 72179099 - heading
+                            # 7217, wire of iron or non-alloy steel - which attracts 18%
+                            # GST. Read from the listing's External Product Information
+                            # field on 5 August 2026.
+                            # NOTE: the listing's Product Tax Code field is EMPTY, which
+                            # is a separate problem - see the handbook, section 8.8.
 SUPPLIER_COST    = None     # Rs per unit, EX-GST (the taxable value on the invoice,
                             # not the invoice total - the GST part is input credit)
 PACKAGING_COST   = None     # Rs per unit: poly bag + FNSKU label + insert card
