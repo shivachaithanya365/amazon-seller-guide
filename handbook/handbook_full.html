@@ -207,15 +207,23 @@ limits, the Legal Metrology declaration list, the GST additional-place-of-busine
 Act 2025 start date, the FSSAI thresholds and perpetual validity, the BIS penalty section, the FSSAI
 e-commerce licence route and the IEC requirement were each re-verified against a primary or official
 source, cited where they appear.</p>
-<p><strong>What that pass changed.</strong> Four things were wrong and are now fixed: TCS credit appears
-in GSTR-2A and not GSTR-2B; the labelling table was missing unit sale price and best-before date; Easy
-Ship weight handling is a flat fee with no distance component, not distance-based as previously stated;
-and a quoted Amazon example of &ldquo;800 g Easy Ship = ₹68&rdquo; matched no current rate card and has
-been removed. The Easy Ship rate table, absent altogether before, has been added.</p>
-<p><strong>What still has not been checked.</strong> Chapters 19 to 25 and Appendices C to I — packaging,
-returns, advertising, brand building, the case studies, the glossary and the checklists. They carry their
-original tags. Where those say UNCONFIRMED, take them at their word. Chapters 13 to 18 have had their
-regulator claims checked but not every sentence.</p>
+<p><strong>What that pass changed.</strong> Eight things were wrong and are now fixed:</p>
+<ul>
+<li>TCS credit appears in <strong>GSTR-2A</strong>, not GSTR-2B.</li>
+<li>The labelling table was missing <strong>unit sale price</strong> and <strong>best-before date</strong>, both mandatory.</li>
+<li><strong>Easy Ship weight handling is a flat fee</strong> with no distance component. It was described as distance-based, and its rate table was missing entirely.</li>
+<li>A quoted Amazon example of &ldquo;800 g Easy Ship = ₹68&rdquo; matched no current rate card and has been removed rather than guessed at.</li>
+<li><strong>SAFE-T claims are for seller-fulfilled orders, not FBA.</strong> The book told you, an FBA seller, to use the wrong system. FBA warehouse losses go through FBA reimbursement claims, which run on almost the opposite timetable.</li>
+<li>The <strong>refund administration fee</strong> is 20% of the referral fee, capped — not a vague &ldquo;most of it comes back&rdquo;. At your price point that is ₹0.</li>
+<li><strong>Case 1 in Chapter 23 did not add up:</strong> it showed ₹39 weight handling but calculated with ₹30, overstating profit by ₹11 a unit.</li>
+<li><strong>LDX1 is a Punjab centre</strong>, not Haryana. Appendix F had it in the wrong state — the precise error that appendix exists to prevent.</li>
+</ul>
+<p><strong>What is still not independently checked.</strong> The FC code list in Appendix F beyond the
+corrections above; the &ldquo;16 Heavy &amp; Bulky centres&rdquo; count; listing-field and main-image
+requirements in Appendix G; return windows and the 13-day refund figure in Chapter 20; and the COD and
+RTO percentages in 24.1, which the book already tells you are blog-sourced rather than
+planning-grade. Every one of those still carries an UNCONFIRMED or CHECK LIVE tag. Where it does, take
+it at its word.</p>
 
 <p>One question is left genuinely open</strong> — whether EPR plastic packaging rules exempt
 micro and small brand owners. Credible sources conflict. See 17.5, and take it to a consultant rather
@@ -1939,10 +1947,31 @@ Do not create a new one.</li>
 <li><strong>If it is genuinely unbranded, handmade, private-label, or a bundle you made</strong> —
 you likely qualify for a <strong>GTIN exemption</strong> and can skip buying a barcode.</li>
 </ul>
-<p><span class="tag c">UNCONFIRMED</span> How the exemption works: it is granted per brand, per
-category — not account-wide. Apply during listing creation: Catalogue → Add Products →
+<p><span class="tag v">VERIFIED</span> How the exemption works: it is granted <strong>per brand, per
+category</strong> — not account-wide. Apply during listing creation: Catalogue → Add Products →
 &ldquo;I'm adding a product not sold on Amazon&rdquo; → tick &ldquo;I don't have a Product ID&rdquo; →
-submit your brand name plus 2–9 images showing all sides of the product and packaging. Review typically takes 48–72 hours.</p>
+submit your brand name plus <strong>2–9 images</strong> of the product and its packaging.</p>
+<div class="box warn">
+<p class="lbl">The three things that get exemptions rejected</p>
+<ol>
+<li><strong>Renders instead of photographs.</strong> <span class="tag v">VERIFIED</span> The images must
+be real-world photos — the product physically held or placed on a table. Mockups, catalogue renders,
+watermarked or visibly edited images are rejected.</li>
+<li><strong>Brand not permanently on the product.</strong> If you are claiming a brand, the branding must
+be <strong>permanently affixed to the product itself</strong>, not just printed on a label or shown in
+the listing. A sticker will not do.</li>
+<li><strong>Typing the brand or category differently later.</strong> <span class="tag v">VERIFIED</span>
+When you create the listing you must enter the category and brand <strong>exactly</strong> as they appear
+on the approval notice — same capitalisation, no extra spaces or characters — or Amazon will not
+recognise the exemption and the listing will error.</li>
+</ol>
+<p style="margin-bottom:0">If you are not the brand owner you also need a Letter of Authorisation.</p>
+</div>
+<p class="src">Verified 4 August 2026 against Amazon's own seller guide,
+<a href="https://m.media-amazon.com/images/G/35/sp-marketing-toolkit/Sellerfacingguides/How_to_apply_for_a_GTIN_Exemption.pdf">How to apply for a GTIN Exemption (PDF)</a>,
+plus Seller Forums guidance on image requirements and exact-match entry. <span class="tag c">UNCONFIRMED</span>
+Turnaround is reported anywhere from 24&ndash;48 hours to 48&ndash;72 hours; treat it as &ldquo;a couple of
+days&rdquo; rather than a promise.</p>
 <div class="box">
 <p class="lbl">One thing to think about before relying on exemption</p>
 <p>A GTIN exemption is an <strong>Amazon-only shortcut</strong>, not a real product identity. If you
@@ -2008,10 +2037,22 @@ back at a fulfilment centre, and processes the refund request within 13 days of 
 <h2>20.2 What returns cost you</h2>
 <div class="box warn">
 <p class="lbl">The asymmetry nobody explains up front</p>
-<p><span class="tag c">UNCONFIRMED</span> On a return you typically get <strong>most of the referral
-fee credited back — but not the weight handling fee or the pick &amp; pack fee</strong>. Those are
-gone. So a returned unit costs you the outbound delivery, the picking labour, and possibly a removal
-or disposal fee if it comes back unsellable.</p>
+<p><span class="tag v">VERIFIED</span> On a refund, Amazon returns the referral fee you paid
+<strong>minus a &ldquo;refund administration fee&rdquo;</strong>, which is the <strong>lesser of a fixed
+cap or 20% of the referral fee</strong>. The weight handling fee and the pick &amp; pack fee are
+<strong>not</strong> returned at all. So a returned unit costs you the outbound delivery, the picking
+labour, and possibly a removal or disposal fee if it comes back unsellable.</p>
+<div class="box good">
+<p class="lbl">What this actually costs you — which is nothing</p>
+<p style="margin-bottom:0">The refund administration fee is 20% <em>of the referral fee</em>. Your
+referral fee at ₹333 in a Home category is <strong>₹0</strong> (Chapter 8). Twenty per cent of zero is
+zero, so <strong>this particular fee cannot touch you at your current price point.</strong> It starts to
+matter the day you list something above ₹1,000, where referral fees switch on. What does hurt you on
+every return, today, is the weight handling and pick &amp; pack you never get back.</p>
+</div>
+<p class="src"><span class="tag c">UNCONFIRMED</span> The cap is quoted as US$5 on Amazon's US seller
+forums; the rupee figure for Amazon.in was not confirmed. Since 20% of your referral fee is currently
+₹0, the cap does not affect you either way — but check it before pricing above ₹1,000.</p>
 <p style="margin-bottom:0">This is why a 20% return rate is far worse than a 20% discount. Build a
 return allowance into your margin sheet (Chapter 11).</p>
 </div>
@@ -2022,9 +2063,34 @@ materially different item within 3 business days. Since you use FBA, Amazon hand
 customer-facing return process directly — so this mainly matters if you ever add a Self-Ship or
 Easy Ship product.</p>
 
-<h2>20.4 SAFE-T claims — getting Amazon's own mistakes paid back</h2>
-<p><span class="tag c">UNCONFIRMED</span> SAFE-T claims let FBA sellers recover money when
-<strong>Amazon's</strong> handling causes the loss:</p>
+<h2>20.4 Getting Amazon's own mistakes paid back — two different systems</h2>
+<div class="box warn">
+<p class="lbl">An earlier edition of this book got this wrong</p>
+<p>It said SAFE-T claims are how <strong>FBA</strong> sellers recover stock lost or damaged in a
+fulfilment centre. <span class="tag v">VERIFIED</span> They are not. SAFE-T covers
+<strong>seller-fulfilled</strong> orders. File a SAFE-T claim for FBA warehouse loss and it will be
+rejected, because you used the wrong system.</p>
+<p style="margin-bottom:0">You are on FBA, so <strong>the second table below is yours.</strong></p>
+</div>
+
+<h4>SAFE-T — for seller-fulfilled orders only</h4>
+<p>SAFE-T stands for Seller Assurance For E-commerce Transactions. It lets you appeal a refund
+<strong>Amazon issued</strong> on a seller-fulfilled order, most often a return using an Amazon-issued
+prepaid return label. It matters to you only if you later add an Easy Ship or Self-Ship product.</p>
+<table>
+<thead><tr><th style="width:44mm">Point</th><th>Detail</th></tr></thead>
+<tbody>
+<tr><td><strong>Filing window</strong></td><td><span class="tag v">VERIFIED</span> <strong>30 days</strong> — reduced from 60 days with effect from <strong>16 February 2026</strong>. The clock starts at the return delivery scan at your premises or the refund date, whichever is <em>later</em>; for a lost shipment, from the last tracking scan.</td></tr>
+<tr><td><strong>Wait before filing</strong></td><td><span class="tag c">UNCONFIRMED</span> Reported as 15 business days after the refund is issued, for return-related claims.</td></tr>
+<tr><td><strong>Who must have refunded</strong></td><td><span class="tag v">VERIFIED</span> <strong>Amazon</strong> must have initiated the refund. If <em>you</em> issued the refund yourself, the SAFE-T claim is denied.</td></tr>
+</tbody></table>
+<p><span class="tag s">CHECK LIVE</span> Amazon also shortened the window for sellers to assess a
+seller-fulfilled return before Amazon refunds automatically. Both timers moved together in early 2026,
+so check the current numbers in Seller Central before relying on either.</p>
+
+<h4>FBA reimbursement claims — this is the one for you</h4>
+<p>For stock Amazon lost or damaged while it held it, the route is an <strong>FBA reimbursement
+claim</strong>, not SAFE-T. This covers:</p>
 <ul>
 <li>Stock damaged or lost inside a fulfilment centre</li>
 <li>Stock lost in transit between fulfilment centres</li>
@@ -2032,9 +2098,14 @@ Easy Ship product.</p>
 <li>Stock disposed of incorrectly</li>
 <li>Fee and charge disputes</li>
 </ul>
-<p>File from Seller Central against the relevant order or shipment, attaching shipment IDs,
-inventory records and photos. Typical review time is 3–7 business days, tracked in the
-SAFE-T Communication Center.</p>
+<p><span class="tag c">UNCONFIRMED</span> For FBA <em>customer-return</em> claims the window is reported
+as <strong>60 to 120 days</strong> after the customer refund or replacement date — and deliberately
+<strong>not before 60 days</strong>, to leave the customer time to send the item back. So the FBA timing
+is almost the opposite of SAFE-T's: with SAFE-T you must move fast, with FBA returns you must wait.
+<span class="tag s">CHECK LIVE</span> Amazon has been automating more of this, so confirm the current
+window before you file.</p>
+<p>File from Seller Central against the relevant order or shipment, attaching shipment IDs, inventory
+records and photos.</p>
 <div class="box info">
 <p class="lbl">Amazon will not tell you when it owes you money</p>
 <p>Check your <strong>Inventory Adjustment Report</strong> and <strong>Reimbursements Report</strong>
@@ -2125,10 +2196,23 @@ is actually active. Building them earlier just means rebuilding them.</li>
 </ol>
 <div class="box warn">
 <p class="lbl">What an insert card may not say</p>
-<p>Ask for a review, by all means. <strong>Do not offer anything in exchange for a positive
-review</strong> — no discount, no gift, no refund. That violates Amazon policy and risks your
-account. &ldquo;If you have a moment, we'd appreciate an honest review&rdquo; is fine. Anything
-conditional on the rating is not.</p>
+<p>Asking for an <em>honest</em> review is fine. <span class="tag v">VERIFIED</span> Three things are
+not, and each risks your account:</p>
+<ul>
+<li><strong>Offering anything in exchange</strong> — no discount, no gift, no refund, no free product.</li>
+<li><strong>Asking specifically for a positive or 5-star review.</strong> Amazon prohibits this
+<em>even when no incentive is offered.</em> The word &ldquo;positive&rdquo; is itself the violation.</li>
+<li><strong>Asking unhappy customers to contact you instead of leaving a negative review.</strong> This
+one catches well-meaning sellers constantly. It looks like good service; Amazon treats it as review
+manipulation.</li>
+</ul>
+<p>&ldquo;If you have a moment, we'd appreciate an honest review&rdquo; is acceptable. Anything
+conditional on the rating, or that tries to divert a bad rating, is not. Amazon's guidance is explicit
+that repeat violations can lead to account deactivation — and if you discover inserts already in FBA
+stock that break these rules, you are expected to remove that inventory.</p>
+<p style="margin-bottom:0"><strong>Safest use of an insert card:</strong> care instructions, how to use
+the product, and your customer-service contact for genuine problems. Those add value and break no
+rules.</p>
 </div>
 
 <!-- ========== CH 23 ========== -->
@@ -2149,27 +2233,35 @@ included below. Leaving them out overstates profit on every higher-priced produc
 <thead><tr><th style="width:52mm">Line item</th><th style="width:24mm">Amount</th><th>Confidence</th></tr></thead>
 <tbody>
 <tr><td>Selling price</td><td>₹300</td><td>—</td></tr>
-<tr><td>Referral fee — Kitchen, under ₹1,000</td><td>₹0</td><td><span class="tag v">VERIFIED</span> 0% band</td></tr>
-<tr><td>Closing fee — Group A, ₹0–300</td><td>₹20</td><td><span class="tag c">UNCONFIRMED</span></td></tr>
+<tr><td>Referral fee — &ldquo;Containers, Boxes, Bottles and Kitchen Storage&rdquo;, under ₹1,000</td><td>₹0</td><td><span class="tag v">VERIFIED</span> 0% band</td></tr>
+<tr><td>Closing fee — Group A, ₹0–300</td><td>₹20</td><td><span class="tag v">VERIFIED</span> rate card</td></tr>
 <tr><td>Weight handling — 300 g, Regional, Standard STEP</td><td><strong>₹39</strong></td><td><span class="tag v">VERIFIED</span> rate</td></tr>
-<tr><td>Pick &amp; pack — standard, under 1 kg</td><td>₹17</td><td><span class="tag c">UNCONFIRMED</span></td></tr>
-<tr><td>GST at 18% on (₹20 + ₹30 + ₹17)</td><td>≈₹12</td><td>Calculated</td></tr>
+<tr><td>Pick &amp; pack — standard, under 1 kg</td><td>₹17</td><td><span class="tag v">VERIFIED</span> Amazon's page</td></tr>
+<tr><td>GST at 18% on (₹20 + ₹39 + ₹17 = ₹76)</td><td>≈₹14</td><td>Calculated</td></tr>
 <tr><td>Product cost</td><td>₹110</td><td>Illustrative</td></tr>
 <tr><td>Packaging</td><td>₹8</td><td>Illustrative</td></tr>
-<tr><td><strong>Net profit</strong></td><td><strong>≈₹103</strong></td><td>≈34% margin</td></tr>
+<tr><td><strong>Net profit</strong></td><td><strong>≈₹92</strong></td><td>≈31% margin</td></tr>
 </tbody></table>
 <p><small>Note: the ₹17 pick &amp; pack fee is easy to leave out of this kind of calculation. It
 applies to every FBA unit sold, so it is included here.</small></p>
+<div class="box warn">
+<p class="lbl">This case was wrong in an earlier edition</p>
+<p style="margin-bottom:0">It showed weight handling as ₹39 but calculated the GST and the total using
+₹30, producing a net profit of ₹103 and a 34% margin. The correct figures with ₹39 throughout are
+<strong>₹92 and about 31%</strong>. Worth flagging as a habit rather than a one-off: when you update a
+fee in your own margin sheet, re-check every row that depends on it. GST is charged on the
+<em>sum</em> of the Amazon fees, so any fee change moves the GST line too.</p>
+</div>
 
 <h2>Case 2 — a ₹1,200 charging cable (FBA)</h2>
 <table>
 <thead><tr><th style="width:52mm">Line item</th><th style="width:24mm">Amount</th><th>Confidence</th></tr></thead>
 <tbody>
 <tr><td>Selling price</td><td>₹1,200</td><td>—</td></tr>
-<tr><td>Referral fee — Cables &amp; Adapters, 20% above ₹1,000</td><td>₹240</td><td><span class="tag c">UNCONFIRMED</span> (Appendix A)</td></tr>
+<tr><td>Referral fee — &ldquo;Cables and Adapters – Electronics, PC and Wireless&rdquo;, 20% above ₹1,000</td><td>₹240</td><td><span class="tag v">VERIFIED</span> (Appendix A)</td></tr>
 <tr><td>Closing fee — above ₹1,000</td><td><strong>₹52</strong></td><td><span class="tag v">VERIFIED</span></td></tr>
 <tr><td>Weight handling — 150 g, National, Standard STEP</td><td><strong>₹65</strong></td><td><span class="tag v">VERIFIED</span> rate</td></tr>
-<tr><td>Pick &amp; pack</td><td>₹17</td><td><span class="tag c">UNCONFIRMED</span></td></tr>
+<tr><td>Pick &amp; pack</td><td>₹17</td><td><span class="tag v">VERIFIED</span> Amazon's page</td></tr>
 <tr><td>GST at 18% on (₹240 + ₹52 + ₹65 + ₹17)</td><td>≈₹67</td><td>Calculated</td></tr>
 <tr><td>Product cost</td><td>₹350</td><td>Illustrative</td></tr>
 <tr><td>Packaging</td><td>₹15</td><td>Illustrative</td></tr>
@@ -2185,10 +2277,10 @@ selling.</p>
 <thead><tr><th style="width:52mm">Line item</th><th style="width:24mm">Amount</th><th>Confidence</th></tr></thead>
 <tbody>
 <tr><td>Selling price</td><td>₹5,000</td><td>—</td></tr>
-<tr><td>Referral fee — Furniture-Other, 15.5% (₹1,000–15,000)</td><td>₹775</td><td><span class="tag c">UNCONFIRMED</span></td></tr>
+<tr><td>Referral fee — &ldquo;Furniture – Other products&rdquo;, 15.5% (₹1,000–15,000)</td><td>₹775</td><td><span class="tag v">VERIFIED</span> (Appendix A)</td></tr>
 <tr><td>Closing fee — above ₹1,000</td><td><strong>₹52</strong></td><td><span class="tag v">VERIFIED</span></td></tr>
 <tr><td>Weight handling — Heavy &amp; Bulky, National, first 12 kg, Standard STEP</td><td><strong>₹300</strong></td><td><span class="tag v">VERIFIED</span> rate</td></tr>
-<tr><td>Pick &amp; pack — Heavy &amp; Bulky up to 12 kg</td><td>₹26</td><td><span class="tag c">UNCONFIRMED</span></td></tr>
+<tr><td>Pick &amp; pack — Heavy &amp; Bulky, per unit</td><td>₹26</td><td><span class="tag v">VERIFIED</span> Amazon's page</td></tr>
 <tr><td>GST at 18% on (₹775 + ₹52 + ₹300 + ₹26)</td><td>≈₹208</td><td>Calculated</td></tr>
 <tr><td>Product cost</td><td>₹2,200</td><td>Illustrative</td></tr>
 <tr><td>Packaging and crating</td><td>₹150</td><td>Illustrative</td></tr>
@@ -2779,6 +2871,11 @@ that matters for a launch.</p>
 separate GST registration (5.2).</p>
 <div class="box warn">
 <p class="lbl">Read this before using the table</p>
+<p><span class="tag v">VERIFIED</span> Amazon opened new centres through 2025 and 2026 — Odisha (BBX1),
+Madhya Pradesh (IDX2, replacing SIDA), Punjab (LDX1), Delhi (DED1), West Bengal, and a Heavy &amp; Bulky
+site in Haryana (LDEB) on 1 April 2026. Each announcement told sellers to add the centre to their GST
+registration as an Additional Place of Business <em>before</em> sending inventory. <strong>This table
+will keep going out of date.</strong> Treat it as a prompt to go and look, never as an answer.</p>
 <p><span class="tag c">UNCONFIRMED</span> This list comes from an FC capabilities sheet that could not
 be independently verified against a published Amazon document.</p>
 <p><strong>Never register for GST in a state based on this table alone.</strong> Amazon opens new
@@ -2789,9 +2886,9 @@ in Seller Central first. Registering in the wrong state is far more expensive th
 <thead><tr><th style="width:34mm">State</th><th style="width:44mm">Cities</th><th>FC codes reported</th></tr></thead>
 <tbody>
 <tr><td><strong>Telangana</strong> (yours)</td><td>Hyderabad</td><td>HYD3, HYD8, SHYL, SHTX, SHYH, SHTI, XSAD, XSIP</td></tr>
-<tr><td>Haryana</td><td>Gurgaon, Gurugram, Jhajjar</td><td>DEL2, DEL4, DEL5, DED4, SHDZ, HDX1, HDO3, SDEU, LDX1, XNAB</td></tr>
-<tr><td>Delhi (NCT)</td><td>New Delhi</td><td>DEX3, DEX8</td></tr>
-<tr><td>Punjab</td><td>Ludhiana, Rajpura</td><td>ATX1, SATF</td></tr>
+<tr><td>Haryana</td><td>Gurgaon, Gurugram, Jhajjar</td><td>DEL2, DEL4, DEL5, DED4, SHDZ, HDX1, HDO3, SDEU, XNAB, <strong>LDEB</strong> <small>(Heavy &amp; Bulky, opened 1 Apr 2026)</small></td></tr>
+<tr><td>Delhi (NCT)</td><td>New Delhi</td><td>DEX3, DEX8, <strong>DED1</strong> <small>(opened 1 Aug 2025)</small></td></tr>
+<tr><td>Punjab</td><td>Ludhiana, Rajpura</td><td>ATX1, SATF, <strong>LDX1</strong> <small>(opened 1 Jul 2025)</small></td></tr>
 <tr><td>Rajasthan</td><td>Jaipur, Bagru</td><td>JPX1, JPX2</td></tr>
 <tr><td>Uttar Pradesh</td><td>Lucknow</td><td>LKO1, SLKY, SLKF</td></tr>
 <tr><td>Maharashtra</td><td>Mumbai, Bhiwandi, Pune, Nagpur</td><td>BOM4, BOM5, BOM7, PNQ3, NAX1, SBOW, SPUN, SBOB, XWUA</td></tr>
@@ -2804,7 +2901,7 @@ in Seller Central first. Registering in the wrong state is far more expensive th
 <tr><td>Tamil Nadu</td><td>Chennai, Coimbatore, Karumathampatti, Tiruvallur, Krishnagiri</td><td>MAA4, SMAB, SMAH, CJB1, SCJY, SCJF, SBLI, SCJB</td></tr>
 <tr><td>Andhra Pradesh</td><td>Visakhapatnam, Anakapalli</td><td>RJX1, SVTZ</td></tr>
 <tr><td>Kerala</td><td>Ernakulam</td><td>COX1</td></tr>
-<tr><td>Madhya Pradesh</td><td>Indore, Bhopal</td><td>IDX2, SBHF</td></tr>
+<tr><td>Madhya Pradesh</td><td>Indore, Bhopal</td><td>IDX2, SBHF, <strong>SIDA</strong></td></tr>
 </tbody></table>
 <h4>Two traps in the code names</h4>
 <ul>
@@ -2812,8 +2909,14 @@ in Seller Central first. Registering in the wrong state is far more expensive th
 Gurgaon/Gurugram — <strong>Haryana</strong>. Genuine Delhi centres use <strong>DEX</strong>.</li>
 <li><strong>Some Bangalore-sounding codes are in Tamil Nadu.</strong> SBLI and SCJB are at
 Krishnagiri, just across the Tamil Nadu border.</li>
-<li><strong>LDX1 is ambiguous</strong> in the source sheet — grouped with Haryana, but Rajpura itself
-is in Punjab. If you see LDX1, check the full address.</li>
+<li><strong>LDX1 is in Punjab, not Haryana.</strong> <span class="tag v">VERIFIED</span> An earlier
+edition of this book grouped it with Haryana and flagged it as ambiguous. Amazon's own centre-opening
+announcement settles it: LDX1 opened in <strong>Punjab</strong> on 1 July 2025. Corrected above.</li>
+<li><strong>The same prefix can mean two different states.</strong> <span class="tag v">VERIFIED</span>
+This is the trap, stated as sharply as it can be: <strong>LDX1 is Punjab but LDEB is Haryana</strong>,
+and <strong>DED1 is Delhi but DED4 is Haryana</strong>. Both pairs share a prefix and sit in different
+states. There is no rule you can learn here — the prefix genuinely carries no reliable information
+about the state. Open the full address, every time.</li>
 </ul>
 <h4>Heavy &amp; Bulky facilities</h4>
 <p><span class="tag c">UNCONFIRMED</span> There are reportedly 16 dedicated Heavy &amp; Bulky centres nationwide,
