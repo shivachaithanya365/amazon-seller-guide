@@ -383,13 +383,15 @@ wire itself. Every margin figure elsewhere in this book uses ₹333 as revenue, 
 Product Information field carries HSN code <strong>72179099</strong> — heading 7217, wire of iron or
 non-alloy steel, which attracts <strong>18% GST</strong>. So your ₹333 is ₹282.20 of revenue plus
 <strong>₹50.80 of output GST</strong>. <code>research/account/unit_economics.py</code> now uses 18%.</p>
-<p style="margin-bottom:0"><span class="tag n">ACTION NEEDED</span> <strong>Your Product Tax Code field
-is empty.</strong> On the listing's Offer tab, Product Tax Code shows only the placeholder
-&ldquo;Example: A_GEN_NOTAX&rdquo; — nothing is set. The PTC is what tells Amazon which GST rate to
-apply when it collects tax on your behalf. With it blank you cannot be sure the right rate is being
-collected, and any mismatch between what Amazon collects and what you declare in GSTR-1 becomes your
-problem at filing time. <strong>Set the PTC to the code matching 18%</strong> (normally
-<code>A_GEN_TAX</code>) and have your CA confirm it against HSN 72179099 before the next return.</p>
+<p><span class="tag v">RESOLVED</span> <strong>This was a live gap and it has been closed.</strong> The
+listing's Product Tax Code field was <em>empty</em> — showing only the placeholder
+&ldquo;Example: A_GEN_NOTAX&rdquo;. The PTC is what tells Amazon which GST rate to apply when it collects
+tax on your behalf, so a blank field means no assurance the right rate is being collected, and any
+mismatch against what you declare in GSTR-1 lands on you at filing time.</p>
+<p style="margin-bottom:0">It was set to <code>A_GEN_TAX</code> on 5 August 2026, matching HSN 72179099
+at 18%. <strong>One thing still to do:</strong> have your CA confirm that code against the HSN on your
+next GSTR-1, since this is the one item here where a wrong answer is a tax problem rather than a fee
+problem.</p>
 </div>
 
 
