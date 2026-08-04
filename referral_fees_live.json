@@ -1,0 +1,878 @@
+[
+ {
+  "category": "Automotive - Helmets & Riding Gloves",
+  "fee": "0.00% for item price <= 1,000 | 8.50% for item price > 1,000"
+ },
+ {
+  "category": "Automotive - Tyres & Rims",
+  "fee": "0.00% for item price <= 1,000 | 3.00% for item price > 1,000 | (Until June 9,2026) | 0.00% for item price <= 1,000 | 7.00% for item price > 1,000 | (From June 10,2026)"
+ },
+ {
+  "category": "Automotive Vehicles - 2-Wheelers, 4-Wheelers and Electric Vehicles",
+  "fee": "0.00% for item price <= 1,000 | 5.00% for item price > 1,000 and <= 50,000 | 2.00% for item price > 50,000"
+ },
+ {
+  "category": "Automotive – Car and Bike parts, Brakes, Styling and body fittings, Transmission, Engine parts, Exhaust systems, Interior fitting, Suspension and Wipers",
+  "fee": "0.00% for item price <= 1,000 | 16.00% for item price > 1,000"
+ },
+ {
+  "category": "Automotive – Cleaning kits (Sponges, Brush, Duster, Cloths and liquids), Car interior & exterior care (Waxes, polish, Shampoo and other), Car and Bike Lighting and Paints",
+  "fee": "0.00% for item price <= 1,000 | 13.00% for item price > 1,000"
+ },
+ {
+  "category": "Automotive Accessories (Floor Mats, Seat/Car/Bike Covers) and Riding Gear (Face Covers and Gloves)",
+  "fee": "0.00% for item price <= 1,000 | 14.00% for item price > 1,000"
+ },
+ {
+  "category": "Vehicle Tools and Appliances",
+  "fee": "0.00% for item price <= 1,000 | 8.50% for item price > 1,000"
+ },
+ {
+  "category": "Oils, Lubricants",
+  "fee": "0.00% for item price <= 1,000 | 11.50% for item price > 1,000"
+ },
+ {
+  "category": "Automotive – Batteries and air fresheners",
+  "fee": "0.00% for item price <= 1,000 | 8.50% for item price > 1,000"
+ },
+ {
+  "category": "Car Electronics Devices",
+  "fee": "0.00% for item price <= 300 | 7.50% for item price > 300 and <= 500 | 9.50% for item price > 500 and <= 1,000 | 12.00% for item price > 1,000"
+ },
+ {
+  "category": "Car Cradles, Lens Kits & Tablet Cases",
+  "fee": "0.00% for item price <= 300 | 5.00% for item price > 300 and <= 1,000 | 28.50% for item price > 1,000"
+ },
+ {
+  "category": "Car Electronics Accessories",
+  "fee": "0.00% for item price <= 300 | 5.00% for item price > 300 and <= 1,000 | 15.00% for item price > 1,000"
+ },
+ {
+  "category": "Toys - Drones",
+  "fee": "0.00% for item price <= 1,000 | 30.00% for item price > 1,000"
+ },
+ {
+  "category": "Toys - Party Supplies, Balloons, Banners, Masks, Confetti, Birthday Celebration",
+  "fee": "0.00% for item price <= 1,000 | 12.50% for item price > 1,000"
+ },
+ {
+  "category": "Toys - Games and Puzzles, Boards Games, Adult Games and Building Sets",
+  "fee": "0.00% for item price <= 1,000 | 12.50% for item price > 1,000"
+ },
+ {
+  "category": "Toys - Infant and Pre-school Toys (Electronic and Non-Electronic)",
+  "fee": "0.00% for item price <= 1,000 | 11.50% for item price > 1,000"
+ },
+ {
+  "category": "Toys - Outdoor, Activity and Sports Toys",
+  "fee": "0.00% for item price <= 1,000 | 10.50% for item price > 1,000"
+ },
+ {
+  "category": "Toys - Plush Toys, Action Figures and Dolls",
+  "fee": "0.00% for item price <= 1,000 | 10.50% for item price > 1,000"
+ },
+ {
+  "category": "Toys - Remote and Non-Remote Controlled Vehicles and Vehicle Sets",
+  "fee": "0.00% for item price <= 1,000 | 12.50% for item price > 1,000"
+ },
+ {
+  "category": "Toys - STEM, Art and Craft, Learning and Development Toys",
+  "fee": "0.00% for item price <= 1,000 | 11.50% for item price > 1,000"
+ },
+ {
+  "category": "Baby Hardlines - Swings, Bouncers and Rockers, Carriers, Walkers, Baby Safety - Guards and Locks, Baby Room Décor, Baby Furniture, Baby Car Seats and Accessories",
+  "fee": "0.00% for item price <= 1,000 | 6.50% for item price > 1,000"
+ },
+ {
+  "category": "Baby Strollers",
+  "fee": "0.00% for item price <= 1,000 | 9.00% for item price > 1,000"
+ },
+ {
+  "category": "Baby and Kids-Furniture and Home Décor",
+  "fee": "0.00% for item price <= 1,000 | 8.50% for item price > 1,000"
+ },
+ {
+  "category": "Baby-Walker",
+  "fee": "0.00% for item price <= 1,000 | 5.00% for item price > 1,000"
+ },
+ {
+  "category": "Baby - Diapers",
+  "fee": "0.00% for item price <= 1,000 | 9.50% for item price > 1,000"
+ },
+ {
+  "category": "Books",
+  "fee": "0.00%for item price <= 250 | 2.00%for item price > 250 and <= 500 | 4.00%for item price > 500 and <= 1,000 | 13.50% for item price > 1,000"
+ },
+ {
+  "category": "School Textbook Bundles",
+  "fee": "2.00%for item price <= 250 | 3.00%for item price > 250 and <= 1,000 | 4.00%for item price > 1,000 and <= 1,500 | 4.50%for item price > 1,500"
+ },
+ {
+  "category": "Video Games - Consoles",
+  "fee": "7.00% for item price <= 500 | 5.00% for item price > 500 and <= 1,000 | 9.00% for item price > 1,000"
+ },
+ {
+  "category": "Video Games - Accessories",
+  "fee": "0.00% for item price <= 300 | 5.00% for item price > 300 and <= 1,000 | 13.50% for item price > 1,000"
+ },
+ {
+  "category": "Video Games - Online Game Services",
+  "fee": "0.00% for item price <= 1,000 | 2.00% for item price > 1,000 and <= 2,000 | 3.00% for item price > 2,000"
+ },
+ {
+  "category": "Movies",
+  "fee": "6.50% for item price <= 500 | 0.00% for item price > 500 and <= 1,000 | 6.50% for item price > 1,000"
+ },
+ {
+  "category": "Music",
+  "fee": "6.50% for item price <= 500 | 0.00% for item price > 500 and <= 1,000 | 6.50% for item price > 1,000"
+ },
+ {
+  "category": "Musical Instruments - DJ & VJ Equipment, | Recording and Computer, | Cables & Leads, | PA & Stage",
+  "fee": "6.00% for item price <= 300 | 4.50% for item price > 300 and <= 500 | 0.00% for item price > 500 and <= 1,000 | 11.00% for item price > 1,000"
+ },
+ {
+  "category": "Musical Instruments - Microphones",
+  "fee": "9.50% for item price <= 300 | 0.00% for item price > 300 and <= 1,000 | 11.50% for item price > 1,000"
+ },
+ {
+  "category": "Musical Instruments - Keyboards",
+  "fee": "8.00% for item price <= 500 | 0.00% for item price > 500 and <= 1,000 | 8.00% for item price > 1,000"
+ },
+ {
+  "category": "Musical Instruments - Guitars",
+  "fee": "10.00% for item price <= 500 | 0.00% for item price > 500 and <= 1,000 | 10.00% for item price > 1,000"
+ },
+ {
+  "category": "Masks",
+  "fee": "0.00% for item price <= 1,000 | 8.00% for item price > 1,000"
+ },
+ {
+  "category": "Personal Care Appliances - Weighing Scales and Fat Analyzers",
+  "fee": "0.00% for item price <= 1,000 | 13.50% for item price > 1,000"
+ },
+ {
+  "category": "3D Printers",
+  "fee": "0.00% for item price <= 1,000 | 12.00% for item price > 1,000"
+ },
+ {
+  "category": "Business and Industrial Supplies - Scientific Supplies",
+  "fee": "0.00% for item price <= 1,000 | 11.50% for item price > 1,000 and <= 15,000 | 7.00% for item price > 15,000"
+ },
+ {
+  "category": "Business & Industrial Supplies - Commercial, Food Handling Equipment and Health Supplies",
+  "fee": "0.00% for item price <= 1,000 | 5.50% for item price > 1,000"
+ },
+ {
+  "category": "Business and Industrial Supplies - Electrical Testing, Dimensional Measurement, Thermal Printers, Barcode Scanners",
+  "fee": "0.00% for item price <= 1,000 | 6.00% for item price > 1,000"
+ },
+ {
+  "category": "Power & Hand Tools and Water Dispensers",
+  "fee": "0.00% for item price <= 1,000 | 10.00% for item price > 1,000"
+ },
+ {
+  "category": "Stethoscopes",
+  "fee": "0.00% for item price <= 1,000 | 10.50% for item price > 1,000"
+ },
+ {
+  "category": "Packing materials",
+  "fee": "0.00% for item price <= 1,000 | 5.00% for item price > 1,000"
+ },
+ {
+  "category": "Office products - Office supplies",
+  "fee": "0.00% for item price <= 1,000 | 13.00% for item price > 1,000"
+ },
+ {
+  "category": "Office products - Electronic Devices",
+  "fee": "0.00% for item price <= 1,000 | 11.50% for item price > 1,000"
+ },
+ {
+  "category": "Office products - Arts and Crafts",
+  "fee": "0.00% for item price <= 1,000 | 5.00% for item price > 1,000"
+ },
+ {
+  "category": "Office products - Writing Instruments",
+  "fee": "0.00% for item price <= 1,000 | 14.00% for item price > 1,000"
+ },
+ {
+  "category": "Apparel - Accessories",
+  "fee": "0.00% for item price <= 1,000 | 19.00% for item price > 1,000"
+ },
+ {
+  "category": "Apparel - Sweat Shirts and Jackets",
+  "fee": "0 .00% for item price <= 1,000 | 18.00% for item price > 1,000"
+ },
+ {
+  "category": "Apparel - Shorts",
+  "fee": "0.00% for item price <= 1,000 | 24.00% for item price > 1,000"
+ },
+ {
+  "category": "Apparel - Baby",
+  "fee": "0.00% for item price <= 1,000 | 7.00% for item price > 1,000"
+ },
+ {
+  "category": "Apparel - Ethnic wear",
+  "fee": "0.00% for item price <= 1,000 | 16.50% for item price > 1,000"
+ },
+ {
+  "category": "Apparel - Other innerwear",
+  "fee": "0.00% for item price <= 1,000 | 18.50% for item price > 1,000"
+ },
+ {
+  "category": "Apparel - Sleepwear",
+  "fee": "0.00% for item price <= 1,000 | 19.00% for item price > 1,000"
+ },
+ {
+  "category": "Apparel - Sarees and Dress Materials",
+  "fee": "0.00% for item price <= 1,000 | 15.00% for item price > 1,000"
+ },
+ {
+  "category": "Apparel - Men's T-shirts (except Polos, Tank tops and full sleeve tops)",
+  "fee": "0.00% for item price <= 1,000 | 23.00% for item price > 1,000"
+ },
+ {
+  "category": "Apparel - Women’s Innerwear and Lingerie",
+  "fee": "0.00% for item price <= 1,000 | 18.00% for item price > 1,000"
+ },
+ {
+  "category": "Apparel - Dress",
+  "fee": "0.00% for item price <= 1,000 | 19.00% for item price > 1,000"
+ },
+ {
+  "category": "Apparel - Shirts",
+  "fee": "0.00% for item price <= 1,000 | 21.00% for item price > 1,000"
+ },
+ {
+  "category": "Apparel - Socks and Stockings",
+  "fee": "0.00% for item price <= 1,000 | 19.00% for item price > 1,000"
+ },
+ {
+  "category": "Apparel - Thermals",
+  "fee": "0.00% for item price <= 1,000 | 19.00% for item price > 1,000"
+ },
+ {
+  "category": "Pants - Trousers, Jeans, Trackpants and Leggings",
+  "fee": "0.00% for item price <= 1,000 | 19.00% for item price > 1,000"
+ },
+ {
+  "category": "Backpacks, Laptop Sleeves and Bags",
+  "fee": "0.00% for item price <= 1,000 | 14.50% for item price > 1,000"
+ },
+ {
+  "category": "Eyewear - Sunglasses, Frames and zero power eye glasses",
+  "fee": "0.00% for item price <= 1,000 | 18.50% for item price > 1,000"
+ },
+ {
+  "category": "Fashion Jewellery",
+  "fee": "0.00% for item price <= 1,000 | 22.50% for item price > 1,000"
+ },
+ {
+  "category": "Fine Jewellery - Gold Coins",
+  "fee": "0.00% for item price <= 1,000 | 6.00% for item price > 1,000"
+ },
+ {
+  "category": "Fine Jewellery - studded",
+  "fee": "0.00% for item price <= 1,000 | 13.00% for item price > 1,000"
+ },
+ {
+  "category": "Fine Jewellery - unstudded and solitaire",
+  "fee": "0.00% for item price <= 1,000 | 5.00% for item price > 1,000"
+ },
+ {
+  "category": "Silver Jewellery",
+  "fee": "0.00% for item price <= 1,000 | 13.00% for item price > 1,000"
+ },
+ {
+  "category": "Silver Coins & Bars",
+  "fee": "0.00% for item price <= 1,000 | 6.00% for item price > 1,000"
+ },
+ {
+  "category": "Handbags",
+  "fee": "0.00% for item price <= 1,000 | 12.00% for item price > 1,000"
+ },
+ {
+  "category": "Luggage - Suitcase & Trolleys",
+  "fee": "0.00% for item price <= 1,000 | 5.50% for item price > 1,000"
+ },
+ {
+  "category": "Luggage - Travel Accessories",
+  "fee": "0.00% for item price <= 1,000 | 12.00% for item price > 1,000"
+ },
+ {
+  "category": "Flip Flops, Fashion Sandals and Slippers",
+  "fee": "0.00% for item price <= 1,000 | 15.00% for item price > 1,000"
+ },
+ {
+  "category": "Kids shoes",
+  "fee": "0.00% for item price <= 1,000 | 16.00% for item price > 1,000"
+ },
+ {
+  "category": "Shoes",
+  "fee": "0.00% for item price <= 1,000 | 8.00% for item price > 1,000"
+ },
+ {
+  "category": "Wallets",
+  "fee": "0.00% for item price <= 1,000 | 14.00% for item price > 1,000"
+ },
+ {
+  "category": "Watches",
+  "fee": "0.00% for item price <= 1,000 | 15.00% for item price > 1,000"
+ },
+ {
+  "category": "Camera Lenses",
+  "fee": "7.00% for item price <= 1,000 | 10.00% for item price > 1,000"
+ },
+ {
+  "category": "Camera and Camcorder",
+  "fee": "5.00% for item price <= 1,000 | 7.00% for item price > 1000 and <= 19,000 | 9.00% for item price >19,000 and <=49000 | 7.00% for item price >49000"
+ },
+ {
+  "category": "Camera Accessories",
+  "fee": "0.00% for item price <= 300 | 5.00% for item price > 300 and <= 1,000 | 13.50% for item price > 1,000"
+ },
+ {
+  "category": "Cases, Covers and Skins, and Screen Guards",
+  "fee": "0.00% for item price <= 1,000 | 25.00% for item price > 1,000"
+ },
+ {
+  "category": "Accessories - Electronics, PC and Wireless",
+  "fee": "0.00% for item price <= 300 | 5.00% for item price > 300 and <= 1,000 | 17.00% for item price > 1,000"
+ },
+ {
+  "category": "Electronic Devices (except TV, Camera & Camcorder, Camera Lenses and Accessories, GPS Devices, Speakers)",
+  "fee": "9.00% for item price <= 1,000 | 11.00% for item price > 1,000"
+ },
+ {
+  "category": "GPS Devices",
+  "fee": "13.50% for item price <= 300 | 12.50% for item price > 300 and <= 500 | 13.50% for item price > 500"
+ },
+ {
+  "category": "Hard Disks",
+  "fee": "9.50% for item price <= 1,000 | 12.50% for item price > 1,000"
+ },
+ {
+  "category": "Headsets, Headphones and Earphones",
+  "fee": "0.00% for item price <= 1,000 | 18.00% for item price > 1,000"
+ },
+ {
+  "category": "Keyboards and Mouse",
+  "fee": "0.00% for item price <= 300 | 5.00% for item price > 300 and <= 1,000 | 17.00% for item price > 1,000"
+ },
+ {
+  "category": "Laptop and Camera Battery",
+  "fee": "14.00% for item price <= 300 | 12.50% for item price > 300 and <= 500 | 14.00% for item price > 500 and <= 1,000 | 15.50% for item price > 1,000"
+ },
+ {
+  "category": "Monitors",
+  "fee": "6.50% for item price <= 1,000 | 8.00% for item price > 1,000"
+ },
+ {
+  "category": "Tablets (including Graphic Tablets)",
+  "fee": "0.00% for item price <= 300 | 6.00% for item price > 300 and <= 12,000 | 10.00% for item price > 12,000"
+ },
+ {
+  "category": "Scanners and Printers",
+  "fee": "9.00% for item price <= 1,000 | 10.50% for item price > 1,000"
+ },
+ {
+  "category": "Memory Cards",
+  "fee": "16.00% for item price <= 500 | 5.00% for item price > 500 and <= 1,000 | 16.00% for item price > 1,000"
+ },
+ {
+  "category": "Speakers",
+  "fee": "11.00% for item price <= 500 | 11.50% for item price > 500 and <= 1000 | 14.00% for item price > 1000"
+ },
+ {
+  "category": "Power Banks and Chargers",
+  "fee": "0.00% for item price <= 1,000 | 20.50% for item price > 1,000"
+ },
+ {
+  "category": "Smart Watches and Accessories",
+  "fee": "0.00% for item price <= 300 | 5.00% for item price > 300 and <= 1,000 | 17.00% for item price > 1,000"
+ },
+ {
+  "category": "PC Components - RAM and Motherboards",
+  "fee": "0.00% for item price <= 300 | 5.50% for item price > 300"
+ },
+ {
+  "category": "Entertainment Collectibles",
+  "fee": "13.00% for item price <= 300 | 17.00% for item price > 300"
+ },
+ {
+  "category": "Software products",
+  "fee": "0.00% for item price <= 1,000 | 7.50% for item price > 1,000 and <= 2,000 | 9.50% for item price > 2,000"
+ },
+ {
+  "category": "Cables and Adapters - Electronics, PC and Wireless",
+  "fee": "0.00% for item price <= 1,000 | 20.00% for item price > 1,000"
+ },
+ {
+  "category": "Musical Instruments - Other products",
+  "fee": "0.00% for item price <= 1,000 | 11.00% for item price > 1,000"
+ },
+ {
+  "category": "Grocery - Herbs and Spices",
+  "fee": "0.00% for item price <= 1,000 | 8.00% for item price > 1,000"
+ },
+ {
+  "category": "Grocery - Dried fruits and nuts",
+  "fee": "0.00% for item price <= 1,000 | 9.00% for item price > 1,000"
+ },
+ {
+  "category": "Grocery - Hampers and gifting",
+  "fee": "0.00% for item price <= 1,000 | 11.50% for item price > 1,000"
+ },
+ {
+  "category": "Grocery & Gourmet - Oils",
+  "fee": "0.00% for item price <= 1,000 | 5.00% for item price > 1,000"
+ },
+ {
+  "category": "Grocery and Gourmet - Beverages",
+  "fee": "0.00% for item price <= 1,000 | 10.00% for item price > 1,000"
+ },
+ {
+  "category": "Pet Foods",
+  "fee": "0.00% for item price <= 300 | 6.50% for item price > 300 and <= 1,000 | 9.50% for item price > 1,000"
+ },
+ {
+  "category": "Pet - Aquatics Supplies",
+  "fee": "0.00% for item price <= 1,000 | 14.00% for item price > 1,000"
+ },
+ {
+  "category": "Pet Accessories including Apparel, Collar, Leash and Harness",
+  "fee": "0.00% for item price <= 1,000 | 12.50% for item price > 1,000"
+ },
+ {
+  "category": "Pet comforters including Bed, Feeder, Cages, Carriers, Crates, Kennels and Doors",
+  "fee": "0.00% for item price <= 1,000 | 12.50% for item price > 1,000"
+ },
+ {
+  "category": "Pet Essentials including Health Care, Grooming Aids, Shower and Bath Supplies, Supplements and Vitamins, Tick and Flea Control, Dental Care",
+  "fee": "0.00% for item price <= 1,000 | 14.00% for item price > 1,000"
+ },
+ {
+  "category": "Beauty - Fragrance",
+  "fee": "0.00% for item price <= 500 | 14.00% for item price > 500 and <= 1,000 | 10.00% for item price > 1,000"
+ },
+ {
+  "category": "Beauty - Haircare, Bath and Shower",
+  "fee": "0.00% for item price <= 1,000 | 8.00% for item price > 1,000"
+ },
+ {
+  "category": "Beauty - Makeup",
+  "fee": "0.00% for item price <= 1,000 | 7.00% for item price > 1,000"
+ },
+ {
+  "category": "Luxury Beauty",
+  "fee": "0.00% for item price <= 500 | 9.00% for item price > 500 and <= 1,000 | 10.00% for item price > 1,000"
+ },
+ {
+  "category": "Face Wash",
+  "fee": "0.00% for item price <= 500 | 9.00% for item price > 500 and <= 1,000 | 9.50% for item price > 1,000"
+ },
+ {
+  "category": "Moisturizer cream",
+  "fee": "0.00% for item price <= 500 | 9.00% for item price > 500 and <= 1,000 | 9.50% for item price > 1,000"
+ },
+ {
+  "category": "Sunscreen",
+  "fee": "0.00% for item price <= 500 | 9.00% for item price > 500 and <= 1,000 | 9.50% for item price > 1,000"
+ },
+ {
+  "category": "Deodrants",
+  "fee": "0.00% for item price <= 500 | 6.50% for item price > 500 and <= 1,000 | 7.00% for item price > 1,000"
+ },
+ {
+  "category": "Facial steamers",
+  "fee": "0.00% for item price <= 500 | 7.00% for item price > 500"
+ },
+ {
+  "category": "Personal Care Appliances - Grooming and Styling",
+  "fee": "0.00% for item price <= 1,000 | 9.50% for item price > 1,000"
+ },
+ {
+  "category": "Personal Care Appliances - Electric Massagers",
+  "fee": "0.00% for item price <= 1,000 | 14.50% for item price > 1,000"
+ },
+ {
+  "category": "Personal Care Appliances - Glucometer and Glucometer Strips",
+  "fee": "0.00% for item price <= 1,000 | 5.50% for item price > 1,000"
+ },
+ {
+  "category": "Personal Care Appliances - Thermometers",
+  "fee": "0.00% for item price <= 1,000 | 10.50% for item price > 1,000"
+ },
+ {
+  "category": "Personal Care Appliances - Blood Pressure Monitors",
+  "fee": "0.00% for item price <= 1,000 | 7.50% for item price > 1,000"
+ },
+ {
+  "category": "Personal Care Appliances - Electric Pain Relief Devices (Electric Heating Pads, Electric Hot Water Bags, EMS, Tens)",
+  "fee": "0.00% for item price <= 1,000 | 7.50% for item price > 1,000"
+ },
+ {
+  "category": "Personal Care Appliances - Electric Tooth brush, Oral Irrigators and Accessories",
+  "fee": "0.00% for item price <= 1,000 | 7.50% for item price > 1,000"
+ },
+ {
+  "category": "Health and Household - Sports Nutrition and Meal Replacement Shakes",
+  "fee": "0.00% for item price <= 300 | 9.00% for item price > 300 and <= 500 | 9.50% for item price > 500"
+ },
+ {
+  "category": "Health and Household - Medical Equipment, Sexual Wellness, Adult Incontinence, Elderly Care",
+  "fee": "0.00% for item price <= 1,000 | 2.00% for item price > 1,000"
+ },
+ {
+  "category": "Health and Household - Ayurvedic, Homeopathic and Alternate Medicine products",
+  "fee": "0.00% for item price <= 1,000 | 7.00% for item price > 1,000"
+ },
+ {
+  "category": "Health and Household - Household Cleaning, Laundry, Air Fresheners, Personal Hygiene (Hand Wash )",
+  "fee": "0.00% for item price <= 1,000 | 8.00% for item price > 1,000"
+ },
+ {
+  "category": "Feminine Hygiene and Care",
+  "fee": "0.00% for item price <= 1,000 | 8.00% for item price > 1,000"
+ },
+ {
+  "category": "Health and Household - Vitamins & Mineral Health Supplements",
+  "fee": "0.00% for item price <= 300 | 9.00% for item price > 300 and <= 500 | 10.50% for item price > 500 and <= 1,000 | 11.00% for item price > 1,000"
+ },
+ {
+  "category": "Body Support - Wearables and Soft Aids",
+  "fee": "0.00% for item price <= 1,000 | 2.00% for item price > 1,000"
+ },
+ {
+  "category": "OTC Medicine",
+  "fee": "12.00% for item price <= 500 | 15.00% for item price > 500"
+ },
+ {
+  "category": "Bean Bags & Inflatables",
+  "fee": "0.00% for item price <= 1,000 | 8.00% for item price > 1,000"
+ },
+ {
+  "category": "Rugs and Doormats",
+  "fee": "0.00% for item price <= 1,000 | 9.00% for item price > 1,000"
+ },
+ {
+  "category": "Mattresses",
+  "fee": "25.50% for item price <= 500 | 0.00% for item price > 500 and <= 1,000 | 16.00% for item price > 1,000 and <= 20,000 | 13.50 % for item price > 20,000"
+ },
+ {
+  "category": "Clocks",
+  "fee": "0.00% for item price <= 1,000 | 10.00% for item price > 1,000"
+ },
+ {
+  "category": "Wall Art",
+  "fee": "0.00% for item price <= 1,000 | 13.50% for item price > 1,000"
+ },
+ {
+  "category": "Home Fragrance and Candles",
+  "fee": "0.00% for item price <= 1,000 | 12.50% for item price > 1,000"
+ },
+ {
+  "category": "Bedsheets, Blankets and covers",
+  "fee": "0.00% for item price <= 1,000 | 8.50% for item price > 1,000"
+ },
+ {
+  "category": "Home furnishing (Excluding curtain and curtain accessories)",
+  "fee": "0.00% for item price <= 1,000 | 11.00% for item price > 1,000"
+ },
+ {
+  "category": "Home improvement - Accessories",
+  "fee": "0.00% for item price <= 1,000 | 13.50% for item price > 1,000"
+ },
+ {
+  "category": "Office Furniture - Study Table, Office and Gaming Chairs",
+  "fee": "16.50% for item price <= 500 | 00.00% for item price > 500 and <= 1,000 | 15.50% for item price > 1,000 and <= 15,000 | 11.00% for item price > 15,000"
+ },
+ {
+  "category": "Tiles & Flooring Accessories",
+  "fee": "0.0 % for item price <= 300 | 8.0 % for item price >300"
+ },
+ {
+  "category": "Wires (Electrical Wires/cables for house wiring, adhoc usage)",
+  "fee": "0.00% for item price <= 300 | 10.00% for item price > 300"
+ },
+ {
+  "category": "Home Storage (Excluding Kitchen Containers, Boxes, Bottles, and Kitchen Storage)",
+  "fee": "0.00% for item price <= 1,000 | 15.00% for item price > 1,000"
+ },
+ {
+  "category": "Home Improvement - | Wallpapers and Wallpaper Accessories",
+  "fee": "0.00% for item price <= 1,000 | 6.50% for item price > 1,000"
+ },
+ {
+  "category": "Home Decor Products",
+  "fee": "0.00% for item price <= 1,000 | 17.00% for item price > 1,000"
+ },
+ {
+  "category": "Wall Paints and Tools",
+  "fee": "0.00% for item price <= 1,000 | 6.00% for item price > 1,000"
+ },
+ {
+  "category": "Home - Waste & Recycling",
+  "fee": "0.00% for item price <= 1,000 | 8.00% for item price > 1,000"
+ },
+ {
+  "category": "Craft materials",
+  "fee": "0.00% for item price <= 1,000 | 5.00% for item price > 1,000"
+ },
+ {
+  "category": "Water Purifier and Accessories",
+  "fee": "0.00% for item price <= 1,000 | 6.50% for item price > 1,000 and <= 5,000 | 7.50% for item price > 5,000"
+ },
+ {
+  "category": "Water Heaters and Accessories",
+  "fee": "0.00% for item price <= 1,000 | 8.00% for item price > 1,000 and <= 5,000 | 9.00% for item price > 5,000"
+ },
+ {
+  "category": "Home improvement - Kitchen & Bath (Fittings, accessories), Cleaning Supplies, Electricals, Hardware, Building Materials",
+  "fee": "0.00% for item price <= 1,000 | 12.00% for item price > 1,000"
+ },
+ {
+  "category": "Sanitaryware - Toilets, Bathtubs, Basins/Sinks, Bath Mirrors & Vanities, and Shower Enclosures/partitions",
+  "fee": "0.00% for item price <= 1,000 | 8.00% for item price > 1,000 and <= 10,000 | 6.00% for item price > 10,000"
+ },
+ {
+  "category": "Home Safety and Security Systems",
+  "fee": "0.00% for item price <= 1,000 | 6.00% for item price > 1,000"
+ },
+ {
+  "category": "Inverter and Batteries",
+  "fee": "0.00% for item price <= 1,000 | 4.50% for item price > 1,000"
+ },
+ {
+  "category": "Cleaning and Home Appliances",
+  "fee": "0.00% for item price <= 1,000 | 7.50% for item price > 1,000and <= 5,000 | 8.50% for item price > 5,000"
+ },
+ {
+  "category": "Ladders",
+  "fee": "0.00% for item price <= 1,000 | 8.00% for item price > 1,000"
+ },
+ {
+  "category": "Indoor Lighting – Wall, ceiling fixture lights, lamp bases, lamp shades and Smart Lighting",
+  "fee": "0.00% for item price <= 1,000 | 12.50% for item price > 1,000"
+ },
+ {
+  "category": "Doors and Windows (wooden, metal, PVC/UPVC Doors & Windows)",
+  "fee": "0.00% for item price <= 1,000 | 6.00% for item price > 1,000 and <= 5,000 | 2.00% for item price > 5,000"
+ },
+ {
+  "category": "LED Bulbs and Battens",
+  "fee": "0.00% for item price <= 1,000 | 14.00% for item price > 1,000"
+ },
+ {
+  "category": "Cushion Covers",
+  "fee": "0.00% for item price <= 1,000 | 10.00% for item price > 1,000"
+ },
+ {
+  "category": "Curtains and Curtain Accessories",
+  "fee": "0.00% for item price <= 1,000 | 16.50% for item price > 1,000"
+ },
+ {
+  "category": "Slipcovers and Kitchen Linens",
+  "fee": "0.00% for item price <= 1,000 | 15.50% for item price > 1,000"
+ },
+ {
+  "category": "Safes and Lockers with Locking Mechanism",
+  "fee": "0.00% for item price <= 1,000 | 12.00% for item price > 1,000"
+ },
+ {
+  "category": "Lawn & Garden - Solar Panels",
+  "fee": "0.00% for item price <= 1,000 | 2.00% for item price > 1,000"
+ },
+ {
+  "category": "Lawn & Garden - Leaf blower and Water pump",
+  "fee": "0.00% for item price <= 1,000 | 6.50% for item price > 1,000"
+ },
+ {
+  "category": "Lawn & Garden- Chemical Pest Control, Bird control, Plant protection, Foggers",
+  "fee": "0.00% for item price <= 1,000 | 9.00% for item price > 1,000"
+ },
+ {
+  "category": "Lawn & Garden - Solar Devices (Panels, Inverters, Charge controller, Battery, Lights, Solar gadgets)",
+  "fee": "0.00% for item price <= 1,000 | 8.00% for item price > 1,000"
+ },
+ {
+  "category": "Lawn and Garden - Plants, Seeds, Bulbs and Gardening Tools",
+  "fee": "0.00% for item price <= 1,000 | 11.00% for item price > 1,000"
+ },
+ {
+  "category": "Lawn & Garden - Outdoor equipments (Saws, Lawn Mowers, Cultivator, Tiller, String Trimmers, Water Pumps, Generators, Barbeque Grills, Greenhouses)",
+  "fee": "0.00% for item price <= 1,000 | 6.50% for item price > 1,000"
+ },
+ {
+  "category": "Kitchen - Glassware & Ceramicware",
+  "fee": "0.00% for item price <= 1,000 | 12.50% for item price > 1,000"
+ },
+ {
+  "category": "Kitchen - Gas Stoves & Pressure Cookers",
+  "fee": "0.00% for item price <= 1,000 | 6.00% for item price > 1,000 and <= 1,500 | 10.00% for item price > 1,500"
+ },
+ {
+  "category": "Containers, Boxes, Bottles, and Kitchen Storage",
+  "fee": "0.00% for item price <= 1,000 | 12.00% for item price > 1,000"
+ },
+ {
+  "category": "Cookware, Tableware & Dinnerware",
+  "fee": "0.00% for item price <= 1,000 | 12.50% for item price > 1,000"
+ },
+ {
+  "category": "Kitchen Tools & Supplies - Choppers, Knives, Bakeware & Accessories",
+  "fee": "0.00% for item price <= 1,000 | 12.50% for item price > 1,000"
+ },
+ {
+  "category": "Major Appliances Accessories",
+  "fee": "0.00% for item price <= 1,000 | 16.00% for item price > 1,000"
+ },
+ {
+  "category": "Small Appliances",
+  "fee": "0.00% for item price <= 1,000 | 4.50% for item price > 1,000 and <= 5,000 | 8.00% for item price > 5,000"
+ },
+ {
+  "category": "Fans and Robotic Vacuums",
+  "fee": "0.00% for item price <= 1,000 | 4.50% for item price > 1,000 and <= 5,000 | 8.00% for item price > 5,000 | (Until June 9,2026) | 0.00% for item price <= 1,000 | 7.00% for item price > 1,000 and <= 5,000 | 8.00% for item price > 5,000 | (From June 10,2026)"
+ },
+ {
+  "category": "Bicycles",
+  "fee": "0.00% for item price <= 1,000 | 6.00% for item price > 1,000"
+ },
+ {
+  "category": "Gym Equipments",
+  "fee": "0.00% for item price <= 1,000 | 12.00% for item price > 1,000 and <= 35,000 | 10.00% for item price > 35,000"
+ },
+ {
+  "category": "Sports - Footwear",
+  "fee": "0.00% for item price <= 1,000 | 16.00% for item price > 1,000"
+ },
+ {
+  "category": "Sports - Cricket and Badminton Equipments, Tennis, Table Tennis, Squash, Football, Volleyball, Basketball, Throwball and Swimming",
+  "fee": "0.00% for item price <= 1,000 | 8.50% for item price > 1,000"
+ },
+ {
+  "category": "Sports - Cricket Bats, Badminton Racquets, Tennis Racquets, Pickleball Paddles, Squash Racquets and TT Tables",
+  "fee": "0.00% for item price <= 1,000 | 7.50% for item price > 1,000"
+ },
+ {
+  "category": "Sports Collectibles",
+  "fee": "0.00% for item price <= 300 | 17.00% for item price > 300"
+ },
+ {
+  "category": "Coin Collectibles",
+  "fee": "0.00% for item price <= 300 | 15.00% for item price > 300"
+ },
+ {
+  "category": "Furniture - Other products",
+  "fee": "0.00% for item price <= 1,000 | 15.50% for item price > 1,000 and <= 15,000 | 11.00% for item price > 15,000"
+ },
+ {
+  "category": "Toys - Other Products",
+  "fee": "0.00% for item price <= 1,000 | 11.50% for item price > 1,000"
+ },
+ {
+  "category": "Grocery and Gourmet - Other products",
+  "fee": "0.00% for item price <= 1,000 | 9.00% for item price > 1,000"
+ },
+ {
+  "category": "Office - Other products",
+  "fee": "0.00% for item price <= 1,000 | 11.50% for item price > 1,000"
+ },
+ {
+  "category": "Beauty - Other Products",
+  "fee": "0.00% for item price <= 500 | 9.00% for item price > 500"
+ },
+ {
+  "category": "Health and Household - Other Products",
+  "fee": "0.00% for item price <= 300 | 11.50% for item price > 300"
+ },
+ {
+  "category": "Business & Industrial Supplies - Other Products",
+  "fee": "0.00% for item price <= 1,000 | 8.00% for item price > 1,000 and <= 15,000 | 5.00% for item price > 15,000"
+ },
+ {
+  "category": "Kitchen - Other Products",
+  "fee": "0.00% for item price <= 1,000 | 12.50% for item price > 1,000"
+ },
+ {
+  "category": "Video Games - Other products",
+  "fee": "0.00% for item price <= 300 | 5.00% for item price > 300 and <= 1,000 | 12.00% for item price > 1,000"
+ },
+ {
+  "category": "Lawn and Garden - Other products",
+  "fee": "0.00% for item price <= 1,000 | 10.00% for item price > 1,000 and <= 15,000 | 5.00% for item price > 15,000"
+ },
+ {
+  "category": "Luggage - Other products",
+  "fee": "0.00% for item price <= 1,000 | 8.00% for item price > 1,000"
+ },
+ {
+  "category": "Baby - Other Products",
+  "fee": "0.00% for item price <= 1,000 | 7.50% for item price > 1,000"
+ },
+ {
+  "category": "Pet - Other Products",
+  "fee": "0.00% for item price <= 1,000 | 12.00% for item price > 1,000"
+ },
+ {
+  "category": "Apparel - Other Products",
+  "fee": "0.00% for item price <= 1,000 | 19.00% for item price > 1,000"
+ },
+ {
+  "category": "Home - other products",
+  "fee": "0.00% for item price <= 1,000 | 18.00% for item price > 1,000"
+ },
+ {
+  "category": "Home improvement - other products",
+  "fee": "0.00% for item price <= 1,000 | 13.50% for item price > 1,000"
+ },
+ {
+  "category": "Indoor Lighting - Others",
+  "fee": "0.00% for item price <= 1,000 | 16.00% for item price > 1,000"
+ },
+ {
+  "category": "Sports - Other products",
+  "fee": "0.00% for item price <= 1,000 | 13.00% for item price > 1,000"
+ },
+ {
+  "category": "Personal Care Appliances - Other products",
+  "fee": "0.00% for item price <= 1,000 | 7.50% for item price > 1,000"
+ },
+ {
+  "category": "Automotive - Other products",
+  "fee": "0.00% for item price <= 1,000 | 16.00% for item price > 1,000"
+ },
+ {
+  "category": "Warranty Services",
+  "fee": "10.00% for item price <= 300 | 29.00% for item price > 300 and <= 500 | 30.00% for item price > 500"
+ },
+ {
+  "category": "Breast pumps",
+  "fee": "0.00% for item price <= 1,000 | 7.50% for item price > 1,000"
+ },
+ {
+  "category": "Diaper bags",
+  "fee": "0.00% for item price <= 1,000 | 7.50% for item price > 1,000"
+ },
+ {
+  "category": "Gym Weights",
+  "fee": "0.00% for item price <= 1,000 | 5.50% for item price > 1,000"
+ },
+ {
+  "category": "Large Furniture - Sofa, Beds, Wardrobes, Recliners, Living & Dining room chairs and tables",
+  "fee": "0.00% for item price <= 1,000 | 15.50% for item price > 1,000 and <= 15,000 | 11.00% for item price > 15,000"
+ },
+ {
+  "category": "Netting Cover",
+  "fee": "0.00% for item price <= 1,000 | 5.00% for item price > 1,000"
+ },
+ {
+  "category": "Shelfs, Cabinets, Racks & Item Stands",
+  "fee": "0.00% for item price <= 1,000 | 13.00% for item price > 1,000"
+ },
+ {
+  "category": "Health and Household – Regulated Healthcare: Menstrual Cups, Contact Lenses, Diagnostic Kits, Pain Relief",
+  "fee": "0.00% for item price <= 1,000 | 2.00% for item price > 1,000"
+ }
+]
