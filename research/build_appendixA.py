@@ -28,13 +28,13 @@ def fmt(fee):
         rate, cond = pct(m.group(1)), m.group(2).strip()
         c = None
         mm = re.match(r'<=\s*([\d,]+)$', cond)
-        if mm: c = f"≤{rupee(mm.group(1))}"
+        if mm: c = f"up to {rupee(mm.group(1))}"
         if c is None:
             mm = re.match(r'>\s*([\d,]+)\s*and\s*<=\s*([\d,]+)$', cond)
             if mm: c = f"{rupee(mm.group(1))}–{mm.group(2)}"
         if c is None:
             mm = re.match(r'>\s*([\d,]+)$', cond)
-            if mm: c = f">{rupee(mm.group(1))}"
+            if mm: c = f"above {rupee(mm.group(1))}"
         if c is None:
             c = cond
         out.append(f"{rate} {c}")

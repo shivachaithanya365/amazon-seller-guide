@@ -82,16 +82,16 @@ out.append('<div class="box warn">\n<p class="lbl">Why both columns exist</p>\n'
            '<p>It is tempting to assume the \u20b9301\u2013500 list is just the \u20b90\u2013300 list at a '
            'different price. <strong>It is not.</strong> Amazon\u2019s own example proves it: '
            '<em>Apparel - Shorts</em> is in Group A (\u20b920) below \u20b9300, but at \u20b9450 it is billed '
-           'under Group D at <strong>\u20b914</strong> \u2014 not the \u20b918 a Group A \u2192 C pairing '
+           'under Group D at <strong>\u20b914</strong> \u2014 not the \u20b918 a Group A to C pairing '
            'would predict.</p>\n'
            f'<p style="margin-bottom:0"><strong>{len(switchers)} categories</strong> behave this way. '
-           'They are marked <strong>\u25b2</strong> in the table below, and listed with the size of the '
+           'They are marked <strong>*</strong> in the table below, and listed with the size of the '
            'error at the end of this appendix.</p>\n</div>')
 
 # --- THE LOOKUP TABLE -------------------------------------------------------
 out.append('<h2>Closing fee by category, both price bands '
            '<span class="tag v">VERIFIED</span></h2>')
-out.append('<p><small><strong>\u25b2</strong> marks a category whose \u20b9301\u2013500 fee does not follow '
+out.append('<p><small><strong>*</strong> marks a category whose \u20b9301\u2013500 fee does not follow '
            'the obvious pairing. A dash means Amazon does not list that category in that band \u2014 often '
            'because it spells the name differently there, so check the other spelling before assuming '
            'the fee does not apply.</small></p>')
@@ -107,7 +107,7 @@ for name in names:
                if hi_g else '<small>\u2014</small>')
     flag = ''
     if lo_g and hi_g and hi_g != PAIR[lo_g]:
-        flag = '<strong>\u25b2</strong>'
+        flag = '<strong>*</strong>'
         hi_cell = f'<strong>\u20b9{hi_r}</strong> <small>({hi_g.replace("Group ", "")})</small>'
     out.append(f'<tr><td>{esc(name)}</td><td class="num">{lo_cell}</td>'
                f'<td class="num">{hi_cell}</td><td class="num">{flag}</td></tr>')
@@ -130,7 +130,7 @@ if g.get('Above 1000 (Rs 72)'):
 
 # --- the switch table -------------------------------------------------------
 if switchers:
-    out.append('<h2>The \u25b2 categories, and what assuming would cost you '
+    out.append('<h2>The * categories, and what assuming would cost you '
                '<span class="tag v">VERIFIED</span></h2>')
     out.append('<table class="tight">\n<thead><tr><th>Fee category</th>'
                '<th style="width:24mm">\u20b90\u2013300</th><th style="width:24mm">\u20b9301\u2013500</th>'
@@ -157,7 +157,7 @@ out.append('<div class="box info">\n<p class="lbl">What this means for your \u20
            '<p style="margin-bottom:0">Two ways that changes. Billed as \u201cWires (Electrical\u2026)\u201d '
            'it is <strong>Group ## \u2014 \u20b922</strong> plus a 10% referral fee above \u20b9300. Billed as '
            '<strong>Home Improvement Accessories</strong> it is <strong>Group D \u2014 \u20b914</strong>, one '
-           'of the \u25b2 rows. None of the four \u20b972 categories apply to you, so above \u20b91,000 you '
+           'of the * rows. None of the four \u20b972 categories apply to you, so above \u20b91,000 you '
            'would pay \u20b952.</p>\n</div>')
 
 pathlib.Path("appendixB_body.html").write_text('\n'.join(out), encoding="utf-8")
@@ -167,5 +167,5 @@ print(f"  underlying assignments      {total}")
 print(f"  in both price bands         {sum(1 for n in names if band_of(n, LO)[0] and band_of(n, HI)[0])}")
 print(f"  \u20b90\u2013300 only               {sum(1 for n in names if band_of(n, LO)[0] and not band_of(n, HI)[0])}")
 print(f"  \u20b9301\u2013500 only             {sum(1 for n in names if not band_of(n, LO)[0] and band_of(n, HI)[0])}")
-print(f"  flagged \u25b2 (broken pairing)  {len(switchers)}")
+print(f"  flagged * (broken pairing)  {len(switchers)}")
 print(f"  \u20b972 above 1,000            {n72}")
