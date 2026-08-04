@@ -141,10 +141,50 @@ for name, t in parts.items():
     for m in re.finditer(r'<span class="tag c">[^<]*</span>(.{0,190})', t, re.S):
         n += 1
         print(f"  [{n:2}] {name}: {strip(m.group(1))[:150]}")
+# --- 4. glyph coverage -----------------------------------------------------
+# WeasyPrint silently DROPS characters the font cannot render. No warning, no
+# placeholder box - the character just vanishes from the PDF. This went unnoticed
+# for a long time and cost 220 "<=" signs in Appendix A, where "0% <= Rs 1,000"
+# was rendering as "0% Rs 1,000", plus 127 navigation arrows. Never rely on a
+# character being present just because it is in the HTML.
+print()
+print("=" * 78)
+print("4. GLYPH COVERAGE - do all characters survive into the PDF?")
+print("=" * 78)
+full = (HB / "handbook_full.html").read_text(encoding="utf-8")
+vis = re.sub(r'<(script|style)[^>]*>.*?</\1>', ' ', full, flags=re.S | re.I)
+vis = html.unescape(re.sub(r'<[^>]+>', ' ', vis))
+used = sorted({c for c in vis if ord(c) > 127})
+print(f"  distinct non-ASCII characters used: {len(used)}")
+
+try:
+    from weasyprint import HTML as _H
+    from pypdf import PdfReader as _R
+    import tempfile, os
+    body = "".join(f"<p>X {c} X</p>" for c in used)
+    doc = ('<html><head><meta charset="utf-8"><style>@page{size:A4;margin:15mm}'
+           'body{font-family:"Noto Sans","DejaVu Sans";font-size:12pt}</style>'
+           f'</head><body>{body}</body></html>')
+    with tempfile.TemporaryDirectory() as d:
+        hp, pp = os.path.join(d, "g.html"), os.path.join(d, "g.pdf")
+        pathlib.Path(hp).write_text(doc, encoding="utf-8")
+        _H(filename=hp).write_pdf(pp)
+        rendered = "".join((pg.extract_text() or "") for pg in _R(pp).pages)
+    dropped = [c for c in used if c not in rendered]
+    if dropped:
+        print(f"  DROPPED BY THE FONT: {len(dropped)}")
+        for c in dropped:
+            print(f"    U+{ord(c):04X} {c!r} - used {vis.count(c)} times and will NOT appear in the PDF")
+        problems.append(f"{len(dropped)} glyph(s) dropped by the font")
+    else:
+        print("  OK - every character used in the book renders in the PDF")
+except ImportError:
+    print("  SKIPPED - weasyprint or pypdf unavailable, cannot verify glyph coverage")
+
 print()
 print("=" * 78)
 if problems:
-    print(f"AUDIT FAILED - {len(problems)} figure(s) disagree with source:")
+    print(f"AUDIT FAILED - {len(problems)} problem(s):")
     for p in problems:
         print("  -", p)
     sys.exit(1)

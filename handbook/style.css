@@ -39,6 +39,10 @@ tr { page-break-inside: avoid; }
 thead { display: table-header-group; }
 table.tight { font-size: 8pt; }
 table.tight td, table.tight th { padding: 1mm 1.5mm; }
+/* Long tables span pages. Repeat the header row on each page, and never split a
+   single row across a page break - both matter for the Appendix B lookup table. */
+thead { display: table-header-group; }
+tr { page-break-inside: avoid; }
 td.num { text-align: right; white-space: nowrap; }
 
 /* provenance badges */

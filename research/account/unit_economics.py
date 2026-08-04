@@ -69,7 +69,12 @@ def economics(gst_rate, supplier, packaging, shipment_units):
     cogs = supplier + packaging + inbound_unit
     # GST on fees is reclaimed, so it is not subtracted here
     contribution = net_revenue - AMAZON_FEES - cogs - storage_unit
-    # a refund loses the sale but you still paid weight handling + pick & pack
+    # A refund loses the sale but you still paid weight handling + pick & pack.
+    # VALIDATED against the July returns report: 5 of 6 returns came back SELLABLE,
+    # so Amazon restocks the unit and you do NOT lose the cost of goods - only the
+    # fulfilment you already paid. The 6th was CUSTOMER_DAMAGED and Amazon credited
+    # an 83.25 inventory reimbursement against the 82.60 refund fee, so it was
+    # roughly neutral. Modelling this as fees-only is therefore correct.
     refund_drag = REFUND_RATE * (85.00 + 17.00)
     contribution_after_refunds = contribution - refund_drag
     ad_unit = ADS_MONTH / UNITS_NET_MONTH
