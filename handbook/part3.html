@@ -359,8 +359,30 @@ claimable back as input tax credit. See 5.3. It affects cash flow, not profit.</
 <div class="box info">
 <p class="lbl">A quick example of how GST on fees works</p>
 <p>Say your fees on one sale are ₹18 closing + ₹40 weight handling + ₹17 pick &amp; pack = ₹75.
-GST at 18% on ₹75 is <strong>₹13.50</strong>. So the true cost of those fees is
-<strong>₹88.50</strong>, not ₹75. Forgetting the GST understates your fees by nearly a fifth.</p>
+GST at 18% on ₹75 is <strong>₹13.50</strong>. Amazon deducts <strong>₹88.50</strong> from your
+settlement, not ₹75 — so for cash-flow purposes, budget the full ₹88.50.</p>
+</div>
+
+<div class="box warn">
+<p class="lbl">But that ₹13.50 is not a cost — and this cuts both ways</p>
+<p>An earlier edition of this book called ₹88.50 &ldquo;the true cost of those fees&rdquo;. For a
+GST-registered seller that is wrong, and the same section already says the right thing about TCS.
+<strong>The GST Amazon charges on its fees is input tax credit.</strong> You offset it against your own
+GST liability, exactly like the TCS. It hits your cash flow, not your profit. Counting it as a cost
+overstates your costs by about <strong>₹21.60 a unit</strong> at your fee level.</p>
+<p><strong>Now the error in the other direction, which is larger.</strong> This section says GST
+&ldquo;is not charged on your sale price&rdquo;. True in the sense that Amazon does not add 18% on top
+of your ₹333 — the customer pays ₹333, full stop. But <strong>your ₹333 is GST-inclusive, and you must
+remit that GST out of it.</strong> On an 18% product, ₹333 breaks into ₹282.20 of revenue and
+<strong>₹50.80 of output GST that is not yours to keep</strong>. Your real revenue per unit is ₹282.20.</p>
+<p><strong>The two do not cancel.</strong> Reclaiming ₹21.60 while remitting ₹50.80 leaves you about
+<strong>₹29 a unit worse off</strong> than a sheet that ignores both — before any input credit on the
+wire itself. Every margin figure elsewhere in this book uses ₹333 as revenue, so read them as
+<em>before</em> this adjustment.</p>
+<p style="margin-bottom:0"><span class="tag n">ACTION NEEDED</span> Find the <strong>GST rate and HSN
+code on your supplier invoice</strong> and confirm the rate on your own sales with your CA. Between 12%
+and 18% is worth about ₹15 per unit — too much to guess at. Then run
+<code>research/account/unit_economics.py</code>, which does this arithmetic properly.</p>
 </div>
 
 
