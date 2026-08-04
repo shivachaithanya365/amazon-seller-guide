@@ -321,16 +321,50 @@ figure. <strong>The real position is far worse than that estimate.</strong></p>
 <h2>3.1 What this does to each sale</h2>
 <p>Your product sells at ₹333. Here is where that money actually goes — every line taken from your own
 account, not estimated:</p>
+<div class="box good">
+<p class="lbl">First, something nobody had noticed: Amazon is barely charging you any fees</p>
+<p><span class="tag v">VERIFIED</span> Across <strong>42 units sold in July, Amazon charged a total of
+₹145.02 in fees</strong> — about <strong>₹3.45 a unit</strong>. At the Fee Preview rate of ₹120 a unit
+it should have been ₹5,040. <strong>39 of your 41 July order lines show ₹0 Amazon fees.</strong></p>
+<p>Two other places confirm it. Your Revenue Calculator shows <strong>&ldquo;Fee Discounts
+₹89.00&rdquo;</strong> cancelling the entire fee, which is why it reports a nonsensical 99.99% margin.
+And your dashboard is offering <strong>New Seller Incentive benefits worth ₹41,000</strong>.</p>
+<p style="margin-bottom:0"><strong>So the fee tables in Chapter 8 describe what you <em>will</em> pay,
+not what you are paying today.</strong> Both numbers matter, for different reasons — see the cliff
+warning below.</p>
+</div>
+
 <div class="formula">  ₹333.00   selling price
-&minus; ₹141.60   Amazon fees including GST   <span style="font-weight:normal">(Fee Preview: ₹120.00 + 18%)</span>
-&minus; ₹432.06   advertising                 <span style="font-weight:normal">(₹15,554 ÷ 36 net units)</span>
-&minus;   ₹0.64   storage                     <span style="font-weight:normal">(₹23.02 ÷ 36)</span>
+&minus;   ₹3.45   Amazon fees, as actually charged  <span style="font-weight:normal">(₹145.02 ÷ 42 units)</span>
+&minus; ₹432.06   advertising                       <span style="font-weight:normal">(₹15,554 ÷ 36 net units)</span>
+&minus;   ₹0.64   storage                           <span style="font-weight:normal">(₹23.02 ÷ 36)</span>
   ─────────
-&minus;₹241.30   <strong>LOSS per unit — before you have paid for the wire at all</strong></div>
-<p>The earlier edition of this page put that loss at <strong>₹39.94</strong>. The real figure is
-<strong>about six times larger</strong>. Two things caused the gap: July ad spend was ₹15,554 rather
-than the ₹7,963 a 7-day projection implied, and Amazon's weight handling on this SKU is ₹85, not the
-₹65 assumed (see below).</p>
+&minus;₹103.15   <strong>LOSS per unit — before you have paid for the wire at all</strong></div>
+<p>Across the whole month: net revenue ₹11,988, less ₹145.02 of fees, less ₹15,554 of advertising, less
+₹23.02 of storage, plus an ₹83.25 FBA reimbursement credit — <strong>a loss of ₹3,650.79 in July
+before the cost of the wire</strong>, or ₹101.41 a unit. That is why your balance reads
+<strong>&minus;₹6,320</strong>.</p>
+<p>The earlier edition of this page put the loss at <strong>₹39.94</strong> a unit, built from a 7-day
+ad figure projected across a month. It was wrong in two directions at once: it understated advertising
+badly (₹7,963 projected against ₹15,554 actual) while charging you fees you are not currently paying.
+<strong>Advertising is the entire loss. There is no other problem here.</strong></p>
+
+<div class="box warn">
+<p class="lbl">The cliff: what happens when the fee waiver ends</p>
+<p>Fee waivers are temporary, and yours is doing a lot of quiet work. Contribution per unit, at 18% GST
+and a ₹100 supplier cost, before any advertising:</p>
+<table class="fixed">
+<thead><tr><th style="width:56mm">Situation</th><th style="width:36mm">Contribution per unit</th><th style="width:40mm">Break-even ACOS</th></tr></thead>
+<tbody>
+<tr><td><strong>Today</strong> — fees waived</td><td><strong>₹147.22</strong></td><td>44.2%</td></tr>
+<tr><td><strong>After the waiver</strong> — ₹120 of fees</td><td><strong>₹30.67</strong></td><td><strong>9.2%</strong></td></tr>
+</tbody></table>
+<p style="margin-bottom:0"><strong>Your headroom drops by about ₹117 a unit the day that waiver
+expires</strong>, and your advertising ceiling falls from roughly 44% to about 9%. Find out the expiry
+date — Seller Central → the New Seller Incentive tile, or Seller Support — and plan the price and the ad
+budget around it now, not after it lands. A campaign that merely looks expensive today becomes fatal
+afterwards.</p>
+</div>
 <p>Add the cost of the rope, the packaging and the ₹1,172.92 inbound freight, and the real loss is
 larger still. <strong>Every extra unit you sell at this ad spend deepens the hole.</strong> This is not
 a product problem or a demand problem — 42 units in a month is genuine demand. It is entirely an ad
@@ -1267,10 +1301,17 @@ remit that GST out of it.</strong> On an 18% product, ₹333 breaks into ₹282.
 <strong>₹29 a unit worse off</strong> than a sheet that ignores both — before any input credit on the
 wire itself. Every margin figure elsewhere in this book uses ₹333 as revenue, so read them as
 <em>before</em> this adjustment.</p>
-<p style="margin-bottom:0"><span class="tag n">ACTION NEEDED</span> Find the <strong>GST rate and HSN
-code on your supplier invoice</strong> and confirm the rate on your own sales with your CA. Between 12%
-and 18% is worth about ₹15 per unit — too much to guess at. Then run
-<code>research/account/unit_economics.py</code>, which does this arithmetic properly.</p>
+<p><span class="tag v">VERIFIED</span> <strong>Your rate is 18%.</strong> Your listing's External
+Product Information field carries HSN code <strong>72179099</strong> — heading 7217, wire of iron or
+non-alloy steel, which attracts <strong>18% GST</strong>. So your ₹333 is ₹282.20 of revenue plus
+<strong>₹50.80 of output GST</strong>. <code>research/account/unit_economics.py</code> now uses 18%.</p>
+<p style="margin-bottom:0"><span class="tag n">ACTION NEEDED</span> <strong>Your Product Tax Code field
+is empty.</strong> On the listing's Offer tab, Product Tax Code shows only the placeholder
+&ldquo;Example: A_GEN_NOTAX&rdquo; — nothing is set. The PTC is what tells Amazon which GST rate to
+apply when it collects tax on your behalf. With it blank you cannot be sure the right rate is being
+collected, and any mismatch between what Amazon collects and what you declare in GSTR-1 becomes your
+problem at filing time. <strong>Set the PTC to the code matching 18%</strong> (normally
+<code>A_GEN_TAX</code>) and have your CA confirm it against HSN 72179099 before the next return.</p>
 </div>
 
 
@@ -1282,6 +1323,25 @@ because of it. Almost no guide covers this.</p>
 Premium</strong>. You are <strong>enrolled automatically</strong>; there is nothing to sign up for.
 Every new seller starts at <strong>Standard</strong>.</p>
 <p class="src">Source: <a href="https://sell.amazon.in/grow-your-business/step">sell.amazon.in/grow-your-business/step</a>, read 4 August 2026.</p>
+
+<div class="box good">
+<p class="lbl">Confirmed from your own STEP dashboard</p>
+<p><span class="tag v">VERIFIED</span> Your dashboard reads <strong>&ldquo;You are in Standard
+level&rdquo;</strong>, based on performance from 1 April to 30 June 2026 and applicable until
+<strong>4 October 2026</strong>. Next evaluation: <strong>5 October 2026</strong>. Every weight-handling
+figure in this book therefore applies to you as written.</p>
+<p>A neat cross-check that the rate card and the STEP page agree: your dashboard says Standard gets
+<strong>₹4 off weight handling</strong> and Advanced gets <strong>₹6 off</strong>. The rate card's
+first-500 g National rates are Basic ₹69, Standard ₹65, Advanced ₹63 — differences of exactly ₹4 and
+₹6. Two independent Amazon sources, same numbers.</p>
+<p style="margin-bottom:0"><strong>What is actually blocking your promotion to Advanced.</strong> Your
+quality metrics are already perfect — Service Quality Score 100/100, cancellation, late dispatch and
+return rate all 0.00%, all marked &ldquo;Reached&rdquo;. Two eligibility gates are not met:
+<strong>Minimum Active Offers — you have 1, the target is 5</strong>, and Local In-Stock is 5.71%
+against a 20% target. So Advanced is not blocked by anything you are doing badly; it is blocked by
+having <strong>one product</strong>. Four more live listings would unlock ₹6 off weight handling and
+₹3,540 of Service Provider Network credits.</p>
+</div>
 
 <h4>What each level gets you</h4>
 <table class="fixed">

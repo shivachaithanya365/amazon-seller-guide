@@ -379,10 +379,17 @@ remit that GST out of it.</strong> On an 18% product, ₹333 breaks into ₹282.
 <strong>₹29 a unit worse off</strong> than a sheet that ignores both — before any input credit on the
 wire itself. Every margin figure elsewhere in this book uses ₹333 as revenue, so read them as
 <em>before</em> this adjustment.</p>
-<p style="margin-bottom:0"><span class="tag n">ACTION NEEDED</span> Find the <strong>GST rate and HSN
-code on your supplier invoice</strong> and confirm the rate on your own sales with your CA. Between 12%
-and 18% is worth about ₹15 per unit — too much to guess at. Then run
-<code>research/account/unit_economics.py</code>, which does this arithmetic properly.</p>
+<p><span class="tag v">VERIFIED</span> <strong>Your rate is 18%.</strong> Your listing's External
+Product Information field carries HSN code <strong>72179099</strong> — heading 7217, wire of iron or
+non-alloy steel, which attracts <strong>18% GST</strong>. So your ₹333 is ₹282.20 of revenue plus
+<strong>₹50.80 of output GST</strong>. <code>research/account/unit_economics.py</code> now uses 18%.</p>
+<p style="margin-bottom:0"><span class="tag n">ACTION NEEDED</span> <strong>Your Product Tax Code field
+is empty.</strong> On the listing's Offer tab, Product Tax Code shows only the placeholder
+&ldquo;Example: A_GEN_NOTAX&rdquo; — nothing is set. The PTC is what tells Amazon which GST rate to
+apply when it collects tax on your behalf. With it blank you cannot be sure the right rate is being
+collected, and any mismatch between what Amazon collects and what you declare in GSTR-1 becomes your
+problem at filing time. <strong>Set the PTC to the code matching 18%</strong> (normally
+<code>A_GEN_TAX</code>) and have your CA confirm it against HSN 72179099 before the next return.</p>
 </div>
 
 
@@ -394,6 +401,25 @@ because of it. Almost no guide covers this.</p>
 Premium</strong>. You are <strong>enrolled automatically</strong>; there is nothing to sign up for.
 Every new seller starts at <strong>Standard</strong>.</p>
 <p class="src">Source: <a href="https://sell.amazon.in/grow-your-business/step">sell.amazon.in/grow-your-business/step</a>, read 4 August 2026.</p>
+
+<div class="box good">
+<p class="lbl">Confirmed from your own STEP dashboard</p>
+<p><span class="tag v">VERIFIED</span> Your dashboard reads <strong>&ldquo;You are in Standard
+level&rdquo;</strong>, based on performance from 1 April to 30 June 2026 and applicable until
+<strong>4 October 2026</strong>. Next evaluation: <strong>5 October 2026</strong>. Every weight-handling
+figure in this book therefore applies to you as written.</p>
+<p>A neat cross-check that the rate card and the STEP page agree: your dashboard says Standard gets
+<strong>₹4 off weight handling</strong> and Advanced gets <strong>₹6 off</strong>. The rate card's
+first-500 g National rates are Basic ₹69, Standard ₹65, Advanced ₹63 — differences of exactly ₹4 and
+₹6. Two independent Amazon sources, same numbers.</p>
+<p style="margin-bottom:0"><strong>What is actually blocking your promotion to Advanced.</strong> Your
+quality metrics are already perfect — Service Quality Score 100/100, cancellation, late dispatch and
+return rate all 0.00%, all marked &ldquo;Reached&rdquo;. Two eligibility gates are not met:
+<strong>Minimum Active Offers — you have 1, the target is 5</strong>, and Local In-Stock is 5.71%
+against a 20% target. So Advanced is not blocked by anything you are doing badly; it is blocked by
+having <strong>one product</strong>. Four more live listings would unlock ₹6 off weight handling and
+₹3,540 of Service Provider Network credits.</p>
+</div>
 
 <h4>What each level gets you</h4>
 <table class="fixed">
