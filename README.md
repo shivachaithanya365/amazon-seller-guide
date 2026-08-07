@@ -10,7 +10,7 @@ on **4 August 2026**. Amazon revises these figures without notice — re-verify 
 
 | Path | What it holds |
 | --- | --- |
-| `handbook/` | The deliverable: 7 hand-written HTML chapters, print stylesheet, and `build.py` which assembles them into the PDF |
+| `handbook/` | The deliverable: 8 hand-written HTML chapters (part1–part8), print stylesheet, and `build.py` which assembles them into the PDF |
 | `research/` | The fee-data pipeline: saved Amazon pages, extraction scripts, and the JSON they produce |
 | `research/ratecards/` | Amazon's own rate-card screenshots, cited as sources in the handbook |
 | `.kiro/steering/` | Project context loaded automatically by Kiro |
@@ -24,8 +24,12 @@ cd handbook
 python3 build.py
 ```
 
-This concatenates `part1.html` … `part7.html` into `handbook_full.html`, asserts the
+This concatenates `part1.html` … `part8.html` into `handbook_full.html`, asserts the
 result has exactly one `<html>` element, then renders `Amazon_India_Seller_Handbook_2026.pdf`.
+
+**Part 8** (added August 2026) covers operational chapters 26–32: Seller Central Dashboard,
+Revenue Checking, Fee Reconciliation, Reports, Advertising Management, Account Rules &
+Compliance, and Growth Strategies.
 
 ## Regenerating the fee data
 
@@ -86,9 +90,20 @@ republishing.
   browser session already signed in to Amazon.in, as *Webpage, HTML Only*.
   `python3 parse_product.py --selftest` confirms the extraction patterns still work
   independently of that bad input.
-- Chapter 3's advertising figures rest on a 7-day → 30-day projection divided by July's
-  unit count, and the Seller Central export behind them is not in this repo. The
-  arithmetic reconciles exactly; the assumption that spend ran flat through July does
-  not yet.
+
+## Resolved issues (August 2026)
+
+- **Chapter 3's advertising figures** — now based on **actual** July Seller Central
+  transaction export (₹15,554 total ad spend, not a 7-day projection). The loss figure
+  (₹103.15/unit) is computed from real settlement data.
+- **Try FBA Promotion terms** — confirmed by Amazon Support (case 13137163892):
+  progressive, no clawback, ends 11 Aug 2026, covers pick/pack + weight handling +
+  closing only (not referral).
+- **FBA reimbursement window** — confirmed at 60 days for inbound/warehouse claims,
+  45–105 days for customer returns (Jan 2025 Seller Central update).
+- **EPR plastic (Ch 17.5)** — Rule 4A (2024 amendment) confirmed to have *created* the
+  micro/small exemption, not undermined it.
+- **SAFE-T 30-day window** — downgraded from VERIFIED to UNCONFIRMED FOR INDIA; all
+  sources describe US seller-fulfilled orders only.
 
 See `.kiro/steering/project-context.md` for detail.

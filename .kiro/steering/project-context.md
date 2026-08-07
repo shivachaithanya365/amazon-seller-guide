@@ -13,8 +13,8 @@ before republishing, and update the capture date in the source notes.
 
 ```
 handbook/            The deliverable
-  build.py           Assembles part1-7 -> handbook_full.html -> PDF (weasyprint)
-  part1..part7.html  The chapters, hand-written
+  build.py           Assembles part1-8 -> handbook_full.html -> PDF (weasyprint)
+  part1..part8.html  The chapters, hand-written
   style.css          Print stylesheet, linked RELATIVELY by part1 + handbook_full
   handbook_full.html Generated - do not edit by hand
   Amazon_India_Seller_Handbook_2026.pdf   Generated
@@ -119,19 +119,29 @@ run has validated them.
    fresh incognito window hits the wall again. The parser's happy path is verified
    only against the synthetic sample - it has never seen a real saved page.
 
-2. **Chapter 3's ad-spend figures rest on a projection, not measurement.** The
-   Rs 1,858 last-7-days Sponsored Ads spend is stated as fact but the underlying
-   Seller Central export is not in this repo, so nothing here can verify it. The
-   Rs 248.84 per-unit ad cost mixes windows: it projects that 7-day figure to 30 days
-   (Rs 7,963) and divides by *July's* 32 units. That is only valid if spend ran flat
-   through July. The headline "Rs 39.94 loss per unit" depends entirely on it. All the
-   arithmetic reconciles exactly - the assumption, not the maths, is the weak point.
-   Commit the transaction CSVs and recompute from actual July spend.
+## Resolved issues (August 2026)
 
-3. **Chapter 9's profit box excludes advertising.** It shows Rs 95 net and ~29% margin
-   at Rs 120 COGS, while Chapter 3 says ads make the same unit a loss. Both are
-   arithmetically right; they just answer different questions. Worth an explicit
-   cross-reference so the two chapters are not read as contradicting each other.
+2. **Chapter 3's ad-spend figures** — RESOLVED. Now based on actual July Seller Central
+   transaction export (Rs 15,554 total ad spend). The loss figure (Rs 103.15/unit) is
+   computed from real settlement data, not a projection.
+
+3. **Chapter 9's profit box excludes advertising** — RESOLVED with explicit
+   cross-reference. Ch 9 = margin before ads, Ch 3 = including ads.
+
+4. **Try FBA Promotion** — RESOLVED. Amazon Support confirmed (case 13137163892):
+   progressive, no clawback, window ends 11 Aug 2026, covers pick/pack + weight
+   handling + closing only.
+
+5. **FBA reimbursement window** — RESOLVED at 60 days for inbound/warehouse, 45-105
+   days for customer returns.
+
+6. **EPR plastic (Ch 17.5)** — RESOLVED. Rule 4A created the exemption.
+
+7. **SAFE-T 30-day window** — Downgraded to UNCONFIRMED FOR INDIA. All sources are
+   US-specific.
+
+8. **Easy Ship Rs 68 example** — RESOLVED. Acknowledged as live on Amazon's page,
+   flagged as disputed, directs to Revenue Calculator.
 
 ## Conventions
 
