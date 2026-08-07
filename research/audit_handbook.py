@@ -22,7 +22,7 @@ ws = re.compile(r'\s+')
 strip = lambda s: ws.sub(' ', re.sub(r'<[^>]+>', ' ', html.unescape(s))).strip()
 
 parts = {}
-for i in range(1, 8):
+for i in range(1, 9):
     parts[f"part{i}"] = (HB / f"part{i}.html").read_text(encoding="utf-8")
 
 # --- 1. tag census ----------------------------------------------------------

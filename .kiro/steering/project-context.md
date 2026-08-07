@@ -31,6 +31,31 @@ research/            Fee-data pipeline
   ratecards/         Amazon's own rate-card screenshots (JPG)
 ```
 
+## Before you change anything: run the audit
+
+```bash
+pip install weasyprint pypdf
+cd handbook  && python3 build.py
+cd ../research && python3 audit_handbook.py     # must print AUDIT PASSED
+```
+
+`research/audit_handbook.py` is the guard rail. It re-derives every Chapter 8 and 9 fee
+figure from source and fails on mismatch, counts the confidence tags per chapter, lists
+every remaining UNCONFIRMED claim, and checks glyph coverage. Run it after any edit to
+the handbook and before any commit. It exits non-zero on failure.
+
+**`pypdf` is not optional.** Without it the glyph-coverage check silently skips, and that
+check exists because WeasyPrint drops unrenderable characters with no warning at all - no
+error, no placeholder box, the character simply is not in the PDF. In August 2026 a build
+shipped with 73 invisible `→` characters, so every navigation path in Chapters 26-32 read
+as "Reports  Payments" instead of "Reports -> Payments". The HTML was fine; only the PDF
+was broken; only this check found it.
+
+**Rule: never use Unicode arrows or comparison glyphs in the source.** Write `-&gt;`,
+`&lt;-`, `&gt;=` or plain words. The characters known to be dropped by the current font
+are `→` (U+2192), `←` (U+2190) and `≥` (U+2265). Assume any other exotic glyph is unsafe
+until the audit says otherwise.
+
 ## Critical: how to run the scripts
 
 Every script in `research/` reads its inputs with bare relative paths
