@@ -3,13 +3,29 @@
 Anything here is unresolved or account-specific. It lives in the repo rather than in a
 chat window so the next person to pick this up starts where we left off.
 
-## Seller Support case 13137163892 — Try FBA Promotion terms
+## Seller Support case 13137163892 — Try FBA Promotion terms ✅ RESOLVED
 
-- **Raised** 05 Aug 2026, 1:44 am IST · **Status** Work in progress
+- **Raised** 05 Aug 2026, 1:44 am IST · **Status** CLOSED — answered by Bhawna C.
 - **Subject** Try FBA Promotion — fee exemption end date, usage and clawback terms
 - Reference orders cited: `171-6493128-9237923` (charged ₹105.02) and
   `406-2815135-1525967` (charged ₹40.00) — the only two July orders where fees
   were charged at all.
+
+### Confirmed answers from Amazon Support (Bhawna C.)
+
+| # | Question | Answer | Source |
+| --- | --- | --- | --- |
+| 1 | Exact end date | **11 Aug 2026** — 60 days from Offering Release Date 12 Jun | Amazon Support |
+| 2 | How much of ₹10,000 used | Track at sellercentral.amazon.in/rewards/ | Amazon Support |
+| 3 | Applied as-you-go, or conditional on 100 units? | **Progressive — per order as fulfilled. NOT conditional.** | Amazon Support |
+| 4 | **Can exempted fees be clawed back?** | **NO. Already-exempted fees will never be reversed.** | Amazon Support |
+
+### Additional confirmed details:
+- Covers: pick & pack + weight handling + closing fees ONLY
+- **Referral fees NOT included** — charged as normal
+- Cap: ₹10,000 OR 100 units OR 60 days, whichever first
+- NOT tracked under STEP/Missions (expected behaviour) — use Seller Rewards page
+- The ₹4,000 clawback hold recommendation is withdrawn — no longer needed
 
 ### Why it was raised
 
@@ -24,25 +40,24 @@ The promotion is **not listed under Performance → STEP → Missions**, so it h
 visible end date and no progress bar. Amazon displays least about the promotion
 carrying the most money.
 
-### The four questions, and our working answers
+### The four questions — ALL ANSWERED
 
 | # | Question | Working answer | Confidence |
 | --- | --- | --- | --- |
-| 1 | Exact end date | **~11 Aug 2026** — Offering Release Date 12 Jun + 60 days | derived, not confirmed |
-| 2 | How much of ₹10,000 used | **~₹3,600–4,900** — 42 units × ₹89–120 expected, less ₹145.02 charged | derived |
-| 3 | Applied as-you-go, or conditional on 100 units? | **As you go** — 39 of 41 lines are already at ₹0 | strong inference |
-| 4 | **Can exempted fees be clawed back if 100 units is missed?** | **UNKNOWN** | needs Amazon |
+| 1 | Exact end date | **11 Aug 2026** — Offering Release Date 12 Jun + 60 days | **CONFIRMED by Amazon** |
+| 2 | How much of ₹10,000 used | Track at sellercentral.amazon.in/rewards/ | **CONFIRMED by Amazon** |
+| 3 | Applied as-you-go, or conditional on 100 units? | **As you go** — progressive per order | **CONFIRMED by Amazon** |
+| 4 | **Can exempted fees be clawed back if 100 units is missed?** | **NO — never reversed** | **CONFIRMED by Amazon** |
 
 Question 4 is the only one that genuinely needs Amazon. It is worth roughly ₹4,000.
 
 **The 100-unit condition will not be met.** 42 units sold against a 100 target, needing
 about 9.7/day for the remaining days against an actual rate of about 1.4/day.
 
-### Planning assumption until answered
+### Planning assumption — RESOLVED
 
-Assume fees **can** be reversed. Keep about ₹4,000 unspent. If a reversal lands and it
-affects a disbursement, that *does* meet Amazon's "Urgent Help Needed" criteria — the
-original case was deliberately not flagged urgent, since it met none of them.
+No clawback. You keep whatever was exempted. From 12 August onward, every unit costs
+~₹120 more in fees. Margin planning must use the full-fee figure from now on.
 
 ### The cliff
 
@@ -80,10 +95,11 @@ is now settled.
 
 - Reimbursed at **sourcing cost**, not the ₹333 sale price — so this is worth roughly
   ₹200–250, not ₹666.
-- **Filing window is UNSETTLED.** 2026 sources disagree between 60 days from the event
-  and 18 months. Amazon compressed the window in late 2024. Assume **60 days** and file
-  now: that expires around end-September if the clock starts at shipment close
-  (31 Jul), or mid-August if it starts at receiving.
+- **Filing window is now VERIFIED at 60 days.** Multiple Amazon Seller Central
+  announcements confirm: inbound shipment shortages must be filed no sooner than
+  15 days, no later than **60 days** from shipment reconciliation date. Customer
+  returns: 45–105 days after refund. File now — the 60-day window from 31 Jul
+  closing expires around end-September.
 - Route: Inventory → Manage FBA Shipments → open `FBA15LXV3FZL` → Reconcile. If no
   reconcile option appears, open a case quoting the shipment ID.
 - **Evidence Amazon will demand** — the burden of proof is entirely on us: packing list
