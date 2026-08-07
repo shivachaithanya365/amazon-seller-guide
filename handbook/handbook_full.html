@@ -73,6 +73,16 @@
 <li><a href="#ch24">24 · Risks Nobody Warns You About</a></li>
 <li><a href="#ch25">25 · Growth Roadmap</a></li>
 </ul>
+<div class="grp">Your dashboard and operations</div>
+<ul>
+<li><a href="#ch26">26 · Seller Central Dashboard — A Complete Walkthrough</a></li>
+<li><a href="#ch27">27 · Revenue Checking — Reading Your Numbers Correctly</a></li>
+<li><a href="#ch28">28 · Fee Checking &amp; Reconciliation</a></li>
+<li><a href="#ch29">29 · Reports — What to Pull, When, and Why</a></li>
+<li><a href="#ch30">30 · Advertising Management — The Full Playbook</a></li>
+<li><a href="#ch31">31 · Account Rules, Policies &amp; Staying Compliant</a></li>
+<li><a href="#ch32">32 · Tips, Hints &amp; Advanced Growth Strategies</a></li>
+</ul>
 <div class="grp">Reference</div>
 <ul>
 <li><a href="#apA">Appendix A · Referral Fee Table, by Category</a></li>
@@ -212,7 +222,7 @@ source, cited where they appear.</p>
 <li>TCS credit appears in <strong>GSTR-2A</strong>, not GSTR-2B.</li>
 <li>The labelling table was missing <strong>unit sale price</strong> and <strong>best-before date</strong>, both mandatory.</li>
 <li><strong>Easy Ship weight handling is a flat fee</strong> with no distance component. It was described as distance-based, and its rate table was missing entirely.</li>
-<li>A quoted Amazon example of &ldquo;800 g Easy Ship = ₹68&rdquo; matched no current rate card and has been removed rather than guessed at.</li>
+<li>A quoted Amazon example of &ldquo;800 g Easy Ship = ₹68&rdquo; appears on Amazon's fee page but does not match the Standard rate card for products above ₹300. Rather than declaring it wrong or right, the book now flags it as disputed and directs you to verify against your own Revenue Calculator.</li>
 <li><strong>SAFE-T claims are for seller-fulfilled orders, not FBA.</strong> The book told you, an FBA seller, to use the wrong system. FBA warehouse losses go through FBA reimbursement claims, which run on almost the opposite timetable.</li>
 <li>The <strong>refund administration fee</strong> is 20% of the referral fee, capped — not a vague &ldquo;most of it comes back&rdquo;. At your price point that is ₹0.</li>
 <li><strong>Case 1 in Chapter 23 did not add up:</strong> it showed ₹39 weight handling but calculated with ₹30, overstating profit by ₹11 a unit.</li>
@@ -225,9 +235,10 @@ RTO percentages in 24.1, which the book already tells you are blog-sourced rathe
 planning-grade. Every one of those still carries an UNCONFIRMED or CHECK LIVE tag. Where it does, take
 it at its word.</p>
 
-<p>One question is left genuinely open</strong> — whether EPR plastic packaging rules exempt
-micro and small brand owners. Credible sources conflict. See 17.5, and take it to a consultant rather
-than trusting either answer.</li>
+<p>One question is left genuinely open</strong> — whether <em>your specific enterprise</em> qualifies
+for the EPR plastic packaging micro/small exemption created by the 2024 PWM Amendment Rules. The
+exemption itself is confirmed (Rule 4A); whether you meet the Udyam classification threshold is the
+part only you can verify. See 17.5.</li>
 </ul>
 
 <!-- ========== CH 2 CHEAT SHEET ========== -->
@@ -282,7 +293,7 @@ That is <strong>₹87 to ₹142</strong> depending on parcel weight and how far 
 <tr><td>Food, drink, or a supplement</td><td>FSSAI licence — online sellers reportedly need a <strong>Central</strong> licence whatever their turnover</td><td>17.2</td></tr>
 <tr><td>A medical device, or makes a health claim</td><td>CDSCO licence</td><td>17.3</td></tr>
 <tr><td>Bluetooth, Wi-Fi, or any wireless</td><td>WPC approval (self-declaration route usually)</td><td>17.4</td></tr>
-<tr><td>Wrapped in plastic (poly bag, bubble wrap, shrink wrap)</td><td>EPR plastic — status unclear for micro/small</td><td>17.5</td></tr>
+<tr><td>Wrapped in plastic (poly bag, bubble wrap, shrink wrap)</td><td>EPR plastic — exemption exists for micro/small (Rule 4A, 2024), verify your Udyam classification</td><td>17.5</td></tr>
 <tr><td>Containing any battery</td><td>EPR battery registration</td><td>17.6</td></tr>
 <tr><td>Gold jewellery</td><td>Hallmarking + HUID (mandatory). Silver is voluntary.</td><td>17.7</td></tr>
 <tr><td>Clothing or textiles</td><td>Legal Metrology, plus the loose-garment labelling rule</td><td>17.8</td></tr>
@@ -298,6 +309,18 @@ First reviews (4) -&gt; Advertising (21) -&gt; Scale (25)</p>
 <h1 id="urgent">3 · Read This First — Your Advertising Is Losing Money</h1>
 <p class="lede">Everything else in this book is reference material. This page is an emergency brake.
 It is based on your own Seller Central data on 4 August 2026.</p>
+
+<div class="box info">
+<p class="lbl">Verification note — account-specific data</p>
+<p style="margin-bottom:0">Every figure in this chapter tagged <span class="tag v">VERIFIED</span>
+was extracted from an actual Seller Central transaction export and Fee Preview on 4 August 2026. I
+cannot independently re-verify these from outside your account. The ₹15,554 ad spend, order
+171-6493128, case 13137163892, and all STEP/Fee Preview readouts are <strong>only as reliable as the
+source export</strong>. The "you're losing ₹100+/unit" conclusion rests entirely on these numbers
+being correct. <span class="tag s">CHECK LIVE</span> <strong>Spot-check at least 2–3 of these figures
+directly in your Seller Central</strong> — compare the July settlement report total, the Fee Preview
+for your SKU, and the ad spend in Campaign Manager → Billing.</p>
+</div>
 
 <div class="box warn">
 <p class="lbl">The numbers — now from your actual transaction export, not a projection</p>
@@ -1284,12 +1307,19 @@ orders and cheaper for distant ones — but on Easy Ship you also pack and store
 <li>700 g book shipped Delhi -&gt; Chandigarh (Regional) via FBA -&gt; <strong>₹54</strong>. <small>Matches FBA Standard 500 g&ndash;1 kg Regional, which also confirms Standard is the level to assume.</small></li>
 </ul>
 <div class="box warn">
-<p class="lbl">One stale number removed</p>
+<p class="lbl">One disputed number — verify against your own Revenue Calculator</p>
 <p style="margin-bottom:0">An earlier edition of this book quoted an Amazon example of
-&ldquo;800 g Easy Ship = ₹68 = ₹51 + ₹17&rdquo;. Those rates match <strong>no</strong> current rate card,
-and the sentence they came from is cut off mid-line on the saved page. It has been removed rather than
-recalculated, because guessing what Amazon meant is exactly how wrong numbers spread. Under the current
-card an 800 g Easy Ship parcel falls in the 500 g&ndash;1 kg band: <strong>₹75</strong> at Standard level.</p>
+&ldquo;800 g Easy Ship = ₹68 = ₹51 + ₹17&rdquo;. Those rates <strong>do appear on Amazon's own fee
+page</strong> (possibly reflecting a specific price-band or promotion tier), but they do not match
+the Standard rate card for products above ₹300 as observed in seller accounts post-March 2026, where
+500 g&ndash;1 kg appears to be charged at <strong>₹85</strong> nationally and the first-500 g slab
+at <strong>₹65</strong> (or ₹55 for products below ₹300 after the March 2026 cut). The discrepancy
+may be because: (a) the ₹51 + ₹17 figure is from a price tier below ₹300 with a different base rate,
+(b) it reflects a now-superseded rate card that Amazon's page has not fully updated, or (c) there is a
+STEP-level or promotional discount baked in. <span class="tag s">CHECK LIVE</span> <strong>Run your
+own SKU through the Revenue Calculator at your price point to see the exact fee Amazon will actually
+charge.</strong> Do not trust either printed number blindly — the Revenue Calculator reflects what your
+account will actually pay.</p>
 </div>
 <p><span class="tag v">VERIFIED</span> Amazon also confirms: shipping fees are computed on
 <strong>volumetric or actual weight, whichever is higher</strong>, with volumetric weight =
@@ -1851,7 +1881,7 @@ not for your first or second product.</p>
 <tr><td>Hazmat?</td><td>No.</td></tr>
 <tr><td>Barcode?</td><td>Check whether the supplier's packaging already has a GS1 barcode. If not, apply for GTIN exemption (19.1).</td></tr>
 <tr><td>Labelling?</td><td><strong>Yes.</strong> Net length, manufacturer address, MRP, month/year of packing, consumer care contact.</td></tr>
-<tr><td>EPR plastic?</td><td><strong>Possibly.</strong> You use poly bag or shrink wrap. Status for micro/small brand owners is unresolved — see 17.5.</td></tr>
+<tr><td>EPR plastic?</td><td><strong>Likely exempt if micro/small.</strong> You use poly bag or shrink wrap. Exemption confirmed under Rule 4A (2024) for micro/small enterprises — verify your Udyam classification. See 17.5.</td></tr>
 </tbody></table>
 
 <h2>16.2 Worked example — an LED bulb (a tempting next product)</h2>
@@ -1900,13 +1930,16 @@ applies — plus possibly EPR plastic (17.5). This chapter is for your <strong>n
 <p><span class="tag c">UNCONFIRMED</span> Covers 400+ product categories: electronics and IT,
 electrical goods, steel, chemicals, food-contact equipment, textiles, toys, helmets, cement. It
 applies the moment you source anything electrical, electronic, or a toy with electronic parts.</p>
-<p><span class="tag v">VERIFIED</span> Penalties sit in <strong>Section 28 of the BIS Act, 2016</strong>.
-For a first offence: imprisonment up to <strong>2 years</strong>, a fine of <strong>at least
-₹2,00,000</strong> — and note that ₹2 lakh is a <em>minimum</em>, not a cap — <strong>or a penalty of up
-to ten times the value of the goods</strong>. For a seller holding real stock, that last limb is the one
-that can hurt most, and the earlier edition of this book omitted it.</p>
-<p class="src">Re-verified 4 August 2026 against reporting of a BIS seizure action citing Section 28 —
-<a href="https://thecsrjournal.in/bis-seizes-non-isi-mark-products-valued-over-rs-5-lakh-from-trichy-shopping-mall/">The CSR Journal</a>.</p>
+<p><span class="tag v">VERIFIED</span> Penalties sit in <strong>Sections 28 and 29 of the BIS Act, 2016</strong>.
+Section 28 covers misuse of the Standard Mark; Section 29 covers selling goods required to conform to
+a standard without doing so. Both carry the same penalty for a first offence: imprisonment up to
+<strong>2 years</strong>, a fine of <strong>at least ₹2,00,000</strong> — and note that ₹2 lakh is a
+<em>minimum</em>, not a cap — <strong>or a penalty of up to ten times the value of the goods</strong>.
+For a seller holding real stock, that last limb is the one that can hurt most.</p>
+<p class="src">Re-verified 7 August 2026 against multiple BIS enforcement reports citing both sections —
+<a href="https://www.newindianexpress.com/states/tamil-nadu/2026/Aug/07/bis-seizes-fake-isi-marked-fibre-rods-worth-rs-2-lakh-in-coimbatore-raid">New Indian Express (Section 28)</a>,
+<a href="https://timesofindia.indiatimes.com/city/coimbatore/bis-officials-raid-helmet-shop-in-coimbatore-seize-non-isi-protective-gear/articleshow/131121969.cms">Times of India (Section 29)</a>,
+<a href="https://www.thehindu.com/news/cities/Coimbatore/bis-seizes-pressure-cookers-bearing-fake-isi-mark-in-coimbatore/article71289839.ece">The Hindu (Section 28)</a>.</p>
 <p><span class="tag c">UNCONFIRMED</span> Repeat offences are widely reported as rising to 5 years and
 ₹5,00,000. That escalation was not confirmed against the Act itself. Marketplaces do actively remove
 non-compliant listings when BIS issues enforcement notices.</p>
@@ -1992,17 +2025,23 @@ inventory seizure. Treat wireless compliance as a real risk, not a theoretical o
 <p>If you use poly bags, bubble wrap or shrink wrap — which you do, per Chapter 19 — you may fall
 under Extended Producer Responsibility, run by CPCB at eprplastic.cpcb.gov.in.</p>
 <div class="box warn">
-<p class="lbl">This one is genuinely unresolved</p>
-<p><span class="tag n">UNSETTLED</span> Many guides state confidently that <strong>micro and small
-brand owners are exempt</strong>, citing a CPCB FAQ. Be careful with that.</p>
-<p>There is a <strong>2024 amendment to the Plastic Waste Management Rules</strong> dealing
-specifically with the registration of micro and small producers and sellers — which points the other
-way. An older primary document does not automatically beat a newer one in a fast-moving area, so treat
-the exemption as unproven rather than settled.</p>
+<p class="lbl">Clearer than previously stated — but still depends on your Udyam classification</p>
+<p><span class="tag v">VERIFIED</span> The <strong>2024 amendment to the Plastic Waste Management Rules
+(Rule 4A, PWM Amendment Rules 2024)</strong> is what <em>created</em> the micro and small enterprise
+exemption — not what undermined it. CPCB confirmed this in an <strong>October 2024 directive</strong>,
+and multiple independent legal/policy sources describe it consistently. A subsequent <strong>March 2026
+amendment</strong> deals with recycled-content mandates and is unrelated to the micro/small exemption.</p>
+<p>An earlier edition of this section had the logic inverted, describing the 2024 amendment as
+"pointing the other way" against an exemption. That was wrong — the amendment is the legal basis
+<em>for</em> the exemption.</p>
+<p><strong>What remains uncertain for you specifically:</strong> whether BSNY qualifies as "micro" or
+"small" under the Udyam classification criteria. The exemption exists, but whether <em>you</em> qualify
+depends on your enterprise's investment and turnover. Check your Udyam registration certificate.</p>
 <p class="src">See: <a href="https://www.mpcb.gov.in/sites/default/files/Registration_of_Micro_and_Small_Producers_Sellers_Manufacturer_and_Importer_of_raw_materials_under_PWM_Rules_2024.pdf">MPCB circular on registration of micro and small producers under PWM Rules 2024</a></p>
-<p style="margin-bottom:0"><strong>What to actually do:</strong> do not assume you are exempt. Check
-your Udyam classification, then confirm your position directly with CPCB or an environmental
-compliance consultant. This is a cheap question to ask and an expensive one to get wrong.</p>
+<p style="margin-bottom:0"><strong>What to actually do:</strong> check your Udyam classification. If
+you are micro or small, you are likely exempt from EPR plastic registration under the 2024 rules. If
+you are medium or large, you must register. If unsure, confirm with CPCB or an environmental
+compliance consultant — a cheap question to answer definitively.</p>
 </div>
 
 <h2>17.6 EPR — batteries</h2>
@@ -2012,12 +2051,12 @@ refurbishment, and disposal in landfill or by incineration is prohibited. Produc
 themselves or authorise another entity.</p>
 <p class="src">Rules confirmed 4 August 2026 against the Government of India press release —
 <a href="https://pib.gov.in/Pressreleaseshare.aspx?PRID=1854433">PIB, Battery Waste Management Rules, 2022</a>.</p>
-<p><span class="tag c">UNCONFIRMED</span> The detail that matters most to you was <em>not</em> confirmed
-against the Rules themselves: that &ldquo;Producer&rdquo; is said to include anyone selling a
-battery-containing product <strong>under their own brand name</strong>, not just the battery
-manufacturer. If that is right, private-labelling a power bank or a battery toy would make you a
-Producer. Given the penalty regime below, confirm this with a consultant <em>before</em> you source any
-such product — do not rely on this paragraph.</p>
+<p><span class="tag v">VERIFIED</span> The detail that matters most to you: &ldquo;Producer&rdquo; is
+explicitly defined to include anyone selling a battery-containing product <strong>under their own brand
+name</strong>, not just the battery manufacturer. If you private-label a power bank or a battery toy,
+you are a Producer under these rules. This is confirmed across multiple independent legal sources and
+the Rules' own definitions. Given the penalty regime below, treat this seriously if you source any
+battery-containing product under your own brand.</p>
 <p><span class="tag c">UNCONFIRMED</span> Registration is through CPCB's portal
 (eprbattery.cpcb.gov.in) using Form 1(A). No government fee for registration itself, but Producers
 must buy EPR certificates from registered recyclers in proportion to what they sell, at
@@ -2290,7 +2329,7 @@ prepaid return label. It matters to you only if you later add an Easy Ship or Se
 <table>
 <thead><tr><th style="width:44mm">Point</th><th>Detail</th></tr></thead>
 <tbody>
-<tr><td><strong>Filing window</strong></td><td><span class="tag v">VERIFIED</span> <strong>30 days</strong> — reduced from 60 days with effect from <strong>16 February 2026</strong>. The clock starts at the return delivery scan at your premises or the refund date, whichever is <em>later</em>; for a lost shipment, from the last tracking scan.</td></tr>
+<tr><td><strong>Filing window</strong></td><td><span class="tag c">UNCONFIRMED FOR INDIA</span> <strong>30 days</strong> — reported as reduced from 60 days with effect from <strong>16 February 2026</strong>. The clock reportedly starts at the return delivery scan at your premises or the refund date, whichever is <em>later</em>; for a lost shipment, from the last tracking scan. <strong>Caveat:</strong> every source confirming this 60-to-30-day compression describes <em>US seller-fulfilled orders specifically</em>. No India-specific confirmation has been found — Amazon's own seller-forum posts discussing the change reference Amazon.com, not Amazon.in. The window on Amazon India may still be 60 days, or it may have changed silently. <span class="tag s">CHECK LIVE</span> Verify the current window in your own Seller Central → SAFE-T Claims page before relying on either number.</td></tr>
 <tr><td><strong>Wait before filing</strong></td><td><span class="tag c">UNCONFIRMED</span> Reported as 15 business days after the refund is issued, for return-related claims.</td></tr>
 <tr><td><strong>Who must have refunded</strong></td><td><span class="tag v">VERIFIED</span> <strong>Amazon</strong> must have initiated the refund. If <em>you</em> issued the refund yourself, the SAFE-T claim is denied.</td></tr>
 </tbody></table>
@@ -2308,12 +2347,12 @@ claim</strong>, not SAFE-T. This covers:</p>
 <li>Stock disposed of incorrectly</li>
 <li>Fee and charge disputes</li>
 </ul>
-<p><span class="tag c">UNCONFIRMED</span> For FBA <em>customer-return</em> claims the window is reported
-as <strong>60 to 120 days</strong> after the customer refund or replacement date — and deliberately
-<strong>not before 60 days</strong>, to leave the customer time to send the item back. So the FBA timing
+<p><span class="tag v">VERIFIED</span> For FBA <em>customer-return</em> claims the window is
+<strong>45 to 105 days</strong> after the customer refund or replacement date — and deliberately
+<strong>not before 45 days</strong>, to leave the customer time to send the item back. So the FBA timing
 is almost the opposite of SAFE-T's: with SAFE-T you must move fast, with FBA returns you must wait.
-<span class="tag s">CHECK LIVE</span> Amazon has been automating more of this, so confirm the current
-window before you file.</p>
+<span class="tag s">CHECK LIVE</span> Amazon has been tightening these windows (it was 60–120 days in
+mid-2024), so confirm the current window before you file.</p>
 <p>File from Seller Central against the relevant order or shipment, attaching shipment IDs, inventory
 records and photos.</p>
 <div class="box info">
@@ -2351,17 +2390,22 @@ one 180-unit shipment.</p>
 price.</strong> This is a small claim — but filing it is how you learn the process before it matters
 on a 500-unit shipment.</p>
 </div>
-<p><span class="tag n">UNSETTLED</span> <strong>How long you have to file is genuinely disputed.</strong>
-Amazon compressed the reimbursement window in late 2024, and sources published in 2026 still
-disagree: some state <strong>60 days from the event</strong> for most claim types, others still say
-<strong>18 months</strong>, and one Amazon seller-forum post says claims can be filed for events up to
-18 months back while also advising you to wait 30 days for automatic reconciliation. Amazon's own
-policy page is the only authority here.
-<span class="tag s">CHECK LIVE</span> Read the current window in Seller Central before you rely on any
-figure — including this book's. <strong>Because the shortest credible window is 60 days, treat any
-shortage as urgent.</strong> A shipment closed at the end of July is inside 60 days only until roughly
-the end of September, and possibly only until mid-August if the clock runs from the receiving date
-rather than the closing date.</p>
+<p><span class="tag v">VERIFIED</span> <strong>The claim window for most types is now 60 days from the event
+date.</strong> Multiple Amazon Seller Central announcements and 2026 sources confirm this consistently:
+</p>
+<ul>
+<li><strong>Inbound shipment shortages:</strong> no sooner than 15 days, no later than <strong>60 days</strong> from the shipment reconciliation (closing) date</li>
+<li><strong>Warehouse lost/damaged:</strong> <strong>60 days</strong> from the event. Amazon now auto-reimburses many of these, but not all — still check monthly.</li>
+<li><strong>Customer returns:</strong> between <strong>45–105 days</strong> after the customer refund or replacement date (per a January 2025 Seller Central update — earlier sources said 60–120 days; the window has tightened)</li>
+</ul>
+<p class="src">Sources: <a href="https://sellercentral.amazon.com/seller-forums/discussions/t/81c3235d-4c44-47ba-96c5-883cecab3244">Amazon Seller Central — Reimbursement Automation &amp; Eligibility Window</a>,
+<a href="https://sellercentral.amazon.com/seller-forums/discussions/t/9a92846d-41f8-4ad7-b59a-f946efdcc2b4">Amazon Seller Central — Updated Eligibility Window (Jan 2025)</a>.</p>
+<p><span class="tag s">CHECK LIVE</span> These windows are for the global Amazon marketplace.
+<strong>Amazon India may use the same or different timelines.</strong> Verify the current window in
+your own Seller Central Help pages before relying on any specific number. The earlier "18 months"
+figure is outdated — multiple sources confirm it no longer applies for manual claims.
+<strong>Because the shortest credible window is 60 days, treat any shortage as urgent.</strong> A
+shipment closed at the end of July is inside 60 days only until roughly the end of September.</p>
 <p><strong>How to file:</strong> Inventory -&gt; Manage FBA Shipments -&gt; open the
 shipment -&gt; Reconcile. If the tab offers no reconciliation, open a case against the shipment ID.
 Amazon will ask for proof that you actually sent the units, so keep these from every shipment:
@@ -3366,7 +3410,7 @@ that matters for a launch.</p>
 <li>Product passed the decision scorecard (Appendix D)</li>
 <li>Gating checked (Chapter 13)</li>
 <li>BIS / FSSAI / CDSCO / WPC / Hazmat checked against Chapter 17 — <strong>not assumed</strong></li>
-<li>EPR plastic position confirmed (17.5) — do not assume exemption</li>
+<li>EPR plastic position confirmed (17.5) — check Udyam classification against Rule 4A exemption</li>
 <li>Trademark conflict search done for your brand name (16.3)</li>
 <li>Barcode ownership checked at verify.gs1.org if the supplier gave you a GTIN</li>
 <li>Supplier finalised — 3+ quotes compared, MOQ agreed, freight responsibility in writing</li>
@@ -3396,10 +3440,13 @@ separate GST registration (5.2).</p>
 <div class="box warn">
 <p class="lbl">Read this before using the table</p>
 <p><span class="tag v">VERIFIED</span> Amazon opened new centres through 2025 and 2026 — Odisha (BBX1),
-Madhya Pradesh (IDX2, replacing SIDA), Punjab (LDX1), Delhi (DED1), West Bengal, and a Heavy &amp; Bulky
-site in Haryana (LDEB) on 1 April 2026. Each announcement told sellers to add the centre to their GST
-registration as an Additional Place of Business <em>before</em> sending inventory. <strong>This table
-will keep going out of date.</strong> Treat it as a prompt to go and look, never as an answer.</p>
+Madhya Pradesh (IDX2, replacing SIDA), Punjab (LDX1), Delhi (DED1), West Bengal, a Heavy &amp; Bulky
+site in Haryana (LDEB) on 1 April 2026, and <strong>transshipment centres in Jharkhand (SIXR, 20 May
+2026) and Chhattisgarh (SRPI, 25 May 2026)</strong>. Transshipment centres receive stock only from
+other FCs — you cannot send FBA shipments to them directly, but your stock may end up there. Each
+announcement told sellers to add the centre to their GST registration as an Additional Place of
+Business <em>before</em> sending inventory. <strong>This table will keep going out of date.</strong>
+Treat it as a prompt to go and look, never as an answer.</p>
 <p><span class="tag c">UNCONFIRMED</span> This list comes from an FC capabilities sheet that could not
 be independently verified against a published Amazon document.</p>
 <p><strong>Never register for GST in a state based on this table alone.</strong> Amazon opens new
@@ -3426,6 +3473,8 @@ in Seller Central first. Registering in the wrong state is far more expensive th
 <tr><td>Andhra Pradesh</td><td>Visakhapatnam, Anakapalli</td><td>RJX1, SVTZ</td></tr>
 <tr><td>Kerala</td><td>Ernakulam</td><td>COX1</td></tr>
 <tr><td>Madhya Pradesh</td><td>Indore, Bhopal</td><td>IDX2, SBHF, <strong>SIDA</strong></td></tr>
+<tr><td>Jharkhand</td><td>—</td><td><strong>SIXR</strong> <small>(transshipment centre, opened 20 May 2026 — does not accept FBA shipments directly)</small></td></tr>
+<tr><td>Chhattisgarh</td><td>—</td><td><strong>SRPI</strong> <small>(transshipment centre, opened 25 May 2026 — does not accept FBA shipments directly)</small></td></tr>
 </tbody></table>
 <h4>Two traps in the code names</h4>
 <ul>
@@ -3575,9 +3624,9 @@ than relying on figures quoted in any guide — Amazon adjusts them.</p>
 <table>
 <thead><tr><th style="width:44mm">Question</th><th>Who to ask</th></tr></thead>
 <tbody>
-<tr><td><strong>EPR plastic packaging</strong> — are you exempt as a micro/small brand owner? (17.5)</td>
-    <td>CPCB directly, or an environmental compliance consultant. Sources genuinely conflict, so do not
-        rely on either answer you find online.</td></tr>
+<tr><td><strong>EPR plastic packaging</strong> — does your Udyam classification qualify you for the micro/small exemption? (17.5)</td>
+    <td>Check your own Udyam certificate. If clearly micro or small, the Rule 4A exemption applies. If
+        borderline or medium/large, confirm with CPCB or an environmental compliance consultant.</td></tr>
 <tr><td><strong>Income tax</strong> — presumptive taxation under 44AD versus normal books, advance tax
     dates, and which return to file (Chapter 6)</td>
     <td>A CA. One consultation is cheap next to a penalty, and the Income Tax Act, 2025 changed some
@@ -3662,3 +3711,895 @@ turns the rest of this book into your actual numbers.</p>
 
 </body>
 </html>
+
+<!-- ========== CH 26 ========== -->
+<h1 id="ch26">26 · Seller Central Dashboard — A Complete Walkthrough</h1>
+<p class="lede">Seller Central is the operating system for your entire Amazon business. This chapter
+walks through every section you need to check, what to look for, and how often. It replaces the brief
+navigation table in Appendix G with a working guide.</p>
+
+<h2>26.1 The home dashboard — what it shows and what it hides</h2>
+<p>When you log in, the home screen shows a summary panel with today's sales, units ordered, buyer
+messages, Buy Box percentage and account health alerts. <strong>Do not treat this as your reporting
+tool.</strong> It is a snapshot, not a ledger.</p>
+
+<div class="box info">
+<p class="lbl">What the home dashboard is actually useful for</p>
+<ul>
+<li><strong>Quick pulse check:</strong> are orders flowing today? Any spike or drop?</li>
+<li><strong>Urgent alerts:</strong> policy violations, listing suppressions, and performance
+notifications appear here as red/yellow banners. Act on these immediately.</li>
+<li><strong>Announcements:</strong> fee changes, new programmes, and deadline reminders. Amazon posts
+these here before they appear elsewhere.</li>
+</ul>
+<p style="margin-bottom:0"><strong>What it cannot do:</strong> show you real profit, break down fees
+per unit, track advertising ROI, or reconcile your GST. For those, you need the specific reports in
+Chapter 29.</p>
+</div>
+
+
+<h2>26.2 The nine menu sections, and what lives where</h2>
+<table>
+<thead><tr><th style="width:28mm">Menu</th><th>What to do here</th><th style="width:26mm">How often</th></tr></thead>
+<tbody>
+<tr><td><strong>Catalogue</strong></td><td>Add or edit listings, check listing limitations, manage product images and descriptions</td><td>Per new product</td></tr>
+<tr><td><strong>Inventory</strong></td><td>Manage FBA stock, create shipments, check Inventory Age, set restock alerts</td><td>Weekly</td></tr>
+<tr><td><strong>Pricing</strong></td><td>Manage prices, set automated pricing rules, view Fee Preview per SKU</td><td>Weekly</td></tr>
+<tr><td><strong>Orders</strong></td><td>Manage orders, handle returns, file SAFE-T claims (seller-fulfilled only)</td><td>Daily</td></tr>
+<tr><td><strong>Advertising</strong></td><td>Campaign Manager, A+ Content, Stores, deals, coupons</td><td>2–3× per week</td></tr>
+<tr><td><strong>Growth</strong></td><td>STEP programme, Missions, Global Selling, deals calendar</td><td>Monthly</td></tr>
+<tr><td><strong>Reports</strong></td><td>Payments, Business Reports, Inventory Ledger, Tax Library, Advertising Reports</td><td>Weekly–Monthly</td></tr>
+<tr><td><strong>Performance</strong></td><td>Account Health, Voice of the Customer, Feedback Manager</td><td>Weekly</td></tr>
+<tr><td><strong>Settings</strong></td><td>Account info, tax settings, bank details, shipping templates, notification preferences</td><td>Rarely</td></tr>
+</tbody></table>
+
+
+<h2>26.3 Your daily check — 5 minutes that prevent problems</h2>
+<table>
+<thead><tr><th style="width:8mm">#</th><th style="width:56mm">What to check</th><th>Where</th><th style="width:44mm">Why</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Any red/yellow banner on the home dashboard</td><td>Home page</td><td>Catches policy violations and listing suppressions before they compound</td></tr>
+<tr><td>2</td><td>Orders waiting or pending</td><td>Orders → Manage Orders</td><td>Seller-fulfilled orders have dispatch deadlines. Even FBA-only sellers should check for anomalies.</td></tr>
+<tr><td>3</td><td>Buyer Messages</td><td>Messages icon (top bar)</td><td>Amazon expects reply within 24 hours. Late replies count against your metrics.</td></tr>
+<tr><td>4</td><td>Return requests</td><td>Orders → Manage Returns</td><td>Early awareness lets you spot patterns — same complaint repeated = a product or listing fix needed</td></tr>
+<tr><td>5</td><td>Ad spend for the day</td><td>Advertising → Campaign Manager → Today's spend</td><td>Catches runaway spend before it bleeds a full day's budget</td></tr>
+</tbody></table>
+
+<h2>26.4 Your weekly check — 20 minutes that build the business</h2>
+<table>
+<thead><tr><th style="width:8mm">#</th><th style="width:56mm">What to check</th><th>Where</th><th style="width:44mm">Why</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Account Health — ODR, Late Shipment, Cancellation, Policy Violations</td><td>Performance → Account Health</td><td>Problems here can suspend your account</td></tr>
+<tr><td>2</td><td>Business Report — sessions, conversion rate, Buy Box %</td><td>Reports → Business Reports → Detail Page Sales &amp; Traffic by Child Item</td><td>Tracks whether your listing is being shown and converting</td></tr>
+<tr><td>3</td><td>Advertising — ACOS, impressions, clicks, orders, Search Term Report</td><td>Advertising → Campaign Manager → Reports</td><td>Detects wasted spend and identifies winning keywords</td></tr>
+<tr><td>4</td><td>Inventory levels vs sales velocity</td><td>Inventory → Manage FBA Inventory</td><td>Prevents stockouts (kills ranking) and overstocking (surcharges)</td></tr>
+<tr><td>5</td><td>Voice of the Customer</td><td>Performance → Voice of the Customer</td><td>Flags negative customer feedback before it becomes a policy issue</td></tr>
+<tr><td>6</td><td>Feedback Manager — new seller ratings</td><td>Performance → Feedback</td><td>Negative feedback adds to ODR if not addressed</td></tr>
+</tbody></table>
+
+
+<h2>26.5 Your monthly check — the compliance and reconciliation pass</h2>
+<table>
+<thead><tr><th style="width:8mm">#</th><th style="width:56mm">What to check</th><th>Where</th><th style="width:44mm">Why</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Settlement Report — download and reconcile against GST returns</td><td>Reports → Payments → Settlement Reports</td><td>Chapter 28 explains this line by line</td></tr>
+<tr><td>2</td><td>Inventory Ledger — which FCs hold your stock</td><td>Reports → Inventory Ledger</td><td>Multi-state stock creates a GST obligation (Chapter 6, 5.2)</td></tr>
+<tr><td>3</td><td>TCS credit check on the GST portal</td><td>gst.gov.in → TCS Credit Received</td><td>Chapter 5.3 — confirms Amazon is reporting TCS against your GSTIN</td></tr>
+<tr><td>4</td><td>Inventory Age — anything approaching 181 days</td><td>Inventory → Manage FBA Inventory → Inventory Age</td><td>Aged surcharge starts at 181 days (Chapter 8.6)</td></tr>
+<tr><td>5</td><td>Reimbursement Report — check for warehouse losses</td><td>Reports → Fulfilment → FBA Reimbursements</td><td>Amazon will not tell you when it owes you money (Chapter 20.4)</td></tr>
+<tr><td>6</td><td>Missions &amp; STEP dashboard</td><td>Performance → STEP → Missions</td><td>Missions expire silently. Start them before chasing their targets.</td></tr>
+</tbody></table>
+
+<div class="box warn">
+<p class="lbl">The habit that costs most new sellers money</p>
+<p>Checking orders and sales daily while ignoring reports and reconciliation monthly. The first feels
+productive; the second is where money is actually recovered. <strong>Set a calendar reminder for the
+1st of every month: download settlement report, check Inventory Ledger, verify TCS.</strong></p>
+</div>
+
+<h2>26.6 Recent Seller Central changes (2026)</h2>
+<table>
+<thead><tr><th style="width:34mm">Change</th><th style="width:30mm">When</th><th>What it means for you</th></tr></thead>
+<tbody>
+<tr><td>Shipping Performance under dashboard refreshes daily</td><td>Early 2026</td><td>Status updates now show in the main dashboard instead of notifications. Check the dashboard directly.</td></tr>
+<tr><td>OTDR enforcement changed</td><td>28 Feb 2026</td><td>On-Time Delivery Rate below 90% now deactivates <em>only affected listings</em>, not all your seller-fulfilled listings. Your other listings stay active.</td></tr>
+<tr><td>Automated FBA reimbursement for warehouse losses</td><td>Late 2024, expanded 2025–2026</td><td>Amazon now automatically reimburses lost/damaged FBA inventory in many cases without you filing. But <em>not always</em> — still check monthly.</td></tr>
+<tr><td>Fee update effective 16 March 2026</td><td>16 Mar 2026</td><td>Zero referral fee expanded to ₹1,000 across 1,800+ categories. Easy Ship fees cut 20%+ for products under ₹300.</td></tr>
+</tbody></table>
+<p class="src"><span class="tag c">UNCONFIRMED</span> Dashboard layout changes are ongoing and Amazon does not formally announce all of them. The menu structure above is as of mid-2026.</p>
+
+
+<!-- ========== CH 27 ========== -->
+<h1 id="ch27">27 · Revenue Checking — Reading Your Numbers Correctly</h1>
+<p class="lede">The number in your bank account is not your revenue. The number on the home dashboard
+is not your revenue. This chapter teaches you where to find the real figure and what it actually
+means.</p>
+
+<h2>27.1 The three numbers people confuse</h2>
+<table>
+<thead><tr><th style="width:40mm">Number</th><th>What it actually is</th><th style="width:44mm">Where to find it</th></tr></thead>
+<tbody>
+<tr><td><strong>Ordered Product Sales</strong></td><td>Total value of units ordered — <em>before</em> cancellations, returns, fees, or anything else. This is <strong>gross</strong>, not revenue.</td><td>Reports → Business Reports → Sales Dashboard</td></tr>
+<tr><td><strong>Net Revenue</strong></td><td>What Amazon pays into your bank after subtracting all fees, refunds, and TCS. This is what actually hits your account.</td><td>Reports → Payments → Settlement Reports</td></tr>
+<tr><td><strong>True Profit</strong></td><td>Net Revenue minus your product cost, packaging, inbound freight, advertising, and storage. <em>This</em> is what you keep.</td><td>Your own spreadsheet — Amazon does not calculate this for you.</td></tr>
+</tbody></table>
+
+<div class="box warn">
+<p class="lbl">The most common mistake: using Ordered Product Sales as revenue</p>
+<p>If 42 units are ordered at ₹333, your dashboard shows ₹13,986. But 6 come back as returns, so you
+are actually paid for 36. Amazon takes ₹145 in fees. TCS is withheld. Advertising was ₹15,554.
+<strong>Your real position is a loss of ₹3,650 — not a gain of ₹13,986.</strong> The dashboard gives
+you the headline. Only the settlement report gives you the truth.</p>
+</div>
+
+<h2>27.2 Where to check your actual revenue — step by step</h2>
+<ol>
+<li><strong>Seller Central → Reports → Payments → Statement View</strong></li>
+<li>Select the settlement period you want to review</li>
+<li>Look at the <strong>Total</strong> at the bottom — this is what was deposited to your bank</li>
+<li>Click <strong>Download Report (V2)</strong> for the line-by-line CSV breakdown</li>
+</ol>
+<p>The settlement report breaks every order into its components: product charges, promotional charges,
+Amazon fees, other charges, and TCS. Each line is one event — one sale, one refund, one fee.</p>
+
+<h2>27.3 The Business Reports panel — what each metric means</h2>
+<p><strong>Path:</strong> Reports → Business Reports → Detail Page Sales and Traffic by Child Item</p>
+<table>
+<thead><tr><th style="width:44mm">Metric</th><th>What it tells you</th><th style="width:38mm">Healthy range</th></tr></thead>
+<tbody>
+<tr><td><strong>Sessions</strong></td><td>Number of unique visitors to your product page in 24 hours</td><td>Growing week over week</td></tr>
+<tr><td><strong>Page Views</strong></td><td>Total views (one person viewing 3 times = 3 page views, 1 session)</td><td>—</td></tr>
+<tr><td><strong>Unit Session Percentage</strong></td><td>Amazon's conversion rate: units ordered ÷ sessions × 100</td><td>8–15% for most categories. Below 5% suggests a listing problem.</td></tr>
+<tr><td><strong>Buy Box Percentage</strong></td><td>Share of page views where you owned the Buy Box (Add to Cart button)</td><td>Above 90% on single-seller ASINs. Below 80% means competition.</td></tr>
+<tr><td><strong>Units Ordered</strong></td><td>How many units were ordered (not yet delivered or confirmed)</td><td>—</td></tr>
+<tr><td><strong>Ordered Product Sales</strong></td><td>Units Ordered × price — gross, before everything</td><td>—</td></tr>
+</tbody></table>
+
+
+<div class="box good">
+<p class="lbl">The one number to track obsessively: Unit Session Percentage</p>
+<p>This is your conversion rate. If traffic goes up but conversion stays flat, you are getting
+impressions but not sales — that usually means a listing problem (bad images, wrong keywords, price
+too high versus competitors). If both drop, you are losing visibility entirely — that is a ranking or
+suppression problem.</p>
+<p style="margin-bottom:0"><strong>A worked example from your own product:</strong> At 42 units sold
+in July with roughly 5–10 sessions per day (estimated from your rank), your conversion rate is probably
+in the 15–25% range, which is actually strong for a new listing. The problem is not conversion — it is
+traffic volume, which will grow with reviews and ranking.</p>
+</div>
+
+<h2>27.4 GST-inclusive pricing — the revenue you do not actually keep</h2>
+<p><span class="tag v">VERIFIED</span> Your ₹333 selling price is <strong>GST-inclusive</strong>. At
+18% GST (HSN 72179099), the breakdown is:</p>
+<div class="formula">₹333.00  ←  what the customer pays
+÷ 1.18   ←  to extract the GST component
+= ₹282.20 revenue + ₹50.80 output GST
+
+You remit ₹50.80 to the government.
+You keep ₹282.20 (before all other costs).</div>
+<p><strong>This is the number that belongs in your margin sheet as "revenue"</strong>, not ₹333.
+Every margin calculation elsewhere in this book uses ₹333 for simplicity — but your real revenue
+ceiling is ₹282.20 per unit, and ₹50.80 was never yours.</p>
+
+<h2>27.5 Revenue Calculator vs Fee Preview — which to use when</h2>
+<table>
+<thead><tr><th style="width:40mm">Tool</th><th>What it tells you</th><th style="width:44mm">When to use it</th></tr></thead>
+<tbody>
+<tr><td><strong>Fee Preview</strong></td><td>Shows the exact fees Amazon will charge on your <em>existing</em> listing, at its current price and classification</td><td>To check what you are <em>currently</em> paying — settles classification questions</td></tr>
+<tr><td><strong>Revenue Calculator</strong></td><td>Lets you input any price, weight, dimensions, and see full fee breakdown FBA vs self-ship side by side</td><td>To model <em>new</em> products or price changes before committing</td></tr>
+</tbody></table>
+<div class="box info">
+<p class="lbl">Revenue Calculator shows "Fee Discounts" — what that means</p>
+<p>If your Revenue Calculator shows a line like "Fee Discounts ₹89.00", it means a promotion is
+currently cancelling part or all of your fees. <strong>That discount has an expiry date.</strong> Never
+use the discounted figure for long-term margin planning. Use the full fee figure — that is what you
+will pay once the promotion ends. Chapter 3 explains your specific situation.</p>
+</div>
+
+
+<!-- ========== CH 28 ========== -->
+<h1 id="ch28">28 · Fee Checking &amp; Reconciliation</h1>
+<p class="lede">Amazon makes mistakes. Not often, but when it does, it costs you money quietly —
+because nothing alerts you. This chapter teaches you to catch overcharges, verify your fee category
+is correct, and reconcile your settlement against what should have been charged.</p>
+
+<h2>28.1 The settlement report — your single source of truth</h2>
+<p><strong>Path:</strong> Reports → Payments → Settlement Reports → Download (V2 flat file)</p>
+<p>This CSV file contains one row per event (sale, refund, fee, adjustment) for each settlement
+period. The columns that matter:</p>
+<table class="tight">
+<thead><tr><th style="width:40mm">Column</th><th>What it tells you</th></tr></thead>
+<tbody>
+<tr><td><code>amount-type</code></td><td>ItemPrice, ItemFees, Promotion, Other, TCS-CGST, TCS-SGST, TCS-IGST</td></tr>
+<tr><td><code>amount-description</code></td><td>The specific fee name: Commission (referral), Fixed Closing Fee, Shipping (weight handling), Pick &amp; Pack, etc.</td></tr>
+<tr><td><code>amount</code></td><td>The rupee amount — negative means Amazon took it, positive means you received it</td></tr>
+<tr><td><code>order-id</code></td><td>Links the fee back to a specific order</td></tr>
+<tr><td><code>sku</code></td><td>Which product was involved</td></tr>
+</tbody></table>
+
+<h2>28.2 How to verify you are being charged correctly — a 5-step process</h2>
+<ol>
+<li><strong>Pick any 5 orders from the settlement report.</strong> Choose randomly — not just recent ones.</li>
+<li><strong>For each order, add up all fee rows.</strong> You should see: Commission (referral fee) + Fixed Closing Fee + Shipping fee (weight handling) + Pick Pack Fee + 18% GST on each.</li>
+<li><strong>Compare against Fee Preview.</strong> Open the SKU's Fee Preview and check that the rates match what was actually charged.</li>
+<li><strong>Check the weight band.</strong> The shipping fee should correspond to the correct weight band for your product's packed weight. If your product weighs 450g but you are being charged the 500g–1kg rate, either the packed weight crosses 500g outbound or there is an error.</li>
+<li><strong>Verify the closing fee group.</strong> Cross-reference against Appendix B — your fee category determines which group and rate applies.</li>
+</ol>
+
+<div class="box warn">
+<p class="lbl">The most common overcharge: wrong weight band</p>
+<p><span class="tag v">VERIFIED</span> Your own account demonstrates this. Your product weighs 460g
+but Amazon bills at the 500g–1kg rate (₹85 National instead of ₹65). The reason: Amazon bills on
+<em>outbound</em> weight which includes its own packaging. If you are marginally over a threshold,
+<strong>reducing your packaging weight by even 50g can save ₹20 per unit</strong>.</p>
+<p style="margin-bottom:0"><strong>If the weight truly should be under the threshold:</strong> weigh a
+finished, Amazon-packaged parcel (ask a friend to order one and weigh it on receipt). If it is under
+500g and you are still being billed at the higher band, raise a case with Seller Support citing the
+actual weight and asking for a fee audit on the SKU.</p>
+</div>
+
+
+<h2>28.3 Fee category verification — the ₹44 per unit question</h2>
+<p>Your fee category determines both your referral fee percentage and which closing-fee group you fall
+in. Getting this wrong can cost significant money on every sale.</p>
+<ol>
+<li><strong>Open Fee Preview</strong> for your SKU (Pricing → Manage Inventory → click the SKU → Fee Preview)</li>
+<li><strong>Read the exact fee category name</strong> — write it down</li>
+<li><strong>Compare against Appendix A.</strong> Does the referral percentage match what you expect for that category?</li>
+<li><strong>Compare against Appendix B.</strong> Does the closing fee match the group assigned to that category name?</li>
+<li><strong>If there is a mismatch:</strong> raise a case with Seller Support requesting a catalogue classification review. Include evidence that your product belongs in the correct category (product description, intended use, comparable ASINs in the right category).</li>
+</ol>
+
+<div class="box good">
+<p class="lbl">Your product: already confirmed correct</p>
+<p><span class="tag v">VERIFIED</span> Your Fee Preview shows referral ₹0.00 and closing ₹18.00.
+This confirms a Home fee category, Group C — not "Wires (Electrical)". No action needed here.
+But <strong>run this check on every new product you add</strong>, because Amazon's automated
+classification can put items in surprising categories.</p>
+</div>
+
+<h2>28.4 Monthly reconciliation — the spreadsheet that catches everything</h2>
+<p>Build a simple monthly reconciliation sheet with these columns:</p>
+<table class="tight">
+<thead><tr><th style="width:36mm">Column</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Total units sold (gross)</td><td>Settlement report or Business Reports</td></tr>
+<tr><td>Total units refunded</td><td>Settlement report → filter refund rows</td></tr>
+<tr><td>Net units</td><td>Gross − refunded</td></tr>
+<tr><td>Gross revenue</td><td>Sum of all ItemPrice rows</td></tr>
+<tr><td>Total Amazon fees charged</td><td>Sum of all ItemFees rows (should be negative)</td></tr>
+<tr><td>Expected fees (calculated)</td><td>Net units × per-unit fees from Fee Preview</td></tr>
+<tr><td><strong>Difference</strong></td><td><strong>Actual fees − Expected fees.</strong> If large, investigate.</td></tr>
+<tr><td>TCS withheld</td><td>Sum of TCS rows. Should be ~0.5% of net taxable sales.</td></tr>
+<tr><td>Net deposited</td><td>Your bank statement for that settlement period</td></tr>
+<tr><td>Advertising spent</td><td>Advertising → Billing → monthly invoice</td></tr>
+</tbody></table>
+
+<div class="box info">
+<p class="lbl">How often sellers find discrepancies</p>
+<p>Industry reports suggest reconciling settlement reports uncovers 1–3% of revenue in missed
+reimbursements or fee overcharges per quarter. On ₹1,00,000 of sales that is ₹1,000–3,000 — not
+life-changing at your scale, but worth 30 minutes a month once you have the spreadsheet built.</p>
+</div>
+
+<h2>28.5 What to do when you find an overcharge</h2>
+<ol>
+<li><strong>Document it:</strong> order ID, SKU, fee type, amount charged, amount expected, and why you believe it is wrong</li>
+<li><strong>Open a case:</strong> Seller Central → Help → Get Support → Selling on Amazon → choose the relevant topic</li>
+<li><strong>Be specific:</strong> quote the order ID and the exact fee line. Vague complaints get vague responses.</li>
+<li><strong>Follow up:</strong> if the first response is generic, reply with additional detail. Escalation is available after 2–3 attempts.</li>
+</ol>
+
+
+<!-- ========== CH 29 ========== -->
+<h1 id="ch29">29 · Reports — What to Pull, When, and Why</h1>
+<p class="lede">Seller Central offers 50+ report types across five categories. Most sellers download
+none of them. This chapter tells you which reports actually matter, what they reveal, and on what
+schedule to pull them.</p>
+
+<h2>29.1 The report categories</h2>
+<table>
+<thead><tr><th style="width:36mm">Category</th><th>Path</th><th style="width:54mm">What lives here</th></tr></thead>
+<tbody>
+<tr><td><strong>Payments</strong></td><td>Reports → Payments</td><td>Settlement reports, transaction view, date range reports, disbursements</td></tr>
+<tr><td><strong>Business Reports</strong></td><td>Reports → Business Reports</td><td>Sales, traffic, conversion, Buy Box metrics by ASIN and by date</td></tr>
+<tr><td><strong>Inventory</strong></td><td>Reports → Fulfilment (or Inventory)</td><td>Inventory Ledger, Age, Adjustments, Reimbursements, Received, Returns</td></tr>
+<tr><td><strong>Advertising</strong></td><td>Advertising → Reports (or Bulk Operations)</td><td>Search Term, Placement, Campaign Performance, Targeting reports</td></tr>
+<tr><td><strong>Tax</strong></td><td>Reports → Tax Document Library</td><td>GST invoices, credit notes, TCS certificates</td></tr>
+</tbody></table>
+
+<h2>29.2 The essential reports — explained one by one</h2>
+
+<h4>1. Settlement Report (Reports → Payments)</h4>
+<p><strong>What:</strong> Every single financial event in your account for a settlement period — sales,
+refunds, fees, adjustments, TCS, advertising charges, reimbursements.</p>
+<p><strong>When to pull:</strong> Every settlement cycle (every 7 days for Standard STEP), or monthly at minimum.</p>
+<p><strong>What to look for:</strong></p>
+<ul>
+<li>Total fees vs expected (Chapter 28.4)</li>
+<li>Refund amounts — do they match the fees being returned?</li>
+<li>TCS lines — do they total approximately 0.5% of your net sales?</li>
+<li>Any "Other" charges you do not recognise</li>
+</ul>
+
+<h4>2. Detail Page Sales and Traffic by Child Item (Business Reports)</h4>
+<p><strong>What:</strong> Per-ASIN daily data: sessions, page views, Buy Box %, units ordered, conversion rate.</p>
+<p><strong>When to pull:</strong> Weekly.</p>
+<p><strong>What to look for:</strong></p>
+<ul>
+<li>Conversion rate (Unit Session %) — dropping means a listing or pricing problem</li>
+<li>Buy Box % — dropping means a competitor appeared or your price is too high</li>
+<li>Sessions — a sudden drop means a ranking or suppression issue</li>
+</ul>
+
+<h4>3. Inventory Ledger (Reports → Fulfilment)</h4>
+<p><strong>What:</strong> Shows where your stock is by fulfilment centre, with movements in and out.</p>
+<p><strong>When to pull:</strong> Monthly (1st of every month).</p>
+<p><strong>What to look for:</strong></p>
+<ul>
+<li>Stock in any FC outside your home state — triggers GST Additional Place of Business obligation (Chapter 6, 5.2)</li>
+<li>Discrepancies between expected inventory and actual on-hand quantities</li>
+</ul>
+
+
+<h4>4. FBA Customer Returns Report (Reports → Fulfilment)</h4>
+<p><strong>What:</strong> Every return — order ID, reason, disposition (sellable or damaged), reimbursement status.</p>
+<p><strong>When to pull:</strong> Monthly.</p>
+<p><strong>What to look for:</strong></p>
+<ul>
+<li>Return reason patterns — same complaint repeated = a fix needed</li>
+<li>Disposition — SELLABLE items are restocked; DAMAGED items are not. Amazon owes you for warehouse damage.</li>
+<li>Reimbursement gaps — if "Damaged – Warehouse" appears with no corresponding reimbursement, file a claim</li>
+</ul>
+
+<h4>5. Inventory Adjustments Report (Reports → Fulfilment)</h4>
+<p><strong>What:</strong> Every change Amazon made to your inventory without a sale — losses, damages, found units, disposals.</p>
+<p><strong>When to pull:</strong> Monthly.</p>
+<p><strong>What to look for:</strong></p>
+<ul>
+<li>Entries marked "Lost – Warehouse" or "Damaged – Warehouse" with no offsetting reimbursement</li>
+<li>These are claims you should file — Chapter 20.4 explains the process</li>
+</ul>
+
+<h4>6. FBA Reimbursements Report (Reports → Fulfilment)</h4>
+<p><strong>What:</strong> Every reimbursement Amazon has paid you — what it was for and how much.</p>
+<p><strong>When to pull:</strong> Monthly.</p>
+<p><strong>What to look for:</strong> Cross-reference against the Adjustments report. Any loss not
+matched by a reimbursement is money Amazon owes you.</p>
+
+<h4>7. Search Term Report (Advertising → Reports)</h4>
+<p><strong>What:</strong> The exact words customers typed that triggered your ads, plus clicks, spend, and sales per term.</p>
+<p><strong>When to pull:</strong> Weekly during active campaigns.</p>
+<p><strong>What to look for:</strong></p>
+<ul>
+<li>Terms with spend but zero sales — add these as negative keywords</li>
+<li>Terms with sales at good ACOS — move these to manual exact-match campaigns</li>
+<li>Irrelevant terms — shows your targeting is too broad</li>
+</ul>
+
+<h4>8. Tax Document Library (Reports → Tax Document Library)</h4>
+<p><strong>What:</strong> GST invoices for every Amazon fee charged, credit notes for returns, and TCS certificates.</p>
+<p><strong>When to pull:</strong> Monthly — your CA needs these for GST filing.</p>
+<p><strong>What to look for:</strong></p>
+<ul>
+<li>Total Input Tax Credit available (18% of all Amazon fees) — this offsets your GST liability</li>
+<li>TCS certificate — confirms what Amazon reported against your GSTIN for the month</li>
+</ul>
+
+<div class="box good">
+<p class="lbl">The report schedule on one card</p>
+<table class="tight">
+<thead><tr><th style="width:48mm">Report</th><th style="width:20mm">Frequency</th><th>Day of month</th></tr></thead>
+<tbody>
+<tr><td>Settlement Report</td><td>Every cycle</td><td>Each disbursement</td></tr>
+<tr><td>Business Reports (traffic/sales)</td><td>Weekly</td><td>Monday morning</td></tr>
+<tr><td>Search Term Report</td><td>Weekly</td><td>Monday (if ads active)</td></tr>
+<tr><td>Inventory Ledger</td><td>Monthly</td><td>1st</td></tr>
+<tr><td>Customer Returns</td><td>Monthly</td><td>5th</td></tr>
+<tr><td>Inventory Adjustments</td><td>Monthly</td><td>5th</td></tr>
+<tr><td>Reimbursements</td><td>Monthly</td><td>5th</td></tr>
+<tr><td>Tax Document Library</td><td>Monthly</td><td>11th (before GSTR-1)</td></tr>
+</tbody></table>
+</div>
+
+
+<!-- ========== CH 30 ========== -->
+<h1 id="ch30">30 · Advertising Management — The Full Playbook</h1>
+<p class="lede">Chapter 21 covered the basics. This chapter is the operational guide — how to
+structure campaigns, manage bids, read reports, and not lose money. It is written for Amazon India
+in 2026, where Sponsored Products is the only ad type a single-product seller needs.</p>
+
+<h2>30.1 Before you start — the retail readiness checklist</h2>
+<p>Advertising sends people to your listing. If the listing cannot convert them, you are paying
+to send traffic to a page that does not sell. <strong>Fix these first:</strong></p>
+<ul class="chk">
+<li>At least 5 images (main + lifestyle + infographic + close-up + packaging)</li>
+<li>Title contains your main keywords in natural reading order</li>
+<li>5 bullet points — features first, benefits after each</li>
+<li>A+ Content if you have Brand Registry (otherwise, strong description)</li>
+<li>At least 10–15 reviews (or at minimum a 4+ star rating)</li>
+<li>Price competitive with the top 3–5 comparable listings</li>
+<li>In stock — never advertise a product that may stock out within days</li>
+<li>Buy Box owned — if you do not have the Buy Box, your ad sends customers to someone else</li>
+</ul>
+
+<div class="box warn">
+<p class="lbl">The lesson from your July spend</p>
+<p><span class="tag v">VERIFIED</span> You spent ₹15,554 on advertising in July with <strong>₹0
+attributed sales</strong>. Your listing has 1 review and a Generic brand. Advertising a listing with
+1 review is like paying for a shop window with nothing in the display. <strong>Get to 10+ reviews
+and fix your brand field before spending another rupee on ads.</strong></p>
+</div>
+
+<h2>30.2 Campaign architecture — the three-campaign model</h2>
+<p>This is not the only way, but it is the simplest structure that actually works for a new seller:</p>
+
+<table>
+<thead><tr><th style="width:30mm">Campaign</th><th style="width:30mm">Targeting</th><th>Purpose</th><th style="width:28mm">Budget</th></tr></thead>
+<tbody>
+<tr><td><strong>Research</strong></td><td>Automatic</td><td>Discover which search terms customers actually use for your product. This is a data-gathering exercise, not a sales machine.</td><td>₹50–100/day</td></tr>
+<tr><td><strong>Performance</strong></td><td>Manual – Exact Match</td><td>Bid only on keywords that have already proven they convert (graduated from Research). Maximum control.</td><td>₹100–200/day</td></tr>
+<tr><td><strong>Defense</strong></td><td>Manual – Product Targeting</td><td>Show your ad on competitor listings. Relevant once you have reviews and competitive pricing.</td><td>₹50/day</td></tr>
+</tbody></table>
+
+<h2>30.3 The keyword graduation process</h2>
+<ol>
+<li><strong>Week 1–2:</strong> Run only the Research (automatic) campaign at ₹50–100/day</li>
+<li><strong>Week 3:</strong> Pull the Search Term Report. Look for terms with 2+ orders and ACOS below your target.</li>
+<li><strong>Move winners to Performance campaign</strong> as exact-match keywords with a bid 10–20% above the average CPC from the Search Term Report.</li>
+<li><strong>Add losers as Negative Exact keywords</strong> in the Research campaign — terms with 10+ clicks and 0 orders are wasting money.</li>
+<li><strong>Repeat every 1–2 weeks.</strong> The Research campaign keeps finding new terms; the Performance campaign holds the proven ones.</li>
+</ol>
+
+<div class="box info">
+<p class="lbl">Why exact match, not broad or phrase, for the Performance campaign</p>
+<p>Broad and phrase match cast a wide net — great for discovery, terrible for cost control. The
+Performance campaign exists to bid precisely on terms you <em>know</em> work. Exact match does that.
+Leave the wide-net discovery to the Research campaign, where you expect and budget for waste.</p>
+</div>
+
+
+<h2>30.4 Bid strategies — what Amazon offers and when to use each</h2>
+<table>
+<thead><tr><th style="width:40mm">Strategy</th><th>What it does</th><th style="width:44mm">When to use</th></tr></thead>
+<tbody>
+<tr><td><strong>Dynamic bids – Down only</strong></td><td>Amazon reduces your bid when a click is less likely to convert. Never raises it.</td><td><strong>Start here.</strong> Safest for new campaigns and limited budgets.</td></tr>
+<tr><td>Dynamic bids – Up and down</td><td>Amazon can raise your bid up to 100% for high-conversion placements (e.g. top of search). Also lowers for poor placements.</td><td>Only for proven, profitable campaigns where you want more volume.</td></tr>
+<tr><td>Fixed bids</td><td>Amazon uses your exact bid regardless of conversion likelihood.</td><td>When you want maximum control and predictable spend — useful for testing new keywords.</td></tr>
+</tbody></table>
+
+<h2>30.5 Reading the Search Term Report — the skill that saves money</h2>
+<p><strong>Path:</strong> Advertising → Reports → Create Report → Search Term → select campaign and date range.</p>
+<table>
+<thead><tr><th style="width:40mm">Column</th><th>What it means</th></tr></thead>
+<tbody>
+<tr><td><strong>Customer Search Term</strong></td><td>The exact words the customer typed</td></tr>
+<tr><td><strong>Impressions</strong></td><td>How many times your ad appeared for this term</td></tr>
+<tr><td><strong>Clicks</strong></td><td>How many people clicked your ad</td></tr>
+<tr><td><strong>Spend</strong></td><td>What you paid for those clicks</td></tr>
+<tr><td><strong>7-day Total Sales</strong></td><td>Revenue from orders placed within 7 days of the click</td></tr>
+<tr><td><strong>7-day Total Orders</strong></td><td>Number of orders attributed to this term</td></tr>
+<tr><td><strong>ACOS</strong></td><td>Spend ÷ Sales × 100 — your cost of advertising per rupee earned</td></tr>
+</tbody></table>
+
+<h4>Decision rules for each search term:</h4>
+<table>
+<thead><tr><th style="width:52mm">Situation</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td>Orders ≥ 2, ACOS below target</td><td><strong>Graduate:</strong> add to Performance campaign as exact match</td></tr>
+<tr><td>Orders ≥ 1, ACOS near target</td><td><strong>Watch:</strong> let it run another week before deciding</td></tr>
+<tr><td>Clicks ≥ 10–15, Orders = 0</td><td><strong>Kill:</strong> add as negative exact keyword in Research campaign</td></tr>
+<tr><td>Irrelevant term (wrong product intent)</td><td><strong>Kill immediately:</strong> negative exact, regardless of clicks</td></tr>
+<tr><td>Very high impressions, very low clicks</td><td>Not necessarily bad — your ad was shown but people chose others. Consider if your main image or price is competitive for this term.</td></tr>
+</tbody></table>
+
+<h2>30.6 Setting your ACOS target — the number that keeps ads profitable</h2>
+<div class="formula">Target ACOS = Net margin (after all fees, before ads) ÷ Selling price × 100
+
+Your numbers:
+  Selling price:           ₹333
+  Amazon fees (National):  ₹141.60
+  Contribution before ads: ₹191.40
+  → Break-even ACOS:      191.40 ÷ 333 × 100 = 57.5%
+
+  But that ignores product cost. If product + packaging = ₹120:
+  Real contribution:       ₹71.40
+  → Real break-even ACOS:  71.40 ÷ 333 × 100 = 21.4%
+
+Target ACOS should be <strong>below</strong> 21% to actually make money on each ad-driven sale.</div>
+
+<div class="box warn">
+<p class="lbl">Your July: 130% TACOS. The maximum you can sustain: ~21% ACOS.</p>
+<p>The gap between 130% and 21% is not something you close with better keywords alone. It means the
+campaign was fundamentally misconfigured — broad targeting, no negative keywords, and no conversion
+(₹0 attributed sales). <strong>Restart from zero using the architecture above.</strong></p>
+</div>
+
+
+<h2>30.7 Negative keywords — the most overlooked profit lever</h2>
+<p>A negative keyword tells Amazon "never show my ad for this search term." This is how you stop
+paying for irrelevant clicks.</p>
+<h4>Common negative keywords for a clothesline/rope wire product:</h4>
+<ul>
+<li><strong>electrical wire</strong> — people searching for house wiring do not want a clothesline</li>
+<li><strong>copper wire</strong> — wrong material entirely</li>
+<li><strong>steel rope</strong> — industrial use, not drying clothes</li>
+<li><strong>wire rope lifting</strong> — heavy industrial application</li>
+<li><strong>charging cable</strong> — electronics searchers landing on your listing waste your budget</li>
+</ul>
+<p><strong>Build your negative keyword list from the Search Term Report.</strong> Every term with spend
+and zero orders is a candidate. Add them weekly. A mature campaign has 50–200+ negative keywords — that
+is normal and healthy.</p>
+
+<h2>30.8 Budget management — daily rules</h2>
+<table>
+<thead><tr><th style="width:38mm">Rule</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>Never set a daily budget higher than your daily revenue</td><td>If you earn ₹387/day (36 units × ₹333 ÷ 31 days), spending ₹500/day on ads guarantees a loss</td></tr>
+<tr><td>Start small: ₹50–100/day for new campaigns</td><td>You are buying data, not sales. Spend enough to learn, not enough to bleed.</td></tr>
+<tr><td>Scale only what works</td><td>Increase budget only on campaigns with ACOS below target for 7+ consecutive days</td></tr>
+<tr><td>Pause, do not reduce to ₹1/day</td><td>Amazon's algorithm works poorly with micro-budgets. Either fund a campaign properly or pause it entirely.</td></tr>
+</tbody></table>
+
+<h2>30.9 Advertising for new product launches — the right sequence</h2>
+<ol>
+<li><strong>Day 1–7:</strong> No ads. Let Amazon index your listing. Focus on getting first 2–3 orders organically from friends, social media, or existing customers.</li>
+<li><strong>Day 8–21:</strong> Start Research campaign (automatic). Budget ₹50/day. Gather search term data.</li>
+<li><strong>Day 22–35:</strong> Pull Search Term Report. Start Performance campaign with winning terms.</li>
+<li><strong>Day 36+:</strong> Optimise weekly. Scale what works. Kill what does not.</li>
+</ol>
+
+<div class="box good">
+<p class="lbl">The mindset shift that prevents your July from repeating</p>
+<p>Advertising is not a growth tool. It is a <strong>data-collection tool that sometimes also drives
+sales</strong>. The first 2–3 weeks of any campaign exist to learn what customers search for, which
+terms convert, and what your real cost per acquisition is. <strong>If the data says "this does not
+convert", the right action is to stop — not to spend more.</strong></p>
+</div>
+
+
+<!-- ========== CH 31 ========== -->
+<h1 id="ch31">31 · Account Rules, Policies &amp; Staying Compliant</h1>
+<p class="lede">Fees cost you money. Suspensions cost you everything. This chapter covers the
+performance metrics that keep your account alive, the policy violations that can kill it, and what
+to do if things go wrong.</p>
+
+<h2>31.1 Account Health Rating (AHR) — the single most important number</h2>
+<p><span class="tag v">VERIFIED</span> Amazon scores every seller on a scale of <strong>0 to
+1,000</strong>. Every new seller starts at <strong>200</strong>. Points are earned at roughly 4 points
+per 200 fulfilled orders over a trailing 180-day period. Points are deducted 2–8 per policy violation.
+Critical violations can drop you straight to zero.</p>
+<table>
+<thead><tr><th style="width:30mm">Score Range</th><th style="width:22mm">Status</th><th>What it means</th></tr></thead>
+<tbody>
+<tr><td>200–1,000</td><td><strong>Healthy</strong></td><td>Normal operations. No restrictions.</td></tr>
+<tr><td>100–199</td><td><strong>At Risk</strong></td><td>You are close to suspension. Fix violations immediately.</td></tr>
+<tr><td>Below 100</td><td><strong>Unhealthy / Deactivated</strong></td><td>Account may be suspended. Appeal required.</td></tr>
+</tbody></table>
+<p><strong>Your current score: 200 (Healthy).</strong> You are at the starting baseline with zero
+violations — which is exactly where a well-run account should be at your age.</p>
+
+<h2>31.2 The performance metrics Amazon watches</h2>
+<table>
+<thead><tr><th style="width:46mm">Metric</th><th style="width:22mm">Target</th><th>What triggers a violation</th></tr></thead>
+<tbody>
+<tr><td><strong>Order Defect Rate (ODR)</strong></td><td>&lt; 1%</td><td>Negative feedback + A-to-Z claims + chargebacks, measured over 60 days. <strong>The most important metric.</strong></td></tr>
+<tr><td><strong>Late Shipment Rate</strong></td><td>&lt; 4%</td><td>Seller-fulfilled orders not confirmed shipped by the expected date. FBA sellers: Amazon handles this.</td></tr>
+<tr><td><strong>Pre-Fulfilment Cancel Rate</strong></td><td>&lt; 2.5%</td><td>Orders you cancel before shipping. FBA sellers: nearly impossible to trigger.</td></tr>
+<tr><td><strong>Valid Tracking Rate (VTR)</strong></td><td>&gt; 95%</td><td>Seller-fulfilled shipments without valid tracking. FBA: handled by Amazon.</td></tr>
+<tr><td><strong>On-Time Delivery Rate (OTDR)</strong></td><td>&gt; 90%</td><td>Orders not delivered by the estimated date. FBA handles delivery.</td></tr>
+</tbody></table>
+
+<div class="box good">
+<p class="lbl">Why FBA protects your Account Health</p>
+<p>Four of the five performance metrics above (Late Shipment, Cancel Rate, VTR, OTDR) relate to
+<strong>fulfilment</strong>. Since Amazon handles all fulfilment for FBA orders, you are largely
+insulated from these. Your main exposure is <strong>ODR</strong> — which comes from customer complaints,
+not operational failures.</p>
+</div>
+
+<h2>31.3 The OTDR change in February 2026</h2>
+<p><span class="tag v">VERIFIED</span> Effective <strong>28 February 2026</strong>, Amazon changed how
+On-Time Delivery Rate enforcement works:</p>
+<ul>
+<li><strong>Before:</strong> If your OTDR fell below 90%, <em>all</em> your seller-fulfilled listings were deactivated.</li>
+<li><strong>After:</strong> Only the <em>specific listings that most impact your OTDR drop</em> are
+deactivated. Your other listings remain active.</li>
+<li><strong>Exception:</strong> If OTDR is <em>significantly</em> below 90% or you repeatedly fail, Amazon
+may still deactivate all seller-fulfilled listings.</li>
+</ul>
+<p><strong>For you (FBA-only):</strong> this does not apply. Amazon delivers your orders, so your OTDR
+is Amazon's problem. It becomes relevant only if you add an Easy Ship or Self-Ship product.</p>
+
+
+<h2>31.4 Policy violations that suspend accounts — the top five</h2>
+<table>
+<thead><tr><th style="width:44mm">Violation</th><th>How it happens</th><th style="width:36mm">How to prevent it</th></tr></thead>
+<tbody>
+<tr><td><strong>Inauthentic product complaints</strong></td><td>A customer or brand owner claims your product is counterfeit or not genuine</td><td>Keep supplier invoices (3+ months). Only sell products you can prove are authentic.</td></tr>
+<tr><td><strong>Intellectual property complaints</strong></td><td>A brand owner files a trademark or copyright complaint against your listing</td><td>Never list against a brand you are not authorised to sell. Check Chapter 16.3.</td></tr>
+<tr><td><strong>Product condition complaints</strong></td><td>Customers report items as used, damaged, or materially different from listing</td><td>Accurate listing descriptions. QC before sending to FBA.</td></tr>
+<tr><td><strong>Restricted product violations</strong></td><td>Listing a product that requires certification you do not have (BIS, FSSAI, etc.)</td><td>Chapter 17 — run every product through the compliance checklist before listing.</td></tr>
+<tr><td><strong>Review manipulation</strong></td><td>Offering incentives for reviews, buying reviews, asking for positive reviews specifically</td><td>Chapter 22.1 — only ask for "honest" reviews. Never offer anything in exchange.</td></tr>
+</tbody></table>
+
+<h2>31.5 What happens when something goes wrong — the suspension process</h2>
+<ol>
+<li><strong>Warning:</strong> Amazon sends an email and a Performance Notification in Seller Central. You have a window (usually 72 hours) to respond or fix the issue.</li>
+<li><strong>Listing suppression:</strong> The specific product listing is hidden. Your account stays active. Fix the issue and the listing can be reinstated.</li>
+<li><strong>Account suspension:</strong> You cannot sell anything. Funds are held for 90 days. You must submit a Plan of Action to appeal.</li>
+<li><strong>Account termination:</strong> Permanent ban. Extremely rare for first-time issues; usually follows repeated suspensions or fraud.</li>
+</ol>
+
+<h2>31.6 Writing a Plan of Action (if you ever need one)</h2>
+<p>A Plan of Action has exactly three parts:</p>
+<table>
+<thead><tr><th style="width:38mm">Section</th><th>What to write</th></tr></thead>
+<tbody>
+<tr><td><strong>Root Cause</strong></td><td>What specifically caused the problem. Be honest. Do not blame Amazon or the customer. Own it.</td></tr>
+<tr><td><strong>Corrective Action</strong></td><td>What you have already done to fix the immediate problem. Past tense — it should be done, not planned.</td></tr>
+<tr><td><strong>Preventive Measures</strong></td><td>What systems you have put in place so this never happens again. Specific steps, not vague promises.</td></tr>
+</tbody></table>
+
+<div class="box warn">
+<p class="lbl">What gets Plans of Action rejected</p>
+<ul>
+<li><strong>Blaming the customer:</strong> "The customer lied" is never a root cause Amazon accepts.</li>
+<li><strong>Being vague:</strong> "We will improve our quality" means nothing. Specific actions only.</li>
+<li><strong>Not addressing the actual violation:</strong> Read the notification carefully. Answer what they asked about, not what you want to talk about.</li>
+<li><strong>Submitting repeatedly without changing anything:</strong> Each rejection makes the next one harder.</li>
+</ul>
+</div>
+
+<h2>31.7 Listing suppression — the most common "suspension" that is not one</h2>
+<p>Far more common than account suspension is <strong>listing suppression</strong> — your product
+disappears from search while your account stays active. Common causes:</p>
+<ul>
+<li>Missing or incorrect Legal Metrology information (Chapter 7)</li>
+<li>Main image not meeting requirements (Appendix G.3)</li>
+<li>Price too far above comparable listings (Amazon suppresses to "protect customers")</li>
+<li>Missing required product information fields (manufacturer, country of origin)</li>
+<li>Product flagged as a potential safety or compliance issue</li>
+</ul>
+<p><strong>How to check:</strong> Performance → Voice of the Customer, or Manage Inventory → look for
+listings with a "Suppressed" status. Fix the flagged issue and request reinstatement.</p>
+
+
+<!-- ========== CH 32 ========== -->
+<h1 id="ch32">32 · Tips, Hints &amp; Advanced Growth Strategies</h1>
+<p class="lede">Everything before this chapter is structure and rules. This chapter is tactics —
+things that work in practice for Amazon India sellers in 2026, collected from verified sources and
+real account data.</p>
+
+<h2>32.1 Pricing strategies that protect your margin</h2>
+
+<h4>The Automated Pricing trap</h4>
+<p><span class="tag v">VERIFIED</span> Your account has "Competitive Price Rule by Amazon" enabled,
+with min ₹333 and max ₹500. This means Amazon can move your price anywhere in that band
+automatically.</p>
+<div class="box warn">
+<p class="lbl">Why you should be careful with automated pricing</p>
+<ul>
+<li>A price change from ₹333 to ₹501 would move you from the ₹301–500 closing fee band (₹18) into the ₹501–1,000 band (₹27) — an instant ₹9 fee increase per unit.</li>
+<li>Conversely, if Amazon drops your price to ₹300, you move into the ₹0–300 band where closing fee groups change.</li>
+<li><strong>Your min should be set at a price where you still make money after ALL fees.</strong> If you cannot make money at ₹333, your minimum is too low.</li>
+</ul>
+</div>
+
+<h4>MRP vs selling price — the legal constraint</h4>
+<p>You cannot sell above MRP in India. Your listing shows MRP ₹499 (note: different from the ₹500 in
+the listing description — <strong>verify the physical label matches</strong>). This means your price
+ceiling is ₹499. With Amazon's automated rule capped at ₹500, you have a ₹166 band to work within.</p>
+
+<h2>32.2 Buy Box mechanics — what actually decides who gets the sale</h2>
+<p>The Buy Box is the "Add to Cart" button. On a listing with multiple sellers, only one gets
+it at a time. Factors that matter:</p>
+<table>
+<thead><tr><th style="width:40mm">Factor</th><th style="width:20mm">Weight</th><th>What you control</th></tr></thead>
+<tbody>
+<tr><td>Fulfilment method</td><td>Very high</td><td>FBA wins over self-ship almost always. You are already on FBA.</td></tr>
+<tr><td>Landed price (item + shipping)</td><td>High</td><td>Must be competitive. Not always lowest, but within range.</td></tr>
+<tr><td>Seller metrics</td><td>Medium</td><td>Order Defect Rate, cancellation, late dispatch — keep clean.</td></tr>
+<tr><td>Stock availability</td><td>Medium</td><td>Must be in stock. Stockouts lose the Buy Box instantly.</td></tr>
+<tr><td>Time in business / history</td><td>Low–Medium</td><td>Longer track record helps. Time fixes this.</td></tr>
+</tbody></table>
+
+<div class="box good">
+<p class="lbl">Right now, you likely own the Buy Box 100%</p>
+<p>Your listing has Brand: Generic and you are the only FBA seller on this ASIN. Nobody else is
+competing for this Buy Box yet. <strong>That changes the moment another seller lists against your
+ASIN</strong> — which they can do because it is Generic (Chapter 4.2). Getting Brand Registry is
+the long-term defense.</p>
+</div>
+
+<h2>32.3 Seasonal planning — India's sale calendar</h2>
+<table>
+<thead><tr><th style="width:34mm">Event</th><th style="width:30mm">Typical timing</th><th>What to do</th></tr></thead>
+<tbody>
+<tr><td>Great Indian Festival</td><td>Late September – October</td><td>Send stock 6–8 weeks ahead. Create deals. Increase ad budgets during the event.</td></tr>
+<tr><td>Prime Day</td><td>July (varies)</td><td>Stock up in May/June. Lightning Deals if eligible.</td></tr>
+<tr><td>Republic Day Sale</td><td>Late January</td><td>Good for home products. Plan in November/December.</td></tr>
+<tr><td>Summer Sale</td><td>May</td><td>Home and garden do well. Order stock in March.</td></tr>
+<tr><td>Diwali period</td><td>October–November</td><td>Peak for home décor, lighting, gifts. Your clothesline is less seasonal but benefits from general traffic surge.</td></tr>
+</tbody></table>
+
+<div class="box info">
+<p class="lbl">The principle that matters more than any specific date</p>
+<p><strong>Place inventory orders 6–8 weeks before a major sale event, not during it.</strong> Supplier
+lead times and Amazon's inbound processing both slow down when everyone rushes at once. A stockout
+during India's biggest sale week costs far more than the extra storage fees for holding stock a few
+weeks early.</p>
+<p style="margin-bottom:0"><span class="tag s">CHECK LIVE</span> Exact event dates move every year.
+Check Seller Central → Growth → Deals, or Announcements, 2–3 months ahead.</p>
+</div>
+
+
+<h2>32.4 Reimbursement auditing — money Amazon owes you</h2>
+<p>This is the process described in Chapter 20.4–20.5, turned into a monthly routine:</p>
+<ol>
+<li><strong>Pull the Inventory Adjustments Report</strong> for the past 60 days</li>
+<li><strong>Filter for "Lost" and "Damaged" reasons</strong> with "Warehouse" as the responsible party</li>
+<li><strong>Cross-reference against the Reimbursements Report</strong> — has Amazon already paid you?</li>
+<li><strong>Any gap = money owed.</strong> Since late 2024, Amazon auto-reimburses many losses. But not all. Check every month.</li>
+<li><strong>File claims for gaps</strong> within 60 days of the event (the current window for most claim types)</li>
+</ol>
+
+<div class="box warn">
+<p class="lbl">Key 2026 change: reimbursement is at sourcing cost, not retail price</p>
+<p><span class="tag v">VERIFIED</span> Amazon now reimburses lost or damaged FBA inventory at your
+<strong>manufacturing (sourcing) cost</strong>, not the selling price. If your rope wire sells at ₹333
+but costs ₹100 to produce, your reimbursement for a lost unit is roughly ₹100 — not ₹333.</p>
+<p style="margin-bottom:0"><strong>This makes your supplier invoices essential documentation.</strong>
+Keep every invoice. Amazon will ask for proof of sourcing cost when processing claims. Without it,
+they may use a generic estimate that is lower than your actual cost.</p>
+</div>
+
+<h4>The five claim types to check monthly:</h4>
+<table class="tight">
+<thead><tr><th style="width:44mm">Claim type</th><th style="width:28mm">Filing window</th><th>Where to find evidence</th></tr></thead>
+<tbody>
+<tr><td>Lost in warehouse</td><td>60 days from event</td><td>Inventory Adjustments → "Lost – Warehouse"</td></tr>
+<tr><td>Damaged by Amazon</td><td>60 days from event</td><td>Inventory Adjustments → "Damaged – Warehouse"</td></tr>
+<tr><td>Inbound shipment shortages</td><td>15–60 days from delivery</td><td>Manage FBA Shipments → compare Expected vs Located</td></tr>
+<tr><td>Customer returns not restocked</td><td>60–120 days after refund</td><td>Customer Returns report → disposition "Sellable" but not back in inventory</td></tr>
+<tr><td>Fee overcharges</td><td>90 days</td><td>Settlement report → compare actual vs expected fees</td></tr>
+</tbody></table>
+
+<h2>32.5 Listing optimisation — the free levers</h2>
+<h4>Title structure that works on Amazon India:</h4>
+<div class="formula">[Brand] [Product Name] [Key Feature 1] [Key Feature 2] [Material/Size] [Colour/Variant]
+
+Example (yours):
+Rope Wire for Cloth Drying &amp; Hanging Clothes — Clothesline, Heavy Gauge, Rust Proof, 12 Gauge, No Sagging, Length 22 Metres (Black)</div>
+<p>Your title is already well-structured. Key improvements for conversion:</p>
+<ul>
+<li><strong>Backend search terms:</strong> Add synonyms customers might use that are not in your title — "balcony drying line", "terrace clothesline", "steel wire clothes hanger outdoor"</li>
+<li><strong>Bullet points:</strong> Lead each with a benefit, then explain the feature. "NO SAGGING GUARANTEED — Heavy 12-gauge steel wire maintains tension across 22 metres without drooping"</li>
+<li><strong>A+ Content:</strong> Not available without Brand Registry. File TM-A first (Chapter 22.1).</li>
+</ul>
+
+<h2>32.6 Product photography that converts — the free version</h2>
+<table>
+<thead><tr><th style="width:26mm">Image slot</th><th>What to show</th><th style="width:44mm">Why it converts</th></tr></thead>
+<tbody>
+<tr><td>Image 1 (Main)</td><td>Product on pure white background, filling 85%+ of frame</td><td>Required by Amazon. Gets you into search results.</td></tr>
+<tr><td>Image 2</td><td>Product in use — hung on a balcony with clothes drying</td><td>Shows the customer what they will actually get</td></tr>
+<tr><td>Image 3</td><td>Close-up of the wire gauge/material quality</td><td>Addresses "will it hold?" concern from 1-star reviews</td></tr>
+<tr><td>Image 4</td><td>Comparison infographic — your wire vs thin alternatives</td><td>Differentiates from cheap competitors</td></tr>
+<tr><td>Image 5</td><td>Packaging shot showing all declarations (length, MRP, address)</td><td>Builds trust, shows professionalism</td></tr>
+<tr><td>Image 6</td><td>Installation ease — one person setting it up</td><td>Removes "is this hard to install?" objection</td></tr>
+<tr><td>Image 7</td><td>Size/scale — the 22m length visualised against a balcony</td><td>Answers "is 22m enough for me?"</td></tr>
+</tbody></table>
+<p><strong>Equipment needed:</strong> A smartphone with a good camera, a white bedsheet for background,
+natural daylight near a window. No studio required for your first set of images.</p>
+
+
+<h2>32.7 Review building — legitimate strategies only</h2>
+<p>Reviews are the growth bottleneck for new sellers. You have 1 review. Here is how to get to 15+
+without risking your account:</p>
+<table>
+<thead><tr><th style="width:38mm">Method</th><th>How it works</th><th style="width:28mm">Cost</th></tr></thead>
+<tbody>
+<tr><td><strong>Request a Review button</strong></td><td>Available on every delivered order in Order Details. Sends Amazon's own template — safe, automated. Click it on every order.</td><td>Free</td></tr>
+<tr><td><strong>Insert card in packaging</strong></td><td>A card saying "If you have a moment, we'd appreciate an honest review." Must NOT ask for positive reviews or offer anything in exchange (Chapter 22.1).</td><td>₹1–3 per card</td></tr>
+<tr><td><strong>Amazon Vine</strong></td><td>Gives free units to trusted reviewers for honest reviews. The most powerful review-building tool. Requires Brand Registry.</td><td>₹0 enrolment fee + cost of units given away</td></tr>
+<tr><td><strong>Follow-up email via Buyer-Seller Messages</strong></td><td>A polite message after delivery checking satisfaction and mentioning that reviews help. Must follow Amazon's template rules.</td><td>Free</td></tr>
+</tbody></table>
+
+<div class="box warn">
+<p class="lbl">What will get your account suspended</p>
+<ul>
+<li>Buying reviews from any service</li>
+<li>Offering discounts or free products in exchange for reviews</li>
+<li>Asking friends or family to review (Amazon detects same-household orders)</li>
+<li>Using insert cards that say "5 stars" or "positive review"</li>
+<li>Offering to replace the product if they remove a negative review</li>
+</ul>
+<p style="margin-bottom:0">Amazon's review manipulation detection has become significantly more
+aggressive in 2025–2026. The risk is not worth it at any scale.</p>
+</div>
+
+<h2>32.8 Inventory management — the numbers to track</h2>
+<table>
+<thead><tr><th style="width:44mm">Metric</th><th>Target</th><th style="width:44mm">Why</th></tr></thead>
+<tbody>
+<tr><td><strong>Weeks of Cover</strong></td><td>6–10 weeks</td><td>Under 4 weeks risks stockouts. Over 12 weeks triggers aged-stock surcharges at 181 days.</td></tr>
+<tr><td><strong>Sell-through rate</strong></td><td>Above 3 per month</td><td>Below this, your Inventory Performance Index (IPI) drops and Amazon may cap your storage</td></tr>
+<tr><td><strong>Reorder point</strong></td><td>Lead time × daily sales rate × 1.5</td><td>The 1.5x buffer covers supplier delays and Amazon inbound processing time</td></tr>
+</tbody></table>
+
+<p><strong>Your current situation:</strong> 141 units on hand, selling ~1.4 units/day = about 100 days
+of cover = roughly 14 weeks. That is slightly above ideal. Watch the Inventory Age dashboard — at 181
+days the surcharge starts. Your stock was received in late June/early July, so the clock started then.
+<strong>The 181-day line hits around late December 2026.</strong> If units are not sold by then, remove
+or discount them.</p>
+
+<h2>32.9 Multi-product strategy — spreading risk</h2>
+<p>Your STEP dashboard shows the single biggest blocker to Advanced level: you have 1 active listing
+and need 5. But adding products is not just about STEP — it is about risk.</p>
+<h4>Criteria for your next 4 products:</h4>
+<ul>
+<li><strong>Same category (Home &amp; Kitchen):</strong> avoids new compliance research</li>
+<li><strong>Open category, no gating:</strong> avoids approval delays</li>
+<li><strong>Under ₹1,000:</strong> keeps 0% referral fee</li>
+<li><strong>Under 500g packed:</strong> stays in cheapest weight band</li>
+<li><strong>Small dimensions:</strong> avoids volumetric weight penalty</li>
+<li><strong>Clear demand (check Best Sellers Rank):</strong> BSR under 50,000 in Home &amp; Kitchen suggests steady sales</li>
+<li><strong>Addressable complaints in reviews:</strong> read 1–3 star reviews on category leaders. If you can fix what they complain about, you have a reason to exist.</li>
+</ul>
+
+<div class="box good">
+<p class="lbl">The value of 5 active listings</p>
+<p>Moving from 1 to 5 listings does three things at once:</p>
+<ol>
+<li><strong>Unlocks STEP Advanced:</strong> ₹6 off weight handling (vs ₹4 today), ₹3,540 in SPN credits</li>
+<li><strong>Unlocks New Seller Incentive 1:</strong> up to ₹5,000 in benefits (needs non-generic listings)</li>
+<li><strong>Diversifies risk:</strong> if one product gets a bad review or a competitor appears, your business does not collapse</li>
+</ol>
+</div>
+
+
+<h2>32.10 Tools and resources worth knowing</h2>
+<table>
+<thead><tr><th style="width:40mm">Tool</th><th>What it does</th><th style="width:28mm">Cost</th></tr></thead>
+<tbody>
+<tr><td><strong>Amazon Revenue Calculator</strong></td><td>Models fee breakdown for any product. The only free tool you absolutely need.</td><td>Free (inside Seller Central)</td></tr>
+<tr><td><strong>Google Trends</strong></td><td>Shows search demand over time for product keywords. Set location to India.</td><td>Free</td></tr>
+<tr><td><strong>Amazon Best Sellers page</strong></td><td>Shows top-selling products by category. Use for product research.</td><td>Free</td></tr>
+<tr><td><strong>Helium 10 / Jungle Scout</strong></td><td>Product research, keyword tracking, competitor analysis. India data is weaker than US, but trends are useful.</td><td>₹2,000–5,000/month</td></tr>
+<tr><td><strong>Excel / Google Sheets</strong></td><td>Your margin calculator, reconciliation sheet, and reorder tracker. No paid tool replaces a well-built spreadsheet.</td><td>Free</td></tr>
+<tr><td><strong>Your CA / accountant</strong></td><td>GST filing, income tax, TCS reconciliation, GSTR-1/3B. Worth more than any tool.</td><td>₹1,000–3,000/month</td></tr>
+</tbody></table>
+
+<h2>32.11 The 10 habits of sellers who survive year one</h2>
+<ol>
+<li><strong>Check Account Health weekly.</strong> Not monthly. Not when something breaks.</li>
+<li><strong>Download and reconcile the settlement report every cycle.</strong> The bank balance tells you how much; only the report tells you why.</li>
+<li><strong>Never spend more on ads than the product earns.</strong> TACOS above 100% means the ads are destroying the business.</li>
+<li><strong>Build the margin sheet before buying stock.</strong> Not after. Not roughly. Every fee, every line.</li>
+<li><strong>Respond to every customer message within 24 hours.</strong> Even if the answer is "let me check."</li>
+<li><strong>Start missions before chasing their targets.</strong> Performing without subscribing earns nothing.</li>
+<li><strong>File reimbursement claims monthly.</strong> Amazon will not tell you when it owes you money.</li>
+<li><strong>Photograph every outbound carton before sealing it.</strong> Your only evidence in a shortage claim.</li>
+<li><strong>Check Inventory Ledger for out-of-state stock monthly.</strong> The GST consequence is real.</li>
+<li><strong>Treat this book as a map, not a contract.</strong> Amazon's own page — Fee Preview, Revenue Calculator, Account Health — always beats what is printed here.</li>
+</ol>
+
+<div class="box good">
+<p class="lbl">Your current position — honest assessment</p>
+<p><strong>What is working:</strong> Account Health 200 (Healthy), ODR 0%, Service Quality 100/100,
+cancellation 0%, product sells organically (42 units without any attributed ad sales), fees currently
+exempted, and the unit economics work once advertising is fixed.</p>
+<p><strong>What needs fixing, in priority order:</strong></p>
+<ol>
+<li><strong>Pause advertising today</strong> — it is costing ₹500/day with ₹0 attributed sales</li>
+<li><strong>Get to 10+ reviews</strong> — use Request a Review on every order + insert card</li>
+<li><strong>Prepare for fee exemption ending</strong> — plan pricing and margins at full fee rates</li>
+<li><strong>File TM-A for a real brand name</strong> — unlocks Brand Registry, Vine, A+ Content</li>
+<li><strong>Add 4 more products</strong> — unlocks STEP Advanced and diversifies risk</li>
+<li><strong>Fix the GST certificate</strong> — add FC as Additional Place of Business (Chapter 5.5)</li>
+</ol>
+<p style="margin-bottom:0"><strong>What can wait:</strong> Brand Store, Sponsored Brands, multi-state
+GST (only if stock moves outside Telangana), Premium STEP (needs far higher volume), advanced
+advertising strategies. These are month 6+ concerns.</p>
+</div>
