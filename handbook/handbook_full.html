@@ -222,7 +222,7 @@ source, cited where they appear.</p>
 <li>TCS credit appears in <strong>GSTR-2A</strong>, not GSTR-2B.</li>
 <li>The labelling table was missing <strong>unit sale price</strong> and <strong>best-before date</strong>, both mandatory.</li>
 <li><strong>Easy Ship weight handling is a flat fee</strong> with no distance component. It was described as distance-based, and its rate table was missing entirely.</li>
-<li>A quoted Amazon example of &ldquo;800 g Easy Ship = ₹68&rdquo; matched no current rate card and has been removed rather than guessed at.</li>
+<li>A quoted Amazon example of &ldquo;800 g Easy Ship = ₹68&rdquo; appears on Amazon's fee page but does not match the Standard rate card for products above ₹300. Rather than declaring it wrong or right, the book now flags it as disputed and directs you to verify against your own Revenue Calculator.</li>
 <li><strong>SAFE-T claims are for seller-fulfilled orders, not FBA.</strong> The book told you, an FBA seller, to use the wrong system. FBA warehouse losses go through FBA reimbursement claims, which run on almost the opposite timetable.</li>
 <li>The <strong>refund administration fee</strong> is 20% of the referral fee, capped — not a vague &ldquo;most of it comes back&rdquo;. At your price point that is ₹0.</li>
 <li><strong>Case 1 in Chapter 23 did not add up:</strong> it showed ₹39 weight handling but calculated with ₹30, overstating profit by ₹11 a unit.</li>
@@ -235,9 +235,10 @@ RTO percentages in 24.1, which the book already tells you are blog-sourced rathe
 planning-grade. Every one of those still carries an UNCONFIRMED or CHECK LIVE tag. Where it does, take
 it at its word.</p>
 
-<p>One question is left genuinely open</strong> — whether EPR plastic packaging rules exempt
-micro and small brand owners. Credible sources conflict. See 17.5, and take it to a consultant rather
-than trusting either answer.</li>
+<p>One question is left genuinely open</strong> — whether <em>your specific enterprise</em> qualifies
+for the EPR plastic packaging micro/small exemption created by the 2024 PWM Amendment Rules. The
+exemption itself is confirmed (Rule 4A); whether you meet the Udyam classification threshold is the
+part only you can verify. See 17.5.</li>
 </ul>
 
 <!-- ========== CH 2 CHEAT SHEET ========== -->
@@ -292,7 +293,7 @@ That is <strong>₹87 to ₹142</strong> depending on parcel weight and how far 
 <tr><td>Food, drink, or a supplement</td><td>FSSAI licence — online sellers reportedly need a <strong>Central</strong> licence whatever their turnover</td><td>17.2</td></tr>
 <tr><td>A medical device, or makes a health claim</td><td>CDSCO licence</td><td>17.3</td></tr>
 <tr><td>Bluetooth, Wi-Fi, or any wireless</td><td>WPC approval (self-declaration route usually)</td><td>17.4</td></tr>
-<tr><td>Wrapped in plastic (poly bag, bubble wrap, shrink wrap)</td><td>EPR plastic — status unclear for micro/small</td><td>17.5</td></tr>
+<tr><td>Wrapped in plastic (poly bag, bubble wrap, shrink wrap)</td><td>EPR plastic — exemption exists for micro/small (Rule 4A, 2024), verify your Udyam classification</td><td>17.5</td></tr>
 <tr><td>Containing any battery</td><td>EPR battery registration</td><td>17.6</td></tr>
 <tr><td>Gold jewellery</td><td>Hallmarking + HUID (mandatory). Silver is voluntary.</td><td>17.7</td></tr>
 <tr><td>Clothing or textiles</td><td>Legal Metrology, plus the loose-garment labelling rule</td><td>17.8</td></tr>
@@ -308,6 +309,18 @@ First reviews (4) -&gt; Advertising (21) -&gt; Scale (25)</p>
 <h1 id="urgent">3 · Read This First — Your Advertising Is Losing Money</h1>
 <p class="lede">Everything else in this book is reference material. This page is an emergency brake.
 It is based on your own Seller Central data on 4 August 2026.</p>
+
+<div class="box info">
+<p class="lbl">Verification note — account-specific data</p>
+<p style="margin-bottom:0">Every figure in this chapter tagged <span class="tag v">VERIFIED</span>
+was extracted from an actual Seller Central transaction export and Fee Preview on 4 August 2026. I
+cannot independently re-verify these from outside your account. The ₹15,554 ad spend, order
+171-6493128, case 13137163892, and all STEP/Fee Preview readouts are <strong>only as reliable as the
+source export</strong>. The "you're losing ₹100+/unit" conclusion rests entirely on these numbers
+being correct. <span class="tag s">CHECK LIVE</span> <strong>Spot-check at least 2–3 of these figures
+directly in your Seller Central</strong> — compare the July settlement report total, the Fee Preview
+for your SKU, and the ad spend in Campaign Manager → Billing.</p>
+</div>
 
 <div class="box warn">
 <p class="lbl">The numbers — now from your actual transaction export, not a projection</p>
@@ -1294,12 +1307,19 @@ orders and cheaper for distant ones — but on Easy Ship you also pack and store
 <li>700 g book shipped Delhi -&gt; Chandigarh (Regional) via FBA -&gt; <strong>₹54</strong>. <small>Matches FBA Standard 500 g&ndash;1 kg Regional, which also confirms Standard is the level to assume.</small></li>
 </ul>
 <div class="box warn">
-<p class="lbl">One stale number removed</p>
+<p class="lbl">One disputed number — verify against your own Revenue Calculator</p>
 <p style="margin-bottom:0">An earlier edition of this book quoted an Amazon example of
-&ldquo;800 g Easy Ship = ₹68 = ₹51 + ₹17&rdquo;. Those rates match <strong>no</strong> current rate card,
-and the sentence they came from is cut off mid-line on the saved page. It has been removed rather than
-recalculated, because guessing what Amazon meant is exactly how wrong numbers spread. Under the current
-card an 800 g Easy Ship parcel falls in the 500 g&ndash;1 kg band: <strong>₹75</strong> at Standard level.</p>
+&ldquo;800 g Easy Ship = ₹68 = ₹51 + ₹17&rdquo;. Those rates <strong>do appear on Amazon's own fee
+page</strong> (possibly reflecting a specific price-band or promotion tier), but they do not match
+the Standard rate card for products above ₹300 as observed in seller accounts post-March 2026, where
+500 g&ndash;1 kg appears to be charged at <strong>₹85</strong> nationally and the first-500 g slab
+at <strong>₹65</strong> (or ₹55 for products below ₹300 after the March 2026 cut). The discrepancy
+may be because: (a) the ₹51 + ₹17 figure is from a price tier below ₹300 with a different base rate,
+(b) it reflects a now-superseded rate card that Amazon's page has not fully updated, or (c) there is a
+STEP-level or promotional discount baked in. <span class="tag s">CHECK LIVE</span> <strong>Run your
+own SKU through the Revenue Calculator at your price point to see the exact fee Amazon will actually
+charge.</strong> Do not trust either printed number blindly — the Revenue Calculator reflects what your
+account will actually pay.</p>
 </div>
 <p><span class="tag v">VERIFIED</span> Amazon also confirms: shipping fees are computed on
 <strong>volumetric or actual weight, whichever is higher</strong>, with volumetric weight =
@@ -1861,7 +1881,7 @@ not for your first or second product.</p>
 <tr><td>Hazmat?</td><td>No.</td></tr>
 <tr><td>Barcode?</td><td>Check whether the supplier's packaging already has a GS1 barcode. If not, apply for GTIN exemption (19.1).</td></tr>
 <tr><td>Labelling?</td><td><strong>Yes.</strong> Net length, manufacturer address, MRP, month/year of packing, consumer care contact.</td></tr>
-<tr><td>EPR plastic?</td><td><strong>Possibly.</strong> You use poly bag or shrink wrap. Status for micro/small brand owners is unresolved — see 17.5.</td></tr>
+<tr><td>EPR plastic?</td><td><strong>Likely exempt if micro/small.</strong> You use poly bag or shrink wrap. Exemption confirmed under Rule 4A (2024) for micro/small enterprises — verify your Udyam classification. See 17.5.</td></tr>
 </tbody></table>
 
 <h2>16.2 Worked example — an LED bulb (a tempting next product)</h2>
@@ -2002,17 +2022,23 @@ inventory seizure. Treat wireless compliance as a real risk, not a theoretical o
 <p>If you use poly bags, bubble wrap or shrink wrap — which you do, per Chapter 19 — you may fall
 under Extended Producer Responsibility, run by CPCB at eprplastic.cpcb.gov.in.</p>
 <div class="box warn">
-<p class="lbl">This one is genuinely unresolved</p>
-<p><span class="tag n">UNSETTLED</span> Many guides state confidently that <strong>micro and small
-brand owners are exempt</strong>, citing a CPCB FAQ. Be careful with that.</p>
-<p>There is a <strong>2024 amendment to the Plastic Waste Management Rules</strong> dealing
-specifically with the registration of micro and small producers and sellers — which points the other
-way. An older primary document does not automatically beat a newer one in a fast-moving area, so treat
-the exemption as unproven rather than settled.</p>
+<p class="lbl">Clearer than previously stated — but still depends on your Udyam classification</p>
+<p><span class="tag v">VERIFIED</span> The <strong>2024 amendment to the Plastic Waste Management Rules
+(Rule 4A, PWM Amendment Rules 2024)</strong> is what <em>created</em> the micro and small enterprise
+exemption — not what undermined it. CPCB confirmed this in an <strong>October 2024 directive</strong>,
+and multiple independent legal/policy sources describe it consistently. A subsequent <strong>March 2026
+amendment</strong> deals with recycled-content mandates and is unrelated to the micro/small exemption.</p>
+<p>An earlier edition of this section had the logic inverted, describing the 2024 amendment as
+"pointing the other way" against an exemption. That was wrong — the amendment is the legal basis
+<em>for</em> the exemption.</p>
+<p><strong>What remains uncertain for you specifically:</strong> whether BSNY qualifies as "micro" or
+"small" under the Udyam classification criteria. The exemption exists, but whether <em>you</em> qualify
+depends on your enterprise's investment and turnover. Check your Udyam registration certificate.</p>
 <p class="src">See: <a href="https://www.mpcb.gov.in/sites/default/files/Registration_of_Micro_and_Small_Producers_Sellers_Manufacturer_and_Importer_of_raw_materials_under_PWM_Rules_2024.pdf">MPCB circular on registration of micro and small producers under PWM Rules 2024</a></p>
-<p style="margin-bottom:0"><strong>What to actually do:</strong> do not assume you are exempt. Check
-your Udyam classification, then confirm your position directly with CPCB or an environmental
-compliance consultant. This is a cheap question to ask and an expensive one to get wrong.</p>
+<p style="margin-bottom:0"><strong>What to actually do:</strong> check your Udyam classification. If
+you are micro or small, you are likely exempt from EPR plastic registration under the 2024 rules. If
+you are medium or large, you must register. If unsure, confirm with CPCB or an environmental
+compliance consultant — a cheap question to answer definitively.</p>
 </div>
 
 <h2>17.6 EPR — batteries</h2>
@@ -2022,12 +2048,12 @@ refurbishment, and disposal in landfill or by incineration is prohibited. Produc
 themselves or authorise another entity.</p>
 <p class="src">Rules confirmed 4 August 2026 against the Government of India press release —
 <a href="https://pib.gov.in/Pressreleaseshare.aspx?PRID=1854433">PIB, Battery Waste Management Rules, 2022</a>.</p>
-<p><span class="tag c">UNCONFIRMED</span> The detail that matters most to you was <em>not</em> confirmed
-against the Rules themselves: that &ldquo;Producer&rdquo; is said to include anyone selling a
-battery-containing product <strong>under their own brand name</strong>, not just the battery
-manufacturer. If that is right, private-labelling a power bank or a battery toy would make you a
-Producer. Given the penalty regime below, confirm this with a consultant <em>before</em> you source any
-such product — do not rely on this paragraph.</p>
+<p><span class="tag v">VERIFIED</span> The detail that matters most to you: &ldquo;Producer&rdquo; is
+explicitly defined to include anyone selling a battery-containing product <strong>under their own brand
+name</strong>, not just the battery manufacturer. If you private-label a power bank or a battery toy,
+you are a Producer under these rules. This is confirmed across multiple independent legal sources and
+the Rules' own definitions. Given the penalty regime below, treat this seriously if you source any
+battery-containing product under your own brand.</p>
 <p><span class="tag c">UNCONFIRMED</span> Registration is through CPCB's portal
 (eprbattery.cpcb.gov.in) using Form 1(A). No government fee for registration itself, but Producers
 must buy EPR certificates from registered recyclers in proportion to what they sell, at
@@ -2300,7 +2326,7 @@ prepaid return label. It matters to you only if you later add an Easy Ship or Se
 <table>
 <thead><tr><th style="width:44mm">Point</th><th>Detail</th></tr></thead>
 <tbody>
-<tr><td><strong>Filing window</strong></td><td><span class="tag v">VERIFIED</span> <strong>30 days</strong> — reduced from 60 days with effect from <strong>16 February 2026</strong>. The clock starts at the return delivery scan at your premises or the refund date, whichever is <em>later</em>; for a lost shipment, from the last tracking scan.</td></tr>
+<tr><td><strong>Filing window</strong></td><td><span class="tag c">UNCONFIRMED FOR INDIA</span> <strong>30 days</strong> — reported as reduced from 60 days with effect from <strong>16 February 2026</strong>. The clock reportedly starts at the return delivery scan at your premises or the refund date, whichever is <em>later</em>; for a lost shipment, from the last tracking scan. <strong>Caveat:</strong> every source confirming this 60-to-30-day compression describes <em>US seller-fulfilled orders specifically</em>. No India-specific confirmation has been found — Amazon's own seller-forum posts discussing the change reference Amazon.com, not Amazon.in. The window on Amazon India may still be 60 days, or it may have changed silently. <span class="tag s">CHECK LIVE</span> Verify the current window in your own Seller Central → SAFE-T Claims page before relying on either number.</td></tr>
 <tr><td><strong>Wait before filing</strong></td><td><span class="tag c">UNCONFIRMED</span> Reported as 15 business days after the refund is issued, for return-related claims.</td></tr>
 <tr><td><strong>Who must have refunded</strong></td><td><span class="tag v">VERIFIED</span> <strong>Amazon</strong> must have initiated the refund. If <em>you</em> issued the refund yourself, the SAFE-T claim is denied.</td></tr>
 </tbody></table>
@@ -3376,7 +3402,7 @@ that matters for a launch.</p>
 <li>Product passed the decision scorecard (Appendix D)</li>
 <li>Gating checked (Chapter 13)</li>
 <li>BIS / FSSAI / CDSCO / WPC / Hazmat checked against Chapter 17 — <strong>not assumed</strong></li>
-<li>EPR plastic position confirmed (17.5) — do not assume exemption</li>
+<li>EPR plastic position confirmed (17.5) — check Udyam classification against Rule 4A exemption</li>
 <li>Trademark conflict search done for your brand name (16.3)</li>
 <li>Barcode ownership checked at verify.gs1.org if the supplier gave you a GTIN</li>
 <li>Supplier finalised — 3+ quotes compared, MOQ agreed, freight responsibility in writing</li>
@@ -3585,9 +3611,9 @@ than relying on figures quoted in any guide — Amazon adjusts them.</p>
 <table>
 <thead><tr><th style="width:44mm">Question</th><th>Who to ask</th></tr></thead>
 <tbody>
-<tr><td><strong>EPR plastic packaging</strong> — are you exempt as a micro/small brand owner? (17.5)</td>
-    <td>CPCB directly, or an environmental compliance consultant. Sources genuinely conflict, so do not
-        rely on either answer you find online.</td></tr>
+<tr><td><strong>EPR plastic packaging</strong> — does your Udyam classification qualify you for the micro/small exemption? (17.5)</td>
+    <td>Check your own Udyam certificate. If clearly micro or small, the Rule 4A exemption applies. If
+        borderline or medium/large, confirm with CPCB or an environmental compliance consultant.</td></tr>
 <tr><td><strong>Income tax</strong> — presumptive taxation under 44AD versus normal books, advance tax
     dates, and which return to file (Chapter 6)</td>
     <td>A CA. One consultation is cheap next to a penalty, and the Income Tax Act, 2025 changed some
