@@ -3,6 +3,10 @@
 A print-quality PDF guide to selling on Amazon India, with every fee figure traced back
 to Amazon's own live fee page and rate-card images.
 
+> **Picking this up cold, or resuming after a gap? Read [`HANDOFF.md`](HANDOFF.md) first.**
+> It covers the seller's situation, what is verified and how, the two numbers still
+> missing, and the editing rules — in one page.
+
 Fee data captured from [sell.amazon.in/fees-and-pricing](https://sell.amazon.in/fees-and-pricing)
 on **4 August 2026**. Amazon revises these figures without notice — re-verify before republishing.
 
@@ -15,6 +19,35 @@ on **4 August 2026**. Amazon revises these figures without notice — re-verify 
 | `research/ratecards/` | Amazon's own rate-card screenshots, cited as sources in the handbook |
 | `research/fc/` | FC Capabilities PDF (10 pages) — source for all FC codes and weight/height thresholds |
 | `.kiro/steering/` | Project context loaded automatically by Kiro |
+
+## Start here if you are picking this up cold
+
+Run these three commands in order. They take under a minute and tell you the current
+state of the book without reading a single chapter.
+
+```bash
+pip install weasyprint pypdf     # pypdf is REQUIRED - see the warning below
+cd handbook && python3 build.py  # rebuild handbook_full.html + the PDF
+cd ../research && python3 audit_handbook.py   # must print AUDIT PASSED
+```
+
+`audit_handbook.py` is the safety net for this repo. It checks four things:
+
+1. **Confidence census** — counts VERIFIED / UNCONFIRMED / CHECK LIVE tags per chapter,
+   so the book cannot quietly drift into looking more certain than it is.
+2. **Chapter 8 and 9 figures** — re-derives every closing-fee and weight-handling number
+   from the extracted data and the rate cards, and fails on any mismatch.
+3. **Every remaining UNCONFIRMED claim**, printed in full as a to-do list.
+4. **Glyph coverage** — whether every character in the HTML survives into the PDF.
+
+> **Install `pypdf` or step 4 silently skips.** WeasyPrint drops characters its font
+> cannot render with no warning and no placeholder box — the character just vanishes from
+> the PDF. This is not theoretical: a build in August 2026 shipped with 73 invisible
+> `→` arrows, turning every "Reports → Payments" navigation path into "Reports  Payments".
+> The HTML looked perfect. Only the glyph check caught it. **Use `-&gt;` and `&lt;-` in
+> source, never the Unicode arrows.**
+
+If the audit fails, fix the cause before committing. It exits non-zero, so it works in CI.
 
 ## Building the PDF
 
