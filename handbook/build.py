@@ -8,7 +8,7 @@ import time, before writing any output. Install it with: pip install weasyprint
 import pathlib, re, sys
 
 HERE = pathlib.Path(__file__).parent
-PARTS = [f"part{i}.html" for i in range(1, 8)]
+PARTS = [f"part{i}.html" for i in range(1, 9)]
 OUT_HTML = HERE / "handbook_full.html"
 OUT_PDF = HERE / "Amazon_India_Seller_Handbook_2026.pdf"
 
