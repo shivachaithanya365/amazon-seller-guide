@@ -108,17 +108,45 @@ is now settled.
 - Going forward: photograph every carton before sealing. Two units is trivial; the same
   1.1% on a 500-unit shipment is not.
 
-### Inventory cross-check
+### Inventory cross-check (updated 7 August 2026)
 
-178 received − 42 sold in July − 2 sold in August + 5 sellable returns restocked =
-**≈139 units expected on hand.** Worth confirming against the live FBA inventory report.
-If on-hand is materially below 139, there is a second shrinkage problem beyond the
-inbound shortage.
+<strong>Live SKU Central data confirms:</strong>
+- **FBA Inventory Total: 140** (Available 137, Reserved 2, Unfulfillable 1, Inbound 0)
+- **Inventory age: 0-90 days = 138 units** (all stock is fresh — 181-day surcharge not until ~December)
+- **1 unfulfillable unit** = customer damaged (from July returns)
+- **Unit weight: 450 grams** | Package dimensions: 13.5 × 13.4 × 4.2 cm | Volume: 759.78 cu cm
+- **BSR: #10/663 in Home & Kitchen** (strong organic ranking)
 
-Two columns in the returns report worth checking when pulling those rows:
-`Label cost` / `Label to be paid by` (an uncounted per-return cost if Amazon billed the
-labels to us), and `SafeT claim ID` / `SafeT claim state` — if any are populated on an
-FBA order, that contradicts Chapter 20.4 and the book needs correcting.
+### Fee Preview confirmed (7 August 2026)
+
+| Fee Type | Standard | Promotion Discount | Final |
+| --- | --- | --- | --- |
+| Referral Fee | ₹0.00 | ₹0.00 | ₹0.00 |
+| Closing Fee | ₹0.00 | ₹0.00 | ₹0.00 |
+| FBA Weight Handling | ₹85.00 | −₹85.00 | ₹0.00 |
+| FBA Pick & Pack | ₹17.00 | −₹17.00 | ₹0.00 |
+| Per Item Fee | ₹18.00 | −₹18.00 | ₹0.00 |
+| **Total** | **₹120.00** | **−₹120.00** | **₹0.00** |
+
+**Key finding:** Amazon labels the ₹18 as "Per Item Fee" in Fee Preview, not "Closing Fee".
+The Closing Fee line shows ₹0.00 standard. The fee the rate card calls "Closing Fee Group C"
+appears as "Per Item Fee" in the Fee Preview interface.
+
+### SKU Economics (last 30 days, as of 7 August 2026)
+
+| Metric | Value |
+| --- | --- |
+| Units sold | 21 |
+| Units returned | 3 |
+| Net units sold | 18 |
+| Sales | ₹6,993.00 |
+| Net sales | ₹6,074.00 |
+| Total Amazon charges | −₹8,979.06 |
+| Of which: Sponsored Products | −₹8,979.06 |
+| Amazon selling fees | ₹0.00 (fully promoted) |
+| **Net proceeds** | **−₹2,905.06** |
+
+**The entire loss is advertising. Amazon fees are ₹0. Product is profitable without ads.**
 
 ## Other open account items
 
@@ -142,7 +170,14 @@ FBA order, that contradicts Chapter 20.4 and the book needs correcting.
 
 ## The one action needing nobody's permission
 
-Advertising ran at about **₹500/day** through July — ₹15,554 against ₹11,988 of net
-revenue, with **₹0 attributed sales**. Without ads the unit clears about ₹190 before
-cost of goods. The product works; the advertising does not. Pausing it is the single
-highest-value action available and requires no reply from Amazon.
+Advertising ran at about **₹300/day** through July and into August — ₹8,979 in the last
+30 days (per SKU Economics on 7 August) against ₹6,074 of net sales, with **₹0 attributed
+sales from ads**. Without ads the unit clears about ₹213 before cost of goods (once fees
+kick in post-11 August). The product works; the advertising does not. **Pausing it is the
+single highest-value action available and requires no reply from Amazon.**
+
+**August update:** SKU Economics confirms the loss. Net proceeds = −₹2,905 for the last
+30 days. The ENTIRE negative amount is Sponsored Products charge. Amazon selling fees are
+₹0 (still promoted). Once the promotion ends on 11 August AND ads are still running, the
+loss per month would be: ₹8,979 (ads) + ₹120 × 18 (fees on net units) = ~₹11,139 against
+₹6,074 net sales = **−₹5,065/month loss**. This is unsustainable.
