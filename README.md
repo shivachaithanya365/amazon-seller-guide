@@ -13,6 +13,7 @@ on **4 August 2026**. Amazon revises these figures without notice — re-verify 
 | `handbook/` | The deliverable: 8 hand-written HTML chapters (part1–part8), print stylesheet, and `build.py` which assembles them into the PDF |
 | `research/` | The fee-data pipeline: saved Amazon pages, extraction scripts, and the JSON they produce |
 | `research/ratecards/` | Amazon's own rate-card screenshots, cited as sources in the handbook |
+| `research/fc/` | FC Capabilities PDF (10 pages) — source for all FC codes and weight/height thresholds |
 | `.kiro/steering/` | Project context loaded automatically by Kiro |
 
 ## Building the PDF

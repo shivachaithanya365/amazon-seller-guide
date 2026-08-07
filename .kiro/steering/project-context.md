@@ -90,13 +90,23 @@ Verified reproducibly from `fees.html` (re-running the scripts proves it):
 all six closing-fee group lists, the Rs 72 exception list, all 219 referral-fee
 rates, pick & pack Rs 17, storage Rs 50/cu ft, the 500 g minimum chargeable weight.
 
-**Not machine-verifiable** - these figures exist only inside the rate-card JPGs and
-were read by eye: the Rs 27 (Rs 501-1,000) and Rs 52 (above Rs 1,000) closing fees,
-the Rs 101 Self-Ship rate, and every weight-handling number (Rs 39 / 65 / 54 / 85).
-Searching the saved page text for "501", "Rs 27" or "Rs 52" returns nothing. They may
-well be right, but no script can confirm them - re-check by eye against
-`research/ratecards/*.jpg` before republishing, and do not assume a passing script
-run has validated them.
+**Read by eye from the rate-card JPGs (not machine-verifiable):** the Rs 27
+(Rs 501-1,000) and Rs 52 (above Rs 1,000) closing fees, the Rs 101 Self-Ship rate,
+and every weight-handling number (Rs 39 / 65 / 54 / 85). Re-check against
+`research/ratecards/*.jpg` before republishing.
+
+**Verified from the FC Capabilities PDF (10 pages, provided by seller):** all FC
+codes and city/region assignments, 22.5 kg max weight (standard), 1.66-1.83 m max
+height (standard), 3 m (H&B), 85 kg floor / 44 kg stacked (H&B).
+
+**Verified from web research (August 2026):** Brand Registry pending TM-A accepted
+(Amazon's page July 2026), GTIN image requirements (Seller Central forums),
+multi-state GST Section 22/25 (CBIC + Amazon FC announcements), fulfilment channel
+structure (sell.amazon.in), FBA reimbursement windows (Seller Central announcements).
+
+**Still not verified (2 items only):**
+- The exact "13-day" refund processing time in Ch 20 - no source confirms this number
+- The count of "16" H&B centres - not countable from the PDF
 
 ## Known open issues
 
